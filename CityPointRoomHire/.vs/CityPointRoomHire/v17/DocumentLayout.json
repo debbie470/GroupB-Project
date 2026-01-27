@@ -1,0 +1,295 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\views\\customers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\views\\rooms\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\views\\bookings\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\controllers\\roomscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\controllers\\bookingequipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\controllers\\equipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\controllers\\staffscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\models\\bookingequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCFE98F8-03E0-41F0-BCC8-23EE1DB385EA}|CityPointRoomHire.csproj|\\\\dom.sandwell.ac.uk\\student\\homeeven\\712770\\github\\groupb-project\\citypointroomhire\\data\\migrations\\20260127103530_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Bookings\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\Index.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Bookings\\Index.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T12:03:52.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Bookings\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\Create.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Bookings\\Create.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\Create.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T11:42:35.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Customers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customers\\Index.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Customers\\Index.cshtml",
+              "RelativeToolTip": "Views\\Customers\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T11:37:53.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Rooms\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Rooms\\Index.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Rooms\\Index.cshtml",
+              "RelativeToolTip": "Views\\Rooms\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T11:20:50.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACwAAACNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-27T10:27:25.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoomsController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\RoomsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomsController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\RoomsController.cs",
+              "RelativeToolTip": "Controllers\\RoomsController.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAAwKAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:26:55.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StaffsController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\StaffsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StaffsController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\StaffsController.cs",
+              "RelativeToolTip": "Controllers\\StaffsController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:26:28.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingEquipmentsController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\BookingEquipmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingEquipmentsController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\BookingEquipmentsController.cs",
+              "RelativeToolTip": "Controllers\\BookingEquipmentsController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:25:35.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EquipmentsController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\EquipmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EquipmentsController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\EquipmentsController.cs",
+              "RelativeToolTip": "Controllers\\EquipmentsController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:23:18.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingsController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAIwGQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:21:05.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T08:53:53.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20260127103530_InitialCreate.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Data\\Migrations\\20260127103530_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260127103530_InitialCreate.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Data\\Migrations\\20260127103530_InitialCreate.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260127103530_InitialCreate.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:35:30.692Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomersController.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T10:22:38.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Staff.cs",
+              "RelativeDocumentMoniker": "Models\\Staff.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Staff.cs",
+              "RelativeToolTip": "Models\\Staff.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T08:59:04.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookingEquipment.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\BookingEquipment.cs",
+              "RelativeDocumentMoniker": "Models\\BookingEquipment.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\BookingEquipment.cs",
+              "RelativeToolTip": "Models\\BookingEquipment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T08:58:33.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Equipment.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Equipment.cs",
+              "RelativeDocumentMoniker": "Models\\Equipment.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Equipment.cs",
+              "RelativeToolTip": "Models\\Equipment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T08:57:52.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Booking.cs",
+              "RelativeDocumentMoniker": "Models\\Booking.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Booking.cs",
+              "RelativeToolTip": "Models\\Booking.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T08:54:39.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Room.cs",
+              "DocumentMoniker": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "Models\\Room.cs",
+              "ToolTip": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\CityPointRoomHire\\Models\\Room.cs",
+              "RelativeToolTip": "Models\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T08:54:13.028Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
