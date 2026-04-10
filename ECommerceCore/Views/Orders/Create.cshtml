@@ -1,0 +1,64 @@
+﻿@model ECommerceCore.Models.Orders
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h1>Checkout</h1>
+
+<p>Choose how you would like to recive your order.</p>
+
+
+<form asp-action="Create" method="post">
+
+    <div asp-validation-summary="ModelOnly" style="color: red;"></div> 
+
+    <input type="hidden" name="basketId" value="@ViewBag.BasketId" /> 
+
+    <!-- Order Method -->
+    <div style="margin-bottom: 20px;">
+        <label style="font-weight:bold; display:block; margin-bottom: 10px;">Order Method</label>
+
+        <div>
+            <input asp-for="Delivery" id="deliveryCheck" />
+            <label asp-for="Delivery">Delivery</label>
+        </div>
+
+        <div>
+            <input asp-for="Collection" id="collectionCheck" />
+            <label asp-for="Collection">Collection</label>
+        </div>
+    </div>
+
+    <!-- Delivery Type -->
+    <div id="deliveryTypeGroup" style="display:none; margin-bottom:15px;">
+        <label asp-for="DeliveryType"></label>
+        <select asp-for="DeliveryType">
+            <option value="">Select Delivery Type</option>
+            <option value="Next Day">Next Day</option>
+            <option value="First Class">First Class</option>
+            <option value="Standard">Standard</option>
+        </select>
+        <br />
+        <span asp-validation-for="DeliveryType" style="color: red;"></span>
+    </div>
+
+    <!-- Collection Date -->
+    <div id="collectionDateGroup" style="display:none; margin-bottom:20px;">
+        <label asp-for="CollectionDate"></label>
+        <input asp-for="CollectionDate" type="date" id="CollectionDate" />
+        <div>Earliest collection date is 2 days from today.</div>
+        <span asp-validation-for="CollectionDate" style="color:red;"></span>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit">Place Order</button>
+
+    <!-- Back link -->
+    <div style="margin-top:10px;">
+        <a asp-controller="Baskets" asp-action="Index">
+            Back to Basket
+        </a>
+    </div>
+
+</form>
