@@ -1,137 +1,158 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\",
+  "WorkspaceRootPath": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\ecommercecore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:ecommercecore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\basketproducts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\basketproducts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\supplierdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\supplierdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\supplierdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\supplierdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\models\\orderproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\orderproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\orderproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\orderproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\models\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\deliveryinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\basketproducts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\basketproducts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\supplierdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\supplierdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\supplierdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\supplierdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\models\\orderproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\orderproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\orderproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\orderproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\models\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\deliveryinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\deliveryinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\loyaltyrewardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\loyaltyrewardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\loyaltyrewardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\producttraceabilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\producttraceabilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\producttraceabilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\models\\producttraceability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\models\\producttraceability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\producttraceability.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\models\\suppliers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\models\\suppliers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\suppliers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\models\\loyaltyrewards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\models\\loyaltyrewards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\loyaltyrewards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\models\\deliveryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\models\\deliveryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\deliveryinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\models\\basketproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\models\\basketproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:models\\basketproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\data\\migrations\\20260410094732_addingallmodelsascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\data\\migrations\\20260410094732_addingallmodelsascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:data\\migrations\\20260410094732_addingallmodelsascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommercecore\\data\\migrations\\20260410092055_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommercecore\\data\\migrations\\20260410092055_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E3883CC-AB3F-47EB-800C-BA3D41E2D4A5}|ECommerceCore.csproj|solutionrelative:data\\migrations\\20260410092055_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -142,28 +163,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\BasketProducts\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\BasketProducts\\Create.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\BasketProducts\\Create.cshtml",
-              "RelativeToolTip": "Views\\BasketProducts\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-12T20:22:28.607Z",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\ECommercePlatform\\appsettings.json",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.json",
+              "RelativeToolTip": "..\\ECommercePlatform\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-13T12:14:41.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "..\\ECommercePlatform\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.Development.json",
+              "RelativeToolTip": "..\\ECommercePlatform\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-13T12:14:39.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-13T11:50:26.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Orders\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Edit.cshtml",
               "RelativeToolTip": "Views\\Orders\\Edit.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAUwC4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -172,59 +219,145 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "OrderProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\OrderProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\OrderProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderProductsController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\OrderProductsController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\OrderProductsController.cs",
               "RelativeToolTip": "Controllers\\OrderProductsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:29:00.664Z"
+              "WhenOpened": "2026-04-10T09:29:00.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAIBJwEAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T10:11:55.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACgAAAAAAAAAAAAmwDgAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T09:46:10.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:55:18.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-10T10:11:55.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACgAAAAAAAAAAAAmwDgAAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-10T09:46:10.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAiwH0AAAAtAAAAAAAAAA==",
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\SeedData.cs",
+              "RelativeToolTip": "Data\\SeedData.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:26:39.472Z"
+              "WhenOpened": "2026-04-10T09:49:13.87Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ECommerceCore",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\ECommerceCore.csproj",
+              "RelativeDocumentMoniker": "ECommerceCore.csproj",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\ECommerceCore.csproj",
+              "RelativeToolTip": "ECommerceCore.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-13T12:05:19.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\BasketProducts\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\BasketProducts\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\BasketProducts\\Create.cshtml",
+              "RelativeToolTip": "Views\\BasketProducts\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-12T20:22:28.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAiwH0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:26:39.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-13T11:50:31.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ECommercePlatform\\Program.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Program.cs",
+              "RelativeToolTip": "..\\ECommercePlatform\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T11:53:07.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "BasketProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\BasketProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\BasketProductsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BasketProductsController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\BasketProductsController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\BasketProductsController.cs",
               "RelativeToolTip": "Controllers\\BasketProductsController.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAYwDwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -233,315 +366,315 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\SupplierDashboard\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\SupplierDashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\SupplierDashboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\SupplierDashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\SupplierDashboard\\Index.cshtml",
               "RelativeToolTip": "Views\\SupplierDashboard\\Index.cshtml",
               "ViewState": "AgIAADMAAAAAAAAAAAAUwE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-10T16:30:09.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Products\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Products\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Products\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-10T17:46:48.454Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\SeedData.cs",
-              "RelativeDocumentMoniker": "Data\\SeedData.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\SeedData.cs",
-              "RelativeToolTip": "Data\\SeedData.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADwAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:49:13.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SupplierDashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\SupplierDashboardController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SupplierDashboardController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\SupplierDashboardController.cs",
-              "RelativeToolTip": "Controllers\\SupplierDashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T16:23:10.784Z"
+              "WhenOpened": "2026-04-10T16:30:09.82Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Orders.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Orders.cs",
-              "RelativeDocumentMoniker": "Models\\Orders.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Orders.cs",
-              "RelativeToolTip": "Models\\Orders.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA7wA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:13:27.424Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Basket.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Basket.cs",
-              "RelativeDocumentMoniker": "Models\\Basket.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Basket.cs",
-              "RelativeToolTip": "Models\\Basket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:06:21.271Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Index.cshtml",
-              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Products\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-10T15:28:47.506Z"
+              "WhenOpened": "2026-04-10T17:46:48.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SupplierDashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\SupplierDashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SupplierDashboardController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\SupplierDashboardController.cs",
+              "RelativeToolTip": "Controllers\\SupplierDashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T16:23:10.784Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "BasketsController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\BasketsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BasketsController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\BasketsController.cs",
-              "RelativeToolTip": "Controllers\\BasketsController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAkwEkAAAAhAAAAAAAAAA==",
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Orders.cs",
+              "RelativeDocumentMoniker": "Models\\Orders.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Orders.cs",
+              "RelativeToolTip": "Models\\Orders.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA3wA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:43:20.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Orders\\Details.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Details.cshtml",
-              "RelativeToolTip": "Views\\Orders\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-10T15:07:13.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAmwEQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:27:51.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "OrderProducts.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\OrderProducts.cs",
-              "RelativeDocumentMoniker": "Models\\OrderProducts.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\OrderProducts.cs",
-              "RelativeToolTip": "Models\\OrderProducts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:11:57.967Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "20260410094732_AddingAllModelsAsController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\Migrations\\20260410094732_AddingAllModelsAsController.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20260410094732_AddingAllModelsAsController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\Migrations\\20260410094732_AddingAllModelsAsController.cs",
-              "RelativeToolTip": "Data\\Migrations\\20260410094732_AddingAllModelsAsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:47:33.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Baskets\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Baskets\\Index.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Baskets\\Index.cshtml",
-              "RelativeToolTip": "Views\\Baskets\\Index.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAmwEkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-10T10:28:26.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Orders\\Create.cshtml",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Create.cshtml",
-              "RelativeToolTip": "Views\\Orders\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-10T11:04:45.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAABUAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:55:18.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DeliveryInfoesController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\DeliveryInfoesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DeliveryInfoesController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\DeliveryInfoesController.cs",
-              "RelativeToolTip": "Controllers\\DeliveryInfoesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:39:50.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "LoyaltyRewardsController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\LoyaltyRewardsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoyaltyRewardsController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\LoyaltyRewardsController.cs",
-              "RelativeToolTip": "Controllers\\LoyaltyRewardsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:30:25.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ProductTraceabilitiesController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\ProductTraceabilitiesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductTraceabilitiesController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\ProductTraceabilitiesController.cs",
-              "RelativeToolTip": "Controllers\\ProductTraceabilitiesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:25:28.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "SuppliersController.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\SuppliersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SuppliersController.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\SuppliersController.cs",
-              "RelativeToolTip": "Controllers\\SuppliersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:23:50.181Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "20260410092055_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\Migrations\\20260410092055_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Data\\Migrations\\20260410092055_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\Migrations\\20260410092055_InitialCreate.cs",
-              "RelativeToolTip": "Data\\Migrations\\20260410092055_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:20:56.907Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Suppliers.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Suppliers.cs",
-              "RelativeDocumentMoniker": "Models\\Suppliers.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Suppliers.cs",
-              "RelativeToolTip": "Models\\Suppliers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:18:13.789Z"
+              "WhenOpened": "2026-04-10T09:13:27.424Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "ProductTraceability.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\ProductTraceability.cs",
-              "RelativeDocumentMoniker": "Models\\ProductTraceability.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\ProductTraceability.cs",
-              "RelativeToolTip": "Models\\ProductTraceability.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Title": "Basket.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Basket.cs",
+              "RelativeDocumentMoniker": "Models\\Basket.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Basket.cs",
+              "RelativeToolTip": "Models\\Basket.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:17:29.579Z"
+              "WhenOpened": "2026-04-10T09:06:21.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T15:28:47.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "BasketsController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\BasketsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BasketsController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\BasketsController.cs",
+              "RelativeToolTip": "Controllers\\BasketsController.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwEkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:43:20.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Details.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T15:07:13.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Controllers\\OrdersController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAmwEQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:27:51.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "OrderProducts.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\OrderProducts.cs",
+              "RelativeDocumentMoniker": "Models\\OrderProducts.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\OrderProducts.cs",
+              "RelativeToolTip": "Models\\OrderProducts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:11:57.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20260410094732_AddingAllModelsAsController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\Migrations\\20260410094732_AddingAllModelsAsController.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260410094732_AddingAllModelsAsController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\Migrations\\20260410094732_AddingAllModelsAsController.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260410094732_AddingAllModelsAsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:47:33.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Baskets\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Baskets\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Baskets\\Index.cshtml",
+              "RelativeToolTip": "Views\\Baskets\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwEkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T10:28:26.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Views\\Orders\\Create.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-10T11:04:45.521Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "Products.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Products.cs",
-              "RelativeDocumentMoniker": "Models\\Products.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Products.cs",
-              "RelativeToolTip": "Models\\Products.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "Title": "DeliveryInfoesController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\DeliveryInfoesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DeliveryInfoesController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\DeliveryInfoesController.cs",
+              "RelativeToolTip": "Controllers\\DeliveryInfoesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:15:01.508Z"
+              "WhenOpened": "2026-04-10T09:39:50.885Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "LoyaltyRewards.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\LoyaltyRewards.cs",
-              "RelativeDocumentMoniker": "Models\\LoyaltyRewards.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\LoyaltyRewards.cs",
-              "RelativeToolTip": "Models\\LoyaltyRewards.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Title": "LoyaltyRewardsController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\LoyaltyRewardsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoyaltyRewardsController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\LoyaltyRewardsController.cs",
+              "RelativeToolTip": "Controllers\\LoyaltyRewardsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:10:54.628Z"
+              "WhenOpened": "2026-04-10T09:30:25.282Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "DeliveryInfo.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\DeliveryInfo.cs",
-              "RelativeDocumentMoniker": "Models\\DeliveryInfo.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\DeliveryInfo.cs",
-              "RelativeToolTip": "Models\\DeliveryInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "ProductTraceabilitiesController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\ProductTraceabilitiesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductTraceabilitiesController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\ProductTraceabilitiesController.cs",
+              "RelativeToolTip": "Controllers\\ProductTraceabilitiesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:09:50.212Z"
+              "WhenOpened": "2026-04-10T09:25:28.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
+              "Title": "SuppliersController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\SuppliersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SuppliersController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Controllers\\SuppliersController.cs",
+              "RelativeToolTip": "Controllers\\SuppliersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:23:50.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20260410092055_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\Migrations\\20260410092055_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\20260410092055_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Data\\Migrations\\20260410092055_InitialCreate.cs",
+              "RelativeToolTip": "Data\\Migrations\\20260410092055_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:20:56.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Suppliers.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Suppliers.cs",
+              "RelativeDocumentMoniker": "Models\\Suppliers.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Suppliers.cs",
+              "RelativeToolTip": "Models\\Suppliers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:18:13.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProductTraceability.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\ProductTraceability.cs",
+              "RelativeDocumentMoniker": "Models\\ProductTraceability.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\ProductTraceability.cs",
+              "RelativeToolTip": "Models\\ProductTraceability.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:17:29.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Products.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Products.cs",
+              "RelativeDocumentMoniker": "Models\\Products.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\Products.cs",
+              "RelativeToolTip": "Models\\Products.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:15:01.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoyaltyRewards.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\LoyaltyRewards.cs",
+              "RelativeDocumentMoniker": "Models\\LoyaltyRewards.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\LoyaltyRewards.cs",
+              "RelativeToolTip": "Models\\LoyaltyRewards.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:10:54.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DeliveryInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\DeliveryInfo.cs",
+              "RelativeDocumentMoniker": "Models\\DeliveryInfo.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\DeliveryInfo.cs",
+              "RelativeToolTip": "Models\\DeliveryInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-10T09:09:50.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "BasketProducts.cs",
-              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\BasketProducts.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\BasketProducts.cs",
               "RelativeDocumentMoniker": "Models\\BasketProducts.cs",
-              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\BasketProducts.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommerceCore\\Models\\BasketProducts.cs",
               "RelativeToolTip": "Models\\BasketProducts.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:08:33.949Z"
+              "WhenOpened": "2026-04-10T09:08:33.949Z",
+              "EditorCaption": ""
             }
           ]
         }

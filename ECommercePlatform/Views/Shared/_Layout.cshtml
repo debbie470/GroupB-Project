@@ -1,4 +1,154 @@
-﻿<!DOCTYPE html>
+﻿<button type="button"
+        class="btn btn-sm btn-outline-secondary"
+        onclick="toggleSettings()">
+    ⚙️ Settings
+</button>
+<div id="settingsPanel" class="settings-panel">
+
+    <h5>⚙️ Settings</h5>
+
+    <hr />
+
+    <button class="btn btn-sm btn-dark w-100 mb-2" onclick="toggleTheme()">
+        🌙 Toggle Dark Mode
+    </button>
+
+    <button class="btn btn-sm btn-primary w-100 mb-2" onclick="speakPage()">
+        🔊 Read Page
+    </button>
+
+    <button class="btn btn-sm btn-danger w-100" onclick="stopSpeaking()">
+        ⛔ Stop Speech
+    </button>
+
+</div>
+
+<script>
+    function applyTheme(isDark) {
+        document.body.classList.toggle("dark-mode", isDark);
+
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        // OPTIONAL: update settings button text if you want later
+    }
+
+    window.toggleTheme = function () {
+        const isDark = !document.body.classList.contains("dark-mode");
+        applyTheme(isDark);
+    };
+
+    // APPLY ON LOAD (IMPORTANT)
+    document.addEventListener("DOMContentLoaded", function () {
+        const saved = localStorage.getItem("theme");
+
+        const isDark = saved === "dark";
+
+        applyTheme(isDark);
+    });
+</script>
+<script>
+    function speakPage() {
+        window.speechSynthesis.cancel();
+
+        // ONLY read main content (not navbar/footer)
+        const main = document.querySelector("main");
+        const text = main ? main.innerText : document.body.innerText;
+
+        const speech = new SpeechSynthesisUtterance(text);
+
+        speech.rate = 1;
+        speech.pitch = 1;
+        speech.lang = "en-GB";
+
+        window.speechSynthesis.speak(speech);
+    }
+
+    function stopSpeaking() {
+        window.speechSynthesis.cancel();
+    }
+
+        <script>
+    function toggleSettings() {
+        const panel = document.getElementById("settingsPanel");
+
+        if (!panel) return;
+
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+</script>
+</script>
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            window.toggleSettings = function () {
+                const panel = document.getElementById("settingsPanel");
+
+                if (!panel) {
+                    console.log("Settings panel not found");
+                    return;
+                }
+
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            };
+
+    });
+</script>
+<script>
+    /* ---------------- SETTINGS TOGGLE ---------------- */
+    window.toggleSettings = function () {
+        const panel = document.getElementById("settingsPanel");
+        if (!panel) return;
+
+        panel.classList.toggle("show");
+    };
+
+    /* ---------------- DARK MODE ---------------- */
+    window.toggleTheme = function () {
+        document.body.classList.toggle("dark-mode");
+
+        localStorage.setItem(
+            "theme",
+            document.body.classList.contains("dark-mode") ? "dark" : "light"
+        );
+    };
+
+    /* ---------------- TEXT TO SPEECH ---------------- */
+    window.speakPage = function () {
+        window.speechSynthesis.cancel();
+
+        const main = document.querySelector("main");
+        const text = main ? main.innerText : document.body.innerText;
+
+        const speech = new SpeechSynthesisUtterance(text);
+        speech.rate = 1;
+        speech.pitch = 1;
+        speech.lang = "en-GB";
+
+        window.speechSynthesis.speak(speech);
+    };
+
+    window.stopSpeaking = function () {
+        window.speechSynthesis.cancel();
+    };
+</script>
+<div id="contentContainer">
+    <!-- Dynamic content will be added here -->
+</div>
+
+<div id="loading" style="display:none;">
+    <p>Loading more content...</p>
+</div>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -68,14 +218,55 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer mt-5" style="background:#DDEEE5; padding:20px 0;">
+
         <div class="container">
-            &copy; 2026 - ECommercePlatform - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+            <div class="row align-items-start">
+
+                <!-- BRAND -->
+                <div class="col-md-4">
+                    <h6 style="color:#2E7D32; font-weight:700; margin-bottom:8px;">
+                        ECommercePlatform
+                    </h6>
+
+                    <p style="font-size:13px; color:#111827; margin:0;">
+                        Local marketplace for fresh produce.
+                    </p>
+
+                    <small style="color:#6B7280;">
+                        &copy; 2026 GLH
+                    </small>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="col-md-4">
+                    <h6 style="color:#2E7D32; margin-bottom:8px;">Contact</h6>
+
+                    <p style="font-size:13px; margin:0;">📍 West Bromwich</p>
+                    <p style="font-size:13px; margin:0;">📧 support@glh.co.uk</p>
+                    <p style="font-size:13px; margin:0;">📞 +44 1234 567890</p>
+                </div>
+
+                <!-- SOCIAL -->
+                <div class="col-md-4">
+                    <h6 style="color:#2E7D32; margin-bottom:8px;">Follow</h6>
+
+                    <p style="font-size:13px; margin:0;">📘 Facebook</p>
+                    <p style="font-size:13px; margin:0;">📸 Instagram</p>
+                    <p style="font-size:13px; margin:0;">🐦 Twitter / X</p>
+                    <p style="font-size:13px; margin:0;">▶ YouTube</p>
+                </div>
+
+            </div>
+
         </div>
+
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
-</html>
+
+

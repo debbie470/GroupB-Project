@@ -26,8 +26,9 @@ namespace ECommercePlatform.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userId == null)
             {
-                return Unauthorized();
+                return RedirectToAction("Login", "Account");
             }
+        
             var basket = await _context.Basket
                 .FirstOrDefaultAsync(x => x.UserId == userId && x.Status);
             if (basket == null)

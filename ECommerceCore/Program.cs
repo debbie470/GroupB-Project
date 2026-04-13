@@ -27,6 +27,12 @@ using (var scope = app.Services.CreateScope())
     await SeedData.SeedProducts(services);
 }
 
+builder.Services.AddAuthentication().AddGoogle(options =>
+{
+    options.ClientId = builder.Configuration["Google:ClientId"];
+    options.ClientSecret = builder.Configuration["Google:ClientSecret"];
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

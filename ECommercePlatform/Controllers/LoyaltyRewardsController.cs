@@ -54,7 +54,7 @@ namespace ECommercePlatform.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("LoyaltyRewardsId,UserId,PointsBalance,TierLevel,History")] LoyaltyRewards loyaltyRewards)
+        public async Task<IActionResult> Create([Bind("LoyaltyRewardsId,PointsBalance,TierLevel,History")] LoyaltyRewards loyaltyRewards)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace ECommercePlatform.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("LoyaltyRewardsId,UserId,PointsBalance,TierLevel,History")] LoyaltyRewards loyaltyRewards)
+        public async Task<IActionResult> Edit(int id, [Bind("LoyaltyRewardsId,PointsBalance,TierLevel,History")] LoyaltyRewards loyaltyRewards)
         {
             if (id != loyaltyRewards.LoyaltyRewardsId)
             {

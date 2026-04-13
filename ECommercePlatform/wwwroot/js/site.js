@@ -1,4 +1,20 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿<script>
+    document.addEventListener("DOMContentLoaded", function () {
 
-// Write your JavaScript code.
+        window.toggleSettings = function () {
+            const panel = document.getElementById("settingsPanel");
+
+            if (!panel) {
+                console.log("Settings panel not found");
+                return;
+            }
+
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        };
+
+});
+</script>

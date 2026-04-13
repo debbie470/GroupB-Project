@@ -12,9 +12,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.UserId)
-            </th>
+           
             <th>
                 @Html.DisplayNameFor(model => model.PointsBalance)
             </th>
@@ -30,9 +28,7 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserId)
-            </td>
+            
             <td>
                 @Html.DisplayFor(modelItem => item.PointsBalance)
             </td>
@@ -51,3 +47,34 @@
 }
     </tbody>
 </table>
+
+<div class="loyalty-header text-center">
+
+    <h2 class="title">🏆 Loyalty Rewards</h2>
+
+    <p class="subtitle">
+        Earn points, climb tiers, and unlock exclusive discounts
+    </p>
+
+    @{
+        var nextTier = "Silver";
+        var pointsNeeded = 100;
+
+        var totalPoints = Model.Sum(x => x.PointsBalance);
+    }
+
+    <div class="progress-wrapper">
+
+        <p class="progress-text">
+            You have <strong>@totalPoints</strong> points.
+            Only <strong>@pointsNeeded</strong> more to reach <strong>@nextTier</strong> 🎯
+        </p>
+
+        <div class="progress-bar-container">
+            <div class="progress-bar-fill" style="width:@(totalPoints % 100)%"></div>
+        </div>
+
+    </div>
+
+</div>
+

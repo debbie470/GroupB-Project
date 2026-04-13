@@ -14,6 +14,10 @@
     </div>
 }
 
+
+<a asp-controller="Products" asp-action="Index">
+    Continue Shopping
+</a>
 <div>
     <div>
         @foreach (var item in Model)
@@ -68,7 +72,4 @@
         Proceed to Checkout
     </a>
 
-    <a asp-controller="Products" asp-action="Index">
-        Continue Shopping
-    </a>
 </div>

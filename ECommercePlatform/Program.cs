@@ -27,7 +27,6 @@ using (var scope = app.Services.CreateScope())
     await SeedData.SeedProducts(services);
 }
 
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -56,3 +55,19 @@ app.MapRazorPages()
    .WithStaticAssets();
 
 app.Run();
+
+builder.Services.AddRazorPages();
+
+builder.Services.AddDefaultIdentity<IdentityUser>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = "Cookies";
+})
+.AddCookie()
+.AddGoogle(options =>
+{
+    options.ClientId = builder.Configuration["Google:ClientId"];
+    options.ClientSecret = builder.Configuration["Google:ClientSecret"];
+});

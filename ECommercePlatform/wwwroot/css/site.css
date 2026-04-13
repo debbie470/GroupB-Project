@@ -29,3 +29,320 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+.flip-card {
+    background: transparent;
+    width: 100%;
+    height: 180px;
+    perspective: 1000px;
+    margin-top: 20px;
+}
+
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* FRONT */
+.flip-front {
+    background: #DDEEE5;
+    color: #2E7D32;
+    font-weight: 600;
+}
+
+/* BACK */
+.flip-back {
+    background: #ffffff;
+    transform: rotateY(180deg);
+    color: #111827;
+}
+
+.navbar {
+    background: #DDEEE5 !important;
+    border-radius: 0 0 18px 18px;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #2E7D32 !important;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    color: #111827 !important;
+    margin: 0 6px;
+    border-radius: 8px;
+    padding: 6px 10px;
+    transition: 0.2s ease;
+}
+
+    .nav-link:hover {
+        background: #CFE7D8;
+        color: #2E7D32 !important;
+        transform: translateY(-1px);
+    }
+
+.navbar-toggler {
+    border-radius: 8px;
+}
+
+:root {
+    --bg: #F3F4F6;
+    --card: #ffffff;
+    --text: #111827;
+    --nav: #DDEEE5;
+    --footer: #DDEEE5;
+    --accent: #2E7D32;
+}
+
+
+.settings-panel {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 220px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 9999;
+}
+
+body.dark-mode .settings-panel {
+    background: #1e1e1e;
+    color: #f5f5f5;
+}
+.settings-panel {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 220px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+    .settings-panel.show {
+        display: block;
+    }
+:root {
+    --bg: #F3F4F6;
+    --card: #ffffff;
+    --text: #111827;
+    --nav: #DDEEE5;
+    --footer: #DDEEE5;
+}
+
+/* DARK MODE */
+body.dark-mode {
+    --bg: #121212;
+    --card: #1e1e1e;
+    --text: #f5f5f5;
+    --nav: #1f2a1f;
+    --footer: #1f2a1f;
+}
+
+/* APPLY TO WHOLE SITE */
+body {
+    background: var(--bg) !important;
+    color: var(--text) !important;
+}
+
+/* NAVBAR */
+.navbar {
+    background: var(--nav) !important;
+}
+
+/* FOOTER */
+footer {
+    background: var(--footer) !important;
+    color: var(--text) !important;
+}
+
+/* CARDS */
+.card,
+.feature-card,
+.settings-panel {
+    background: var(--card) !important;
+    color: var(--text) !important;
+}
+.leaderboard-card {
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+    .leaderboard-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+/* DARK MODE SUPPORT */
+body.dark-mode .leaderboard-card {
+    background: #1e1e1e;
+    color: white;
+}
+.loyalty-header {
+    padding: 30px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #DDEEE5, #F3F4F6);
+    margin-bottom: 25px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+body.dark-mode .loyalty-header {
+    background: linear-gradient(135deg, #1f2a1f, #121212);
+    color: white;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #6b7280;
+}
+
+body.dark-mode .subtitle {
+    color: #cfcfcf;
+}
+
+/* PROGRESS TEXT */
+.progress-text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* BAR CONTAINER */
+.progress-bar-container {
+    width: 100%;
+    height: 12px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+/* BAR FILL */
+.progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+    border-radius: 20px;
+    transition: width 0.8s ease-in-out;
+}
+
+/* DARK MODE BAR */
+body.dark-mode .progress-bar-container {
+    background: #333;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    color: #2F7D34; /* Green color */
+}
+
+p {
+    color: #333333; /* Darker text for readability */
+    font-size: 16px;
+}
+
+section {
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+hr {
+    border: 1px solid #e2e8f0;
+}
+
+.text-success {
+    color: #2F7D34 !important;
+}
+
+.text-muted {
+    color: #6B7280;
+}
+
+/* Hover effect on accordion button */
+.accordion-button:hover {
+    background-color: #e0f4d7;
+    color: #2F7D34; /* Green color */
+}
+
+/* Add subtle transition for smooth hover effect */
+.accordion-button {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for links and buttons */
+a:hover, .btn:hover {
+    color: #fff;
+    background-color: #2F7D34;
+    border-color: #2F7D34;
+    transition: all 0.3s ease;
+}
+/* Fade-in animation for sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s, transform 0.6s;
+}
+
+    section.fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }

@@ -1,6 +1,169 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container mt-4">
+
+    <h2 class="text-center text-success">Privacy Policy</h2>
+
+    <p class="text-center text-muted">Your privacy is important to us. This privacy policy explains how we collect, use, and protect your personal information on the Greenfield Local Hub platform.</p>
+
+    <!-- Section 1: Introduction -->
+    <section class="mt-5">
+        <h3 class="text-success">Introduction</h3>
+        <p>
+            Welcome to Greenfield Local Hub. We value your trust and are committed to safeguarding your personal information. This Privacy Policy outlines how we collect, store, use, and disclose your data when using our platform.
+        </p>
+    </section>
+
+    <!-- Section 2: Information We Collect -->
+    <section class="mt-5">
+        <h3 class="text-success">Information We Collect</h3>
+        <p>
+            We collect personal information when you use our platform, such as when you create an account, place an order, or contact customer support. The information we collect includes:
+        </p>
+        <ul>
+            <li>Personal details (name, email, address, etc.)</li>
+            <li>Payment information (credit card, bank details, etc.)</li>
+            <li>Order and delivery details</li>
+            <li>Browsing data (cookies, device info, etc.)</li>
+        </ul>
+    </section>
+
+    <!-- Section 3: How We Use Your Information -->
+    <section class="mt-5">
+        <h3 class="text-success">How We Use Your Information</h3>
+        <p>
+            Your information is used to provide you with a better user experience and ensure smooth operation of the platform. We use your information to:
+        </p>
+        <ul>
+            <li>Process orders and deliveries</li>
+            <li>Improve platform functionality and user experience</li>
+            <li>Send promotional emails (with your consent)</li>
+            <li>Respond to customer service inquiries</li>
+            <li>Ensure legal and regulatory compliance</li>
+        </ul>
+    </section>
+
+    <!-- Section 4: How We Protect Your Information -->
+    <section class="mt-5">
+        <h3 class="text-success">How We Protect Your Information</h3>
+        <p>
+            We take the security of your personal data seriously. We use modern security measures, such as encryption, to protect your information from unauthorized access, disclosure, alteration, or destruction.
+        </p>
+    </section>
+
+    <!-- Section 5: Transparency & Fair Pricing -->
+    <section class="mt-5">
+        <h3 class="text-success">Transparency & Fair Pricing</h3>
+        <p>
+            We believe in transparent pricing and fair treatment of our users. We ensure that the prices for products and services are clearly presented and that you are always informed of any fees before making a purchase.
+        </p>
+    </section>
+
+    <!-- Section 6: Third-Party Disclosure -->
+    <section class="mt-5">
+        <h3 class="text-success">Third-Party Disclosure</h3>
+        <p>
+            We do not share, sell, or rent your personal information to third parties, except when required by law or to fulfill the services we provide, such as payment processors or delivery partners.
+        </p>
+    </section>
+
+    <!-- Section 7: Your Rights and Choices -->
+    <section class="mt-5">
+        <h3 class="text-success">Your Rights and Choices</h3>
+        <p>
+            You have the right to:
+        </p>
+        <ul>
+            <li>Access your personal information</li>
+            <li>Update or correct any incorrect data</li>
+            <li>Request the deletion of your personal data (under certain conditions)</li>
+            <li>Opt-out of marketing communications</li>
+        </ul>
+    </section>
+
+    <!-- Section 8: Contact Us -->
+    <section class="mt-5 mb-4">
+        <h3 class="text-success">Contact Us</h3>
+        <p>
+            If you have any questions about this Privacy Policy or how your data is handled, please feel free to contact us at:
+        </p>
+        <ul>
+            <li>Email: <a href="mailto:support@greenfieldlocalhub.co.uk">support@greenfieldlocalhub.co.uk</a></li>
+            <li>Phone: +44 1234 567890</li>
+            <li>Address: West Bromwich, UK</li>
+        </ul>
+    </section>
+
+</div>
+
+<div class="accordion" id="privacyAccordion">
+    <!-- Section 1: Introduction -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Introduction
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#privacyAccordion">
+            <div class="accordion-body">
+                Welcome to Greenfield Local Hub. We value your trust and are committed to safeguarding your personal information. This Privacy Policy outlines how we collect, store, use, and disclose your data when using our platform.
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2: Information We Collect -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Information We Collect
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#privacyAccordion">
+            <div class="accordion-body">
+                We collect personal information when you use our platform, such as when you create an account, place an order, or contact customer support. The information we collect includes:
+                <ul>
+                    <li>Personal details (name, email, address, etc.)</li>
+                    <li>Payment information (credit card, bank details, etc.)</li>
+                    <li>Order and delivery details</li>
+                    <li>Browsing data (cookies, device info, etc.)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Sections... -->
+</div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+<p>
+    We collect <span data-bs-toggle="tooltip" data-bs-placement="top" title="This includes your name, contact details, and address.">personal details</span> when you use our platform.
+</p>
+<script>
+    // Initialize tooltips
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+</script>
+<script>
+    // Intersection Observer API for fade-in effect
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+</script>

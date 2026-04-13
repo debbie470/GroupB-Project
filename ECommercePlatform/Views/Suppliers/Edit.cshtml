@@ -14,9 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="SuppliersId" />
             <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <input asp-for="UserId" class="form-control" />
-                <span asp-validation-for="UserId" class="text-danger"></span>
+                @Html.HiddenFor(model => model.UserId) <!-- Hides UserId input -->
             </div>
             <div class="form-group">
                 <label asp-for="SupplierName" class="control-label"></label>
