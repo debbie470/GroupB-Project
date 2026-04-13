@@ -19,233 +19,233 @@ build_property.TargetFrameworkIdentifier = .NETCoreApp
 build_property.TargetFrameworkVersion = v9.0
 build_property.RootNamespace = ECommerceCore
 build_property.RootNamespace = ECommerceCore
-build_property.ProjectDir = C:\ECommerceCore\
+build_property.ProjectDir = C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommerceCore\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\ECommerceCore
+build_property.MSBuildProjectDirectory = C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommerceCore
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/ECommerceCore/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/BasketProducts/Create.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/BasketProducts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0UHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/BasketProducts/Delete.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/BasketProducts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0UHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/BasketProducts/Details.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/BasketProducts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0UHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/BasketProducts/Edit.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/BasketProducts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0UHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/BasketProducts/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/BasketProducts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0UHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Baskets/Create.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Baskets/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Baskets/Delete.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Baskets/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Baskets/Details.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Baskets/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Baskets/Edit.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Baskets/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Baskets/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Baskets/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmFza2V0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/DeliveryInfoes/Create.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/DeliveryInfoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlJbmZvZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/DeliveryInfoes/Delete.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/DeliveryInfoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlJbmZvZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/DeliveryInfoes/Details.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/DeliveryInfoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlJbmZvZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/DeliveryInfoes/Edit.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/DeliveryInfoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlJbmZvZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/DeliveryInfoes/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/DeliveryInfoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlJbmZvZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Home/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Home/Privacy.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/LoyaltyRewards/Create.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/LoyaltyRewards/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG95YWx0eVJld2FyZHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/LoyaltyRewards/Delete.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/LoyaltyRewards/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG95YWx0eVJld2FyZHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/LoyaltyRewards/Details.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/LoyaltyRewards/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG95YWx0eVJld2FyZHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/LoyaltyRewards/Edit.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/LoyaltyRewards/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG95YWx0eVJld2FyZHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/LoyaltyRewards/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/LoyaltyRewards/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG95YWx0eVJld2FyZHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/OrderProducts/Create.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/OrderProducts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJQcm9kdWN0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/OrderProducts/Delete.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/OrderProducts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJQcm9kdWN0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/OrderProducts/Details.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/OrderProducts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJQcm9kdWN0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/OrderProducts/Edit.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/OrderProducts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJQcm9kdWN0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/OrderProducts/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/OrderProducts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJQcm9kdWN0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Orders/Create.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Orders/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Orders/Delete.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Orders/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Orders/Details.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Orders/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Orders/Edit.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Orders/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Orders/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Orders/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Products/Create.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Products/Delete.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Products/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Products/Details.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Products/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Products/Edit.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Products/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/ProductTraceabilities/Create.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/ProductTraceabilities/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFRyYWNlYWJpbGl0aWVzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/ProductTraceabilities/Delete.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/ProductTraceabilities/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFRyYWNlYWJpbGl0aWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/ProductTraceabilities/Details.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/ProductTraceabilities/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFRyYWNlYWJpbGl0aWVzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/ProductTraceabilities/Edit.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/ProductTraceabilities/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFRyYWNlYWJpbGl0aWVzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/ProductTraceabilities/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/ProductTraceabilities/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFRyYWNlYWJpbGl0aWVzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Shared/Error.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/SupplierDashboard/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/SupplierDashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJEYXNoYm9hcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Suppliers/Create.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Suppliers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Suppliers/Delete.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Suppliers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Suppliers/Details.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Suppliers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Suppliers/Edit.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Suppliers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Suppliers/Index.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Suppliers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/_ViewImports.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/_ViewStart.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/ECommerceCore/Views/Shared/_Layout.cshtml]
+[C:/Users/abdul/OneDrive/Documents/GitHub/GroupB-Project/ECommerceCore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8v66vz4nyn

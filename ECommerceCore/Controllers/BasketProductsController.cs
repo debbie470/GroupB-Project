@@ -60,18 +60,26 @@ namespace ECommerceCore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(int productsId)
+        public async Task<IActionResult> Create(BasketProducts model)
         {
+            // Validate form
+            if (!ModelState.IsValid)
+            {
+                ViewData["BasketId"] = new SelectList(_context.Basket, "BasketId", "BasketId", model.BasketId);
+                ViewData["ProductsId"] = new SelectList(_context.Products, "ProductsId", "ProductsId", model.ProductsId);
+                return View(model);
+            }
+
             // Get product
             var product = await _context.Products
-                .FirstOrDefaultAsync(x => x.ProductsId == productsId);
+                .FirstOrDefaultAsync(x => x.ProductsId == model.ProductsId);
 
             if (product == null)
             {
                 return NotFound();
             }
 
-            // Get user
+            // Get logged-in user
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if (userId == null)
             {
@@ -79,7 +87,8 @@ namespace ECommerceCore.Controllers
             }
 
             // Get or create basket
-            var basket = await _context.Basket.FirstOrDefaultAsync(x => x.UserId == userId && x.Status == true);
+            var basket = await _context.Basket
+                .FirstOrDefaultAsync(x => x.UserId == userId && x.Status == true);
 
             if (basket == null)
             {
@@ -87,28 +96,30 @@ namespace ECommerceCore.Controllers
                 {
                     Status = true,
                     UserId = userId,
-                    BasketCreatedAt = DateTime.UtcNow,
+                    BasketCreatedAt = DateTime.UtcNow
                 };
 
                 _context.Basket.Add(basket);
                 await _context.SaveChangesAsync();
             }
 
-            // Check if product already in basket
+            // Check if product already exists in basket
             var basketProduct = await _context.BasketProducts
-                .FirstOrDefaultAsync(bp => bp.BasketId == basket.BasketId && bp.ProductsId == productsId);
+                .FirstOrDefaultAsync(bp =>
+                    bp.BasketId == basket.BasketId &&
+                    bp.ProductsId == model.ProductsId);
 
             if (basketProduct != null)
             {
-                basketProduct.Quantity++;
+                basketProduct.Quantity += model.Quantity;
             }
             else
             {
                 basketProduct = new BasketProducts
                 {
                     BasketId = basket.BasketId,
-                    ProductsId = productsId,
-                    Quantity = 1
+                    ProductsId = model.ProductsId,
+                    Quantity = model.Quantity
                 };
 
                 _context.BasketProducts.Add(basketProduct);
