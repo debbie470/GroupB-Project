@@ -3,48 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\deliveryinfoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\deliveryinfoes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\suppliers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\suppliers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\supplierdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\supplierdashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\deliveryinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\deliveryinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\producttraceabilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\producttraceabilitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\producttraceabilities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\producttraceabilities\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\loyaltyrewardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\loyaltyrewardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\baskets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\suppliers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\suppliers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\loyaltyrewards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\loyaltyrewards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\loyaltyrewardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\loyaltyrewardscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\views\\loyaltyrewards\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -63,24 +91,12 @@
       "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\suppliers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\supplierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,24 +106,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Suppliers\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Suppliers\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Suppliers\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Suppliers\\Edit.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\DeliveryInfoes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\DeliveryInfoes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\DeliveryInfoes\\Index.cshtml",
+              "RelativeToolTip": "Views\\DeliveryInfoes\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:18:20.349Z",
+              "WhenOpened": "2026-04-14T12:03:26.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-13T11:52:52.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAADwv0gAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T12:19:48.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BasketProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\BasketProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BasketProductsController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\BasketProductsController.cs",
+              "RelativeToolTip": "Controllers\\BasketProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T08:25:20.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-13T14:31:36.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-13T12:43:19.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Suppliers\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Suppliers\\Create.cshtml",
@@ -115,38 +195,23 @@
               "RelativeToolTip": "Views\\Suppliers\\Create.cshtml",
               "ViewState": "AgIAAAUAAAAAAAAAAAAwwBUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:17:12.99Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:17:12.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SuppliersController.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\SuppliersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SuppliersController.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\SuppliersController.cs",
-              "RelativeToolTip": "Controllers\\SuppliersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T14:15:18.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\LoyaltyRewards\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\LoyaltyRewards\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\LoyaltyRewards\\Index.cshtml",
-              "RelativeToolTip": "Views\\LoyaltyRewards\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC8AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:01:08.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:44:09.215Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Suppliers\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Suppliers\\Index.cshtml",
@@ -154,21 +219,19 @@
               "RelativeToolTip": "Views\\Suppliers\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:00:41.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:00:41.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Orders\\Index.cshtml",
-              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAMAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\SupplierDashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\SupplierDashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\SupplierDashboard\\Index.cshtml",
+              "RelativeToolTip": "Views\\SupplierDashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T13:59:19.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T08:38:57.214Z"
             },
             {
               "$type": "Document",
@@ -178,14 +241,61 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAFIBAAAAAAAAAAAmwFwBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0CAAAAAAAAAAAAACQCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-04-13T12:45:29.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T12:45:29.364Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-13T13:59:19.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeliveryInfoesController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\DeliveryInfoesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DeliveryInfoesController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\DeliveryInfoesController.cs",
+              "RelativeToolTip": "Controllers\\DeliveryInfoesController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAwwDoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T11:51:01.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAADwv1oAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-13T12:33:12.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductTraceabilitiesController.cs",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\ProductTraceabilitiesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductTraceabilitiesController.cs",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\ProductTraceabilitiesController.cs",
+              "RelativeToolTip": "Controllers\\ProductTraceabilitiesController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowC8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T14:28:24.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Baskets\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Baskets\\Index.cshtml",
@@ -193,51 +303,47 @@
               "RelativeToolTip": "Views\\Baskets\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:53:09.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAANcAAAAAAAAAAAAAAOUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T12:33:12.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:53:09.35Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "ProductTraceabilitiesController.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\ProductTraceabilitiesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductTraceabilitiesController.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\ProductTraceabilitiesController.cs",
-              "RelativeToolTip": "Controllers\\ProductTraceabilitiesController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAA9wC8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T14:28:24.62Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAwwGcAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\ProductTraceabilities\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\ProductTraceabilities\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\ProductTraceabilities\\Index.cshtml",
+              "RelativeToolTip": "Views\\ProductTraceabilities\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T12:43:19.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T11:44:15.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\LoyaltyRewards\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\LoyaltyRewards\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\LoyaltyRewards\\Index.cshtml",
+              "RelativeToolTip": "Views\\LoyaltyRewards\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-13T14:01:08.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Suppliers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Suppliers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Suppliers\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Suppliers\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-13T14:18:20.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\LoyaltyRewards\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\LoyaltyRewards\\Create.cshtml",
@@ -245,12 +351,11 @@
               "RelativeToolTip": "Views\\LoyaltyRewards\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:24:38.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:24:38.627Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\LoyaltyRewards\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\LoyaltyRewards\\Edit.cshtml",
@@ -258,38 +363,11 @@
               "RelativeToolTip": "Views\\LoyaltyRewards\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:25:01.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:25:01.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:44:09.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAwwKgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-13T14:31:36.307Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "LoyaltyRewardsController.cs",
               "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\LoyaltyRewardsController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoyaltyRewardsController.cs",
@@ -297,12 +375,11 @@
               "RelativeToolTip": "Controllers\\LoyaltyRewardsController.cs",
               "ViewState": "AgIAAJkAAAAAAAAAAAAkwFgAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T14:25:35.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T14:25:35.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
@@ -310,12 +387,11 @@
               "RelativeToolTip": "wwwroot\\js\\site.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-04-13T12:58:59.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T12:58:59.503Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "BasketsController.cs",
               "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\BasketsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BasketsController.cs",
@@ -323,34 +399,7 @@
               "RelativeToolTip": "Controllers\\BasketsController.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAA5wB4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T12:53:14.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAADwv0gAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T12:19:48.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-13T11:52:52.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T12:53:14.054Z"
             }
           ]
         }

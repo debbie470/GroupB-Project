@@ -30,6 +30,27 @@ body {
   text-align: start;
 }
 
+/* HERO SECTION */
+.hero {
+    background-color: #F3F4F6; /* Light background */
+    padding: 50px 0; /* Top and bottom padding */
+    text-align: center;
+    color: #111827; /* Dark text color */
+}
+
+    .hero h1 {
+        font-size: 2.5rem;
+        color: #2E7D32; /* Green color for heading */
+        font-weight: 700;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        color: #555; /* Slightly lighter gray for readability */
+        margin-top: 20px;
+    }
+
+/* FEATURE CARDS */
 .flip-card {
     background: transparent;
     width: 100%;
@@ -78,6 +99,21 @@ body {
     color: #111827;
 }
 
+/* SECTION TITLES */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2E7D32; /* Green color */
+    margin-bottom: 20px;
+}
+
+/* SECTION TEXT */
+.section-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
 .navbar {
     background: #DDEEE5 !important;
     border-radius: 0 0 18px 18px;
@@ -132,7 +168,7 @@ body {
 }
 
 body.dark-mode .settings-panel {
-    background: #1e1e1e;
+    background: #121212;
     color: #f5f5f5;
 }
 .settings-panel {
@@ -159,7 +195,7 @@ body.dark-mode .settings-panel {
     --footer: #DDEEE5;
 }
 
-/* DARK MODE */
+ DARK MODE 
 body.dark-mode {
     --bg: #121212;
     --card: #1e1e1e;
@@ -168,24 +204,24 @@ body.dark-mode {
     --footer: #1f2a1f;
 }
 
-/* APPLY TO WHOLE SITE */
+ APPLY TO WHOLE SITE 
 body {
     background: var(--bg) !important;
     color: var(--text) !important;
 }
 
-/* NAVBAR */
+ NAVBAR 
 .navbar {
     background: var(--nav) !important;
 }
 
-/* FOOTER */
+ FOOTER 
 footer {
     background: var(--footer) !important;
     color: var(--text) !important;
 }
 
-/* CARDS */
+ CARDS 
 .card,
 .feature-card,
 .settings-panel {
@@ -202,7 +238,7 @@ footer {
         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 
-/* DARK MODE SUPPORT */
+ DARK MODE SUPPORT 
 body.dark-mode .leaderboard-card {
     background: #1e1e1e;
     color: white;
@@ -232,13 +268,13 @@ body.dark-mode .subtitle {
     color: #cfcfcf;
 }
 
-/* PROGRESS TEXT */
+ PROGRESS TEXT 
 .progress-text {
     margin-top: 10px;
     font-size: 14px;
 }
 
-/* BAR CONTAINER */
+ BAR CONTAINER 
 .progress-bar-container {
     width: 100%;
     height: 12px;
@@ -248,7 +284,7 @@ body.dark-mode .subtitle {
     margin-top: 10px;
 }
 
-/* BAR FILL */
+ BAR FILL 
 .progress-bar-fill {
     height: 100%;
     width: 0%;
@@ -257,12 +293,12 @@ body.dark-mode .subtitle {
     transition: width 0.8s ease-in-out;
 }
 
-/* DARK MODE BAR */
+ DARK MODE BAR 
 body.dark-mode .progress-bar-container {
     background: #333;
 }
 
-/* ANIMATION */
+ ANIMATION 
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -281,11 +317,11 @@ body {
 }
 
 h2, h3 {
-    color: #2F7D34; /* Green color */
+    color: #2F7D34;  Green color 
 }
 
 p {
-    color: #333333; /* Darker text for readability */
+    color: #333333;  Darker text for readability 
     font-size: 16px;
 }
 
@@ -317,32 +353,196 @@ hr {
     color: #6B7280;
 }
 
-/* Hover effect on accordion button */
+ Hover effect on accordion button 
 .accordion-button:hover {
     background-color: #e0f4d7;
-    color: #2F7D34; /* Green color */
+    color: #2F7D34;  Green color 
 }
 
-/* Add subtle transition for smooth hover effect */
+ Add subtle transition for smooth hover effect 
 .accordion-button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect for links and buttons */
+ Hover effect for links and buttons 
 a:hover, .btn:hover {
     color: #fff;
     background-color: #2F7D34;
     border-color: #2F7D34;
     transition: all 0.3s ease;
 }
-/* Fade-in animation for sections */
+ fade-in animation for sections 
 section {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translatey(20px);
     transition: opacity 0.6s, transform 0.6s;
 }
 
-    section.fade-in {
-        opacity: 1;
-        transform: translateY(0);
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    footer .footer
+}     
+  .product-image
+
+{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+    .product-image:hover {
+        transform: translateY(-8px) scale(1.1);
+        filter: brightness(1.1);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.25);
     }
+
+
+/* =========================
+   TRACEABILITY TABLE DESIGN
+   ========================= */
+
+table.table {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+    /* Header */
+    table.table thead {
+        background: #2E7D32;
+        color: white;
+    }
+
+        table.table thead th {
+            border: none !important;
+            padding: 14px;
+            font-weight: 600;
+        }
+
+    /* Rows */
+    table.table tbody tr {
+        transition: all 0.2s ease;
+    }
+
+        table.table tbody tr:hover {
+            background: #f1f8f4;
+            transform: scale(1.01);
+        }
+
+    /* Cells */
+    table.table td {
+        padding: 12px;
+        vertical-align: middle;
+        border-color: #e5e7eb;
+    }
+
+    /* Links (Edit | Details | Delete) */
+    table.table a {
+        text-decoration: none;
+        font-size: 13px;
+        padding: 4px 8px;
+        border-radius: 6px;
+        margin-right: 4px;
+        transition: 0.2s;
+    }
+
+        /* Edit */
+        table.table a[href*="Edit"] {
+            color: #2563eb;
+            background: #e0ecff;
+        }
+
+        /* Details */
+        table.table a[href*="Details"] {
+            color: #0f766e;
+            background: #d1fae5;
+        }
+
+        /* Delete */
+        table.table a[href*="Delete"] {
+            color: #b91c1c;
+            background: #fee2e2;
+        }
+
+/* Create button */
+a[asp-action="Create"] {
+    display: inline-block;
+    background: #2E7D32;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+    a[asp-action="Create"]:hover {
+        background: #256428;
+        transform: translateY(-1px);
+    }
+
+h1 {
+    color: #2E7D32;
+    /* combine effects */
+    animation: slideIn 0.8s ease-out, floatTitle 3s ease-in-out infinite 0.8s, pulseGlow 2.5s infinite 1s;
+    transition: transform 0.3s ease;
+}
+
+/* Slide in on load */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Floating movement */
+@keyframes floatTitle {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Soft glow pulse */
+@keyframes pulseGlow {
+    0% {
+        text-shadow: 0 0 0px rgba(46,125,50,0);
+    }
+
+    50% {
+        text-shadow: 0 0 10px rgba(46,125,50,0.5);
+    }
+
+    100% {
+        text-shadow: 0 0 0px rgba(46,125,50,0);
+    }
+}
+
+/* Hover effect */
+h1:hover {
+    transform: scale(1.05);
+    color: #256428;
+}
+
+
+
+
