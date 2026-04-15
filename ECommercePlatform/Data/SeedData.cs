@@ -163,7 +163,7 @@ namespace ECommercePlatform.Data
                         ImagePath = "/image/Bread.jpg"
                     },
                      new Products
-                    {
+                     {
                         ProductName = "Milk",
                         Stock = 100,
                         Price = 0.40m,
@@ -171,13 +171,13 @@ namespace ECommercePlatform.Data
                         ImagePath = "/image/milk.jpg"
                      },
                       new Products
-                    {
+                      {
                         ProductName = "Rice",
                         Stock = 150,
                         Price = 1.20m,
                         SuppliersId = UkBigFarm.SuppliersId,
                         ImagePath = "/image/rice.jpg"
-                    },
+                      },
                 };
                 await context.Products.AddRangeAsync(products);
                 await context.SaveChangesAsync();

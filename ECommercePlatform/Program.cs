@@ -13,7 +13,15 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddAuthentication()
+    .AddGoogle(options =>
+    {
+        options.ClientId = builder.Configuration["Google:ClientId"];
+        options.ClientSecret = builder.Configuration["Google:ClientSecret"];
+    });
+
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
@@ -61,13 +69,3 @@ builder.Services.AddRazorPages();
 builder.Services.AddDefaultIdentity<IdentityUser>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultScheme = "Cookies";
-})
-.AddCookie()
-.AddGoogle(options =>
-{
-    options.ClientId = builder.Configuration["Google:ClientId"];
-    options.ClientSecret = builder.Configuration["Google:ClientSecret"];
-});

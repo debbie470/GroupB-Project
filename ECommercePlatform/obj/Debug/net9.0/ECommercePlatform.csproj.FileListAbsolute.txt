@@ -820,6 +820,7 @@ C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ref\ECommercePlatform.dll
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\g6ngiumc0c-dhwfk2tsns.gz
+<<<<<<< HEAD
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\vuzw2ylh4n-qorbd2lqzh.gz
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\bin\Debug\net9.0\appsettings.json
@@ -1225,3 +1226,7 @@ C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\De
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ECommercePlatform.pdb
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ECommercePlatform.genruntimeconfig.cache
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ref\ECommercePlatform.dll
+=======
+C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\vuzw2ylh4n-pfx7oi5wdv.gz
+>>>>>>> f74bf42cf136481579ce5f44663de45719f86ee9
+C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\nz8srdjjew-{0}-pfx7oi5wdv-pfx7oi5wdv.gz

@@ -1,35 +1,33 @@
-﻿<button type="button"
-        class="btn btn-sm btn-outline-secondary"
-        onclick="toggleSettings()">
+﻿<!-- Settings Button -->
+<button type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleSettings()">
     ⚙️ Settings
 </button>
+
+<!-- Settings Panel -->
 <div id="settingsPanel" class="settings-panel">
-
     <h5>⚙️ Settings</h5>
-
     <hr />
-
-    <button class="btn btn-sm btn-dark w-100 mb-2" onclick="toggleTheme()">
-        🌙 Toggle Dark Mode
-    </button>
-
-    <button class="btn btn-sm btn-primary w-100 mb-2" onclick="speakPage()">
-        🔊 Read Page
-    </button>
-
-    <button class="btn btn-sm btn-danger w-100" onclick="stopSpeaking()">
-        ⛔ Stop Speech
-    </button>
-
+    <button class="btn btn-sm btn-dark w-100 mb-2" onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
+    <button class="btn btn-sm btn-primary w-100 mb-2" onclick="speakPage()">🔊 Read Page</button>
+    <button class="btn btn-sm btn-danger w-100" onclick="stopSpeaking()">⛔ Stop Speech</button>
+    <h6>Font Size</h6>
+    <button onclick="setFontSize('14px')">Small</button>
+    <button onclick="setFontSize('16px')">Medium</button>
+    <button onclick="setFontSize('18px')">Large</button>
 </div>
 
 <script>
+    // ---------------- SETTINGS TOGGLE ----------------
+    window.toggleSettings = function () {
+        const panel = document.getElementById("settingsPanel");
+        if (!panel) return;
+        panel.classList.toggle("show");  // Toggle display of the settings panel
+    };
+
+    // ---------------- DARK MODE ----------------
     function applyTheme(isDark) {
         document.body.classList.toggle("dark-mode", isDark);
-
         localStorage.setItem("theme", isDark ? "dark" : "light");
-
-        // OPTIONAL: update settings button text if you want later
     }
 
     window.toggleTheme = function () {
@@ -37,90 +35,14 @@
         applyTheme(isDark);
     };
 
-    // APPLY ON LOAD (IMPORTANT)
+    // Apply the saved theme on page load
     document.addEventListener("DOMContentLoaded", function () {
-        const saved = localStorage.getItem("theme");
-
-        const isDark = saved === "dark";
-
+        const savedTheme = localStorage.getItem("theme");
+        const isDark = savedTheme === "dark";
         applyTheme(isDark);
     });
-</script>
-<script>
-    function speakPage() {
-        window.speechSynthesis.cancel();
 
-        // ONLY read main content (not navbar/footer)
-        const main = document.querySelector("main");
-        const text = main ? main.innerText : document.body.innerText;
-
-        const speech = new SpeechSynthesisUtterance(text);
-
-        speech.rate = 1;
-        speech.pitch = 1;
-        speech.lang = "en-GB";
-
-        window.speechSynthesis.speak(speech);
-    }
-
-    function stopSpeaking() {
-        window.speechSynthesis.cancel();
-    }
-
-        <script>
-    function toggleSettings() {
-        const panel = document.getElementById("settingsPanel");
-
-        if (!panel) return;
-
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    }
-</script>
-</script>
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            window.toggleSettings = function () {
-                const panel = document.getElementById("settingsPanel");
-
-                if (!panel) {
-                    console.log("Settings panel not found");
-                    return;
-                }
-
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            };
-
-    });
-</script>
-<script>
-    /* ---------------- SETTINGS TOGGLE ---------------- */
-    window.toggleSettings = function () {
-        const panel = document.getElementById("settingsPanel");
-        if (!panel) return;
-
-        panel.classList.toggle("show");
-    };
-
-    /* ---------------- DARK MODE ---------------- */
-    window.toggleTheme = function () {
-        document.body.classList.toggle("dark-mode");
-
-        localStorage.setItem(
-            "theme",
-            document.body.classList.contains("dark-mode") ? "dark" : "light"
-        );
-    };
-
-    /* ---------------- TEXT TO SPEECH ---------------- */
+    // ---------------- TEXT TO SPEECH ----------------
     window.speakPage = function () {
         window.speechSynthesis.cancel();
 
@@ -138,15 +60,54 @@
     window.stopSpeaking = function () {
         window.speechSynthesis.cancel();
     };
+
+    window.setFontSize = function (size) {
+        console.log("Font size:", size); // debug
+
+        document.documentElement.style.setProperty('--font-size', size);
+        localStorage.setItem('fontSize', size);
+    };
+
+    // Apply saved font size on load
+    document.addEventListener("DOMContentLoaded", function () {
+        const savedSize = localStorage.getItem("fontSize");
+        if (savedSize) {
+            document.documentElement.style.setProperty('--font-size', savedSize);
+        }
+    });
 </script>
-<div id="contentContainer">
-    <!-- Dynamic content will be added here -->
-</div>
 
-<div id="loading" style="display:none;">
-    <p>Loading more content...</p>
-</div>
+<style>
+    /* Example styles for the settings panel */
+    .settings-panel {
+        position: fixed;
+        top: 70px;
+        right: 20px;
+        width: 220px;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        display: none;
+        z-index: 9999;
+    }
 
+        .settings-panel.show {
+            display: block;
+        }
+
+    /* Dark Mode styles */
+    body.dark-mode {
+        background: #121212;
+        color: #f5f5f5;
+    }
+
+        /* Optional: Customize dark mode theme colors for specific elements */
+        body.dark-mode .settings-panel {
+            background: #333;
+            color: #fff;
+        }
+</style>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -218,50 +179,21 @@
         </main>
     </div>
 
-    <footer class="footer mt-5" style="background:#DDEEE5; padding:20px 0;">
-
+    <footer class="footer mt-5" style="background:#2E7D32; padding:20px 0; color:#D1D5DB;">
         <div class="container">
-
-            <div class="row align-items-start">
-
+            <div class="row">
                 <!-- BRAND -->
-                <div class="col-md-4">
-                    <h6 style="color:#2E7D32; font-weight:700; margin-bottom:8px;">
-                        ECommercePlatform
-                    </h6>
-
-                    <p style="font-size:13px; color:#111827; margin:0;">
-                        Local marketplace for fresh produce.
-                    </p>
-
-                    <small style="color:#6B7280;">
-                        &copy; 2026 GLH
-                    </small>
+                <div class="col-md-6">
+                    <h6 style="font-weight:700; margin-bottom:8px;">ECommercePlatform</h6>
+                    <p style="font-size:13px; margin:0;">Local marketplace for fresh produce.</p>
                 </div>
 
                 <!-- CONTACT -->
-                <div class="col-md-4">
-                    <h6 style="color:#2E7D32; margin-bottom:8px;">Contact</h6>
-
-                    <p style="font-size:13px; margin:0;">📍 West Bromwich</p>
+                <div class="col-md-6 text-end">
                     <p style="font-size:13px; margin:0;">📧 support@glh.co.uk</p>
-                    <p style="font-size:13px; margin:0;">📞 +44 1234 567890</p>
                 </div>
-
-                <!-- SOCIAL -->
-                <div class="col-md-4">
-                    <h6 style="color:#2E7D32; margin-bottom:8px;">Follow</h6>
-
-                    <p style="font-size:13px; margin:0;">📘 Facebook</p>
-                    <p style="font-size:13px; margin:0;">📸 Instagram</p>
-                    <p style="font-size:13px; margin:0;">🐦 Twitter / X</p>
-                    <p style="font-size:13px; margin:0;">▶ YouTube</p>
-                </div>
-
             </div>
-
         </div>
-
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

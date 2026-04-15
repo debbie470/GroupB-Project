@@ -45,7 +45,7 @@ namespace ECommercePlatform.Controllers
 
             return View(productTraceability);
         }
-        [Authorize(Roles = "Admin, Producer")]
+        [Authorize(Roles = "Admin, Supplier")]
         // GET: ProductTraceabilities/Create
         public IActionResult Create()
         {
@@ -56,7 +56,7 @@ namespace ECommercePlatform.Controllers
         // POST: ProductTraceabilities/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [Authorize(Roles = "Admin, Producer")]
+        [Authorize(Roles = "Admin, Supplier")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ProductTraceabilityId,ProductsId,Origin,BatchNumber,HarvestDate,Certifications")] ProductTraceability productTraceability)
