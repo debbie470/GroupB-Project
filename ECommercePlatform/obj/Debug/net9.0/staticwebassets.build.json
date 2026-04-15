@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hL2mydIWQJBtdSAaYd3beweC2snIqsZw09cQqqiJ4fA=",
+  "Hash": "u0CcnyFUGZQmct7xFs8prAw1HVAkzXoqa+3F78YJh3M=",
   "Source": "ECommercePlatform",
   "BasePath": "_content/ECommercePlatform",
   "Mode": "Default",
@@ -3650,12 +3650,12 @@
       "OriginalItemSpec": "C:\\Users\\Digi-T-Y2-2\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-owe9vgtlte.gz",
+      "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
       "SourceId": "ECommercePlatform",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ECommercePlatform",
-      "RelativePath": "css/site#[.{fingerprint=owe9vgtlte}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=pfx7oi5wdv}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -3664,8 +3664,8 @@
       "RelatedAsset": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "t8h5ciz2vz",
-      "Integrity": "c1VSYAJjCnjI1T0RPN0/TpqSgTHUWp4IMCF575HAMOc=",
+      "Fingerprint": "qhuzt53oni",
+      "Integrity": "4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css"
@@ -4042,8 +4042,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "owe9vgtlte",
-      "Integrity": "SH1/DuT+tZirtPKNz3u+qSX0luRi1jkXRF+feNk/qJI=",
+      "Fingerprint": "pfx7oi5wdv",
+      "Integrity": "BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -4110,6 +4110,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Bread.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\Carrot.jpg",
+      "SourceId": "ECommercePlatform",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\",
+      "BasePath": "_content/ECommercePlatform",
+      "RelativePath": "images/Carrot#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "estz3ezmcc",
+      "Integrity": "jgzAB90c5ahHDpOEktvVHig8u0XLtvfAPBs6q9bIR2A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Carrot.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\grapes.jpg",
+      "SourceId": "ECommercePlatform",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\",
+      "BasePath": "_content/ECommercePlatform",
+      "RelativePath": "images/grapes#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8zn75j86pl",
+      "Integrity": "JMZqyrghZvo6CSmkBgeflz33oFB8rC32btZtPvs5CTA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\grapes.jpg"
     },
     {
       "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\milk.jpg",
@@ -5438,12 +5480,12 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-owe9vgtlte.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000354484225"
+          "Quality": "0.000301477238"
         }
       ],
       "ResponseHeaders": [
@@ -5453,15 +5495,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2820"
+          "Value": "3316"
         },
         {
           "Name": "ETag",
-          "Value": "\"c1VSYAJjCnjI1T0RPN0/TpqSgTHUWp4IMCF575HAMOc=\""
+          "Value": "\"4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Apr 2026 12:11:06 GMT"
+          "Value": "Wed, 15 Apr 2026 14:22:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5481,13 +5523,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SH1/DuT+tZirtPKNz3u+qSX0luRi1jkXRF+feNk/qJI=\""
+          "Value": "W/\"BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SH1/DuT+tZirtPKNz3u+qSX0luRi1jkXRF+feNk/qJI="
+          "Value": "sha256-BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0="
         }
       ]
     },
@@ -5502,7 +5544,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10410"
+          "Value": "13214"
         },
         {
           "Name": "Content-Type",
@@ -5510,11 +5552,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SH1/DuT+tZirtPKNz3u+qSX0luRi1jkXRF+feNk/qJI=\""
+          "Value": "\"BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Apr 2026 12:11:06 GMT"
+          "Value": "Wed, 15 Apr 2026 14:22:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5524,13 +5566,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SH1/DuT+tZirtPKNz3u+qSX0luRi1jkXRF+feNk/qJI="
+          "Value": "sha256-BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-owe9vgtlte.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5539,7 +5581,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2820"
+          "Value": "3316"
         },
         {
           "Name": "Content-Type",
@@ -5547,11 +5589,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"c1VSYAJjCnjI1T0RPN0/TpqSgTHUWp4IMCF575HAMOc=\""
+          "Value": "\"4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Apr 2026 12:11:06 GMT"
+          "Value": "Wed, 15 Apr 2026 14:22:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5569,18 +5611,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-c1VSYAJjCnjI1T0RPN0/TpqSgTHUWp4IMCF575HAMOc="
+          "Value": "sha256-4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw="
         }
       ]
     },
     {
-      "Route": "css/site.owe9vgtlte.css",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-owe9vgtlte.gz",
+      "Route": "css/site.pfx7oi5wdv.css",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000354484225"
+          "Quality": "0.000301477238"
         }
       ],
       "ResponseHeaders": [
@@ -5590,15 +5632,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2820"
+          "Value": "3316"
         },
         {
           "Name": "ETag",
-          "Value": "\"c1VSYAJjCnjI1T0RPN0/TpqSgTHUWp4IMCF575HAMOc=\""
+          "Value": "\"4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Apr 2026 12:11:06 GMT"
+          "Value": "Wed, 15 Apr 2026 14:22:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5618,13 +5660,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SH1/DuT+tZirtPKNz3u+qSX0luRi1jkXRF+feNk/qJI=\""
+          "Value": "W/\"BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "owe9vgtlte"
+          "Value": "pfx7oi5wdv"
         },
         {
           "Name": "label",
@@ -5632,12 +5674,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SH1/DuT+tZirtPKNz3u+qSX0luRi1jkXRF+feNk/qJI="
+          "Value": "sha256-BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0="
         }
       ]
     },
     {
-      "Route": "css/site.owe9vgtlte.css",
+      "Route": "css/site.pfx7oi5wdv.css",
       "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5647,7 +5689,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10410"
+          "Value": "13214"
         },
         {
           "Name": "Content-Type",
@@ -5655,11 +5697,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SH1/DuT+tZirtPKNz3u+qSX0luRi1jkXRF+feNk/qJI=\""
+          "Value": "\"BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Apr 2026 12:11:06 GMT"
+          "Value": "Wed, 15 Apr 2026 14:22:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5669,7 +5711,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "owe9vgtlte"
+          "Value": "pfx7oi5wdv"
         },
         {
           "Name": "label",
@@ -5677,13 +5719,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SH1/DuT+tZirtPKNz3u+qSX0luRi1jkXRF+feNk/qJI="
+          "Value": "sha256-BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0="
         }
       ]
     },
     {
-      "Route": "css/site.owe9vgtlte.css.gz",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-owe9vgtlte.gz",
+      "Route": "css/site.pfx7oi5wdv.css.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5692,7 +5734,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2820"
+          "Value": "3316"
         },
         {
           "Name": "Content-Type",
@@ -5700,11 +5742,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"c1VSYAJjCnjI1T0RPN0/TpqSgTHUWp4IMCF575HAMOc=\""
+          "Value": "\"4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Apr 2026 12:11:06 GMT"
+          "Value": "Wed, 15 Apr 2026 14:22:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5722,7 +5764,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "owe9vgtlte"
+          "Value": "pfx7oi5wdv"
         },
         {
           "Name": "label",
@@ -5730,7 +5772,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-c1VSYAJjCnjI1T0RPN0/TpqSgTHUWp4IMCF575HAMOc="
+          "Value": "sha256-4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw="
         }
       ]
     },
@@ -15320,6 +15362,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-CQt0kx1E5oRumvnmow+DbEFESh6v1uqHq5JWAXkyo2Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/Carrot.estz3ezmcc.jpg",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\Carrot.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jgzAB90c5ahHDpOEktvVHig8u0XLtvfAPBs6q9bIR2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Apr 2026 14:59:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "estz3ezmcc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Carrot.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jgzAB90c5ahHDpOEktvVHig8u0XLtvfAPBs6q9bIR2A="
+        }
+      ]
+    },
+    {
+      "Route": "images/Carrot.jpg",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\Carrot.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jgzAB90c5ahHDpOEktvVHig8u0XLtvfAPBs6q9bIR2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Apr 2026 14:59:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jgzAB90c5ahHDpOEktvVHig8u0XLtvfAPBs6q9bIR2A="
+        }
+      ]
+    },
+    {
+      "Route": "images/grapes.8zn75j86pl.jpg",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\grapes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JMZqyrghZvo6CSmkBgeflz33oFB8rC32btZtPvs5CTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Apr 2026 15:00:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8zn75j86pl"
+        },
+        {
+          "Name": "label",
+          "Value": "images/grapes.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JMZqyrghZvo6CSmkBgeflz33oFB8rC32btZtPvs5CTA="
+        }
+      ]
+    },
+    {
+      "Route": "images/grapes.jpg",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\grapes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JMZqyrghZvo6CSmkBgeflz33oFB8rC32btZtPvs5CTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Apr 2026 15:00:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JMZqyrghZvo6CSmkBgeflz33oFB8rC32btZtPvs5CTA="
         }
       ]
     },

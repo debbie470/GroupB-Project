@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="delivery-table">
     <thead>
         <tr>
             <th>
@@ -54,3 +54,24 @@
 
 
 
+<div class="delivery-header">
+    <h2>📦 Delivery Dashboard</h2>
+    <p>Track your orders from dispatch to delivery</p>
+
+    <div class="delivery-stats">
+        <div class="stat-box">
+            <h3>@Model.Count()</h3>
+            <p>Total Deliveries</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>@Model.Count(x => x.Status == "Pending")</h3>
+            <p>Pending</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>@Model.Count(x => x.Status == "Delivered")</h3>
+            <p>Delivered</p>
+        </div>
+    </div>
+</div>

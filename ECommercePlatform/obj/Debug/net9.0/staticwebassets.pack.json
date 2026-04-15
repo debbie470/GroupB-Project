@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\images\\Bread.jpg"
     },
     {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\Carrot.jpg",
+      "PackagePath": "staticwebassets\\images\\Carrot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\grapes.jpg",
+      "PackagePath": "staticwebassets\\images\\grapes.jpg"
+    },
+    {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\milk.jpg",
       "PackagePath": "staticwebassets\\images\\milk.jpg"
     },

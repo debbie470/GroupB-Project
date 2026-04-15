@@ -10,6 +10,10 @@
     <button class="btn btn-sm btn-dark w-100 mb-2" onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
     <button class="btn btn-sm btn-primary w-100 mb-2" onclick="speakPage()">🔊 Read Page</button>
     <button class="btn btn-sm btn-danger w-100" onclick="stopSpeaking()">⛔ Stop Speech</button>
+    <h6>Font Size</h6>
+    <button onclick="setFontSize('14px')">Small</button>
+    <button onclick="setFontSize('16px')">Medium</button>
+    <button onclick="setFontSize('18px')">Large</button>
 </div>
 
 <script>
@@ -56,6 +60,21 @@
     window.stopSpeaking = function () {
         window.speechSynthesis.cancel();
     };
+
+    window.setFontSize = function (size) {
+        console.log("Font size:", size); // debug
+
+        document.documentElement.style.setProperty('--font-size', size);
+        localStorage.setItem('fontSize', size);
+    };
+
+    // Apply saved font size on load
+    document.addEventListener("DOMContentLoaded", function () {
+        const savedSize = localStorage.getItem("fontSize");
+        if (savedSize) {
+            document.documentElement.style.setProperty('--font-size', savedSize);
+        }
+    });
 </script>
 
 <style>

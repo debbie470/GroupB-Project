@@ -1,11 +1,12 @@
-html {
-  font-size: 14px;
+: root
+
+{
+    --font-size: 14px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+html {
+    font-size: var(--font-size);
+}
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -544,5 +545,131 @@ h1:hover {
 }
 
 
+.delivery-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
 
+.page-title {
+    text-align: center;
+    color: #2E7D32;
+    margin-bottom: 20px;
+}
+
+.create-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 14px;
+    background: #2E7D32;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+    .create-btn:hover {
+        background: #256428;
+    }
+
+/* Table styling */
+.delivery-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .delivery-table th {
+        background: #2E7D32;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    .delivery-table td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .delivery-table tr:hover {
+        background: #f1f8f4;
+    }
+
+/* Status styles */
+.status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+    .status.pending {
+        background: #fff3cd;
+        color: #856404;
+    }
+
+    .status.delivered {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    .status.cancelled {
+        background: #f8d7da;
+        color: #721c24;
+    }
+/* General Action Link Style */
+.delivery-table a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px; /* Add more padding for button-like appearance */
+    border-radius: 8px; /* Rounded corners for a button-like look */
+    margin-right: 8px;
+    display: inline-block;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+    /* Edit Button */
+    .delivery-table a[href*="Edit"] {
+        color: #2E7D32;
+        background-color: #e0ecff;
+        border: 1px solid #2563eb;
+    }
+
+        .delivery-table a[href*="Edit"]:hover {
+            background-color: #c6e4ff;
+            color: #1c5e34;
+            border-color: #1c5e34;
+        }
+
+    /* Details Button */
+    .delivery-table a[href*="Details"] {
+        color: #0f766e;
+        background-color: #d1fae5;
+        border: 1px solid #0f766e;
+    }
+
+        .delivery-table a[href*="Details"]:hover {
+            background-color: #c2f0d9;
+            color: #065f46;
+            border-color: #065f46;
+        }
+
+    /* Delete Button */
+    .delivery-table a[href*="Delete"] {
+        color: #b91c1c;
+        background-color: #fee2e2;
+        border: 1px solid #b91c1c;
+    }
+
+        .delivery-table a[href*="Delete"]:hover {
+            background-color: #fbcfe8;
+            color: #9b1d1d;
+            border-color: #9b1d1d;
+        }
 

@@ -165,6 +165,45 @@ namespace ECommercePlatform.Controllers
             _context.Orders.Add(orders);
             await _context.SaveChangesAsync();
 
+            // Create and save DeliveryInfo for the newly created order
+            var delivery = new DeliveryInfo
+            {
+                OrdersId = orders.OrdersId, // Link to the created order
+                DeliveryType = orders.DeliveryType, // Assuming delivery type is selected
+                ScheduledDateTime = DateTime.Now.AddDays(2), // Example: Scheduled 2 days from now
+                Status = "Pending" // Initial status of the delivery
+            };
+
+            _context.DeliveryInfo.Add(delivery); // Add to the context
+            await _context.SaveChangesAsync();  // Save the DeliveryInfo
+
+            // Add loyalty points after successful order
+            var loyaltyRewards = await _context.LoyaltyRewards
+                .FirstOrDefaultAsync(lr => lr.UserId == userId);
+
+            if (loyaltyRewards == null)
+            {
+                loyaltyRewards = new LoyaltyRewards
+                {
+                    UserId = userId,
+                    PointsBalance = 0,
+                    TierLevel = "Bronze",
+                    History = "Initial Points"
+                };
+
+                _context.LoyaltyRewards.Add(loyaltyRewards);
+            }
+
+            // Add loyalty points (1 point per $ spent, for example)
+            int earnedPoints = (int)orders.Subtotal;
+
+            // Update loyalty points balance
+            loyaltyRewards.PointsBalance += earnedPoints;
+            // Save the updated loyalty points
+            await _context.SaveChangesAsync();
+
+
+
             // Create order products + update stock
             foreach (var basketProduct in basketProducts)
             {
@@ -194,6 +233,7 @@ namespace ECommercePlatform.Controllers
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Index", "Home");
+           
         }
 
         // GET: Orders/Edit/5

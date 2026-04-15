@@ -820,4 +820,4 @@ C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ref\ECommercePlatform.dll
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\g6ngiumc0c-dhwfk2tsns.gz
-C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\vuzw2ylh4n-owe9vgtlte.gz
+C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\vuzw2ylh4n-pfx7oi5wdv.gz
