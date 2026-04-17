@@ -91,6 +91,7 @@ namespace ECommercePlatform.Controllers
         // POST: DeliveryInfoes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Supplier")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("DeliveryInfoId,OrdersId,DeliveryType,ScheduledDateTime,Status")] DeliveryInfo deliveryInfo)
@@ -144,6 +145,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // POST: DeliveryInfoes/Delete/5
+        [Authorize(Roles = "Supplier")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

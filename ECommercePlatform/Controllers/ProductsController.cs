@@ -1,5 +1,6 @@
 ﻿using ECommercePlatform.Data;
 using ECommercePlatform.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -124,6 +125,7 @@ namespace ECommercePlatform.Controllers
         // POST: Products/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize(Roles = "Supplier")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ProductsId,SuppliersId,ProductName,Stock,Price,ImagePath")] Products products)
@@ -177,6 +179,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // POST: Products/Delete/5
+        [Authorize(Roles = "Supplier")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
