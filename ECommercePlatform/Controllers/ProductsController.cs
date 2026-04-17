@@ -97,6 +97,7 @@ namespace ECommercePlatform.Controllers
             {
                 _context.Add(products);
                 await _context.SaveChangesAsync();
+               
                 return RedirectToAction(nameof(Index));
             }
             ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId);

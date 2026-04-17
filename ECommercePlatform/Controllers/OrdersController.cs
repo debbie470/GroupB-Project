@@ -165,18 +165,7 @@ namespace ECommercePlatform.Controllers
             _context.Orders.Add(orders);
             await _context.SaveChangesAsync();
 
-            // Create and save DeliveryInfo for the newly created order
-            var delivery = new DeliveryInfo
-            {
-                OrdersId = orders.OrdersId, // Link to the created order
-                DeliveryType = orders.DeliveryType, // Assuming delivery type is selected
-                ScheduledDateTime = DateTime.Now.AddDays(2), // Example: Scheduled 2 days from now
-                Status = "Pending" // Initial status of the delivery
-            };
-
-            _context.DeliveryInfo.Add(delivery); // Add to the context
-            await _context.SaveChangesAsync();  // Save the DeliveryInfo
-
+            
             // Add loyalty points after successful order
             var loyaltyRewards = await _context.LoyaltyRewards
                 .FirstOrDefaultAsync(lr => lr.UserId == userId);
