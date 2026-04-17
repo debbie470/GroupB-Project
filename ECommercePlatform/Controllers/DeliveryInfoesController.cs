@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+// ASP>NET Core MVC framework, security, and UI helper libraries
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+// Entity Framework Core for database ORM operations 
 using Microsoft.EntityFrameworkCore;
+// Project-specific namespace for data access and domain 
 using ECommercePlatform.Data;
 using ECommercePlatform.Models;
 using Microsoft.AspNetCore.Authorization;
