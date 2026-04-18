@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\",
+  "WorkspaceRootPath": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\deliveryinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\deliveryinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommerceplatform\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\basketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\basketproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommerceplatform\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\abdul\\onedrive\\documents\\github\\groupb-project\\ecommerceplatform\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,57 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DeliveryInfoesController.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\DeliveryInfoesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DeliveryInfoesController.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\DeliveryInfoesController.cs",
-              "RelativeToolTip": "Controllers\\DeliveryInfoesController.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAAwAkAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T12:20:29.479Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-18T10:18:00.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BasketsController.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\BasketsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BasketsController.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\BasketsController.cs",
-              "RelativeToolTip": "Controllers\\BasketsController.cs",
-              "ViewState": "AgIAAL8AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T12:10:45.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAHwCAAAAAAAAAAAQwKQCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAO4CAAAAAAAAAAAAAO4CAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-04-17T12:10:01.563Z",
+              "WhenOpened": "2026-04-18T10:16:45.858Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BasketProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\BasketProductsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BasketProductsController.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\BasketProductsController.cs",
-              "RelativeToolTip": "Controllers\\BasketProductsController.cs",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\abdul\\OneDrive\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-17T11:48:19.346Z",
+              "WhenOpened": "2026-04-18T10:10:11.848Z",
               "EditorCaption": ""
             }
           ]
