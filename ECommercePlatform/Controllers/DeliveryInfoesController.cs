@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+// ASP>NET Core MVC framework, security, and UI helper libraries
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+// Entity Framework Core for database ORM operations 
 using Microsoft.EntityFrameworkCore;
+// Project-specific namespace for data access and domain 
 using ECommercePlatform.Data;
 using ECommercePlatform.Models;
 using Microsoft.AspNetCore.Authorization;
 
 namespace ECommercePlatform.Controllers
 {
+    // Controller for managing delivery information and tracking 
     public class DeliveryInfoesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -21,6 +25,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // GET: DeliveryInfoes
+        // Displays a list of all delivery records including associated order details   
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.DeliveryInfo.Include(d => d.Orders);
@@ -28,6 +33,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // GET: DeliveryInfoes/Details/5
+        //Retrieves specific delivery details by ID 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -47,6 +53,7 @@ namespace ECommercePlatform.Controllers
         }
         [Authorize(Roles = "Supplier")]
         // GET: DeliveryInfoes/Create
+        //Renders the creation form; restricted to Supplier role
         public IActionResult Create()
         {
             ViewData["OrdersId"] = new SelectList(_context.Orders, "OrdersId", "OrdersId");
@@ -56,6 +63,7 @@ namespace ECommercePlatform.Controllers
         // POST: DeliveryInfoes/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //Persists new delivery data to the database
         [Authorize(Roles = "Supplier")]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -72,6 +80,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // GET: DeliveryInfoes/Edit/5
+        //Loads the edit form for an existing delivery record
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -91,6 +100,8 @@ namespace ECommercePlatform.Controllers
         // POST: DeliveryInfoes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // Updates an existing delivery record with concurrency checking
+        [Authorize(Roles = "Supplier")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("DeliveryInfoId,OrdersId,DeliveryType,ScheduledDateTime,Status")] DeliveryInfo deliveryInfo)
@@ -125,6 +136,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // GET: DeliveryInfoes/Delete/5
+        // Displays deletion confirmation for a delivery record 
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -144,6 +156,8 @@ namespace ECommercePlatform.Controllers
         }
 
         // POST: DeliveryInfoes/Delete/5
+        //Performs the actual deletion from the database
+        [Authorize(Roles = "Supplier")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -157,7 +171,7 @@ namespace ECommercePlatform.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
+        // Internal helper to verify if a delivery record exists
         private bool DeliveryInfoExists(int id)
         {
             return _context.DeliveryInfo.Any(e => e.DeliveryInfoId == id);

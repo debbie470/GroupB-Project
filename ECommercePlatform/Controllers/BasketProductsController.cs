@@ -1,8 +1,13 @@
-﻿using ECommercePlatform.Data;
+﻿// Project-specific namespace for data access and domain 
+using ECommercePlatform.Data;  
 using ECommercePlatform.Models;
+// ASP>NET Core MVC framework, security, and UI helper libraries
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+// Entity Framework Core for database ORM operations 
 using Microsoft.EntityFrameworkCore;
+// System libraries for core logic, collections, LINQ, security claims, and async tasks 
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +16,7 @@ using System.Threading.Tasks;
 
 namespace ECommercePlatform.Controllers
 {
+    // Manages the association between shooping baskets and products 
     public class BasketProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -21,6 +27,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // GET: BasketProducts
+        // Returns a list of all products in all baskets, including related Products and Basket entities 
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.BasketProducts.Include(b => b.Basket).Include(b => b.Products);
@@ -28,6 +35,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // GET: BasketProducts/Details/5
+        //Retrives specific details for a single basket-product record by ID 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -48,6 +56,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // GET: BasketProducts/Create
+        //Initializes the creation view with dropdown lists for Baskets and Products 
         public IActionResult Create()
         {
             ViewData["BasketId"] = new SelectList(_context.Set<Basket>(), "BasketId", "BasketId");
@@ -58,10 +67,12 @@ namespace ECommercePlatform.Controllers
         // POST: BasketProducts/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //Logic to add a produc to a user's active basket
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(int ProductsId)
         {
+            // Verify product existence 
             var product = await _context.Products
             .FirstOrDefaultAsync(x => x.ProductsId == ProductsId);
 
@@ -69,6 +80,7 @@ namespace ECommercePlatform.Controllers
             {
                 return NotFound();
             }
+            // Identify the current authenticated user 
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
@@ -76,6 +88,7 @@ namespace ECommercePlatform.Controllers
             {
                 return Unauthorized();
             }
+            // Fetch an existing active basket or create a new one for the user
 
             var basket = await _context.Basket
             .FirstOrDefaultAsync(x => x.UserId == userId && x.Status == true);
@@ -92,7 +105,7 @@ namespace ECommercePlatform.Controllers
                 _context.Basket.Add(basket);
                 await _context.SaveChangesAsync();
             }
-
+            // Check if the product already exists in the basket to increment quantity or add new records 
             var basketProduct = await _context.BasketProducts
             .FirstOrDefaultAsync(bp => bp.BasketId == basket.BasketId
             && bp.ProductsId == ProductsId);
@@ -120,6 +133,7 @@ namespace ECommercePlatform.Controllers
 
 
         // GET: BasketProducts/Edit/5
+        // Loads the edit form for a specific basket-product entry 
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -140,6 +154,8 @@ namespace ECommercePlatform.Controllers
         // POST: BasketProducts/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //Updates quantity or associations; restricted to user with the "Supplier" role 
+        [Authorize(Roles = "Supplier")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("BasketProductsId,BasketId,ProductsId,Quantity")] BasketProducts basketProducts)
@@ -175,6 +191,7 @@ namespace ECommercePlatform.Controllers
         }
 
         // GET: BasketProducts/Delete/5
+        //display confirmation page for removing a product from a basket 
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -195,6 +212,8 @@ namespace ECommercePlatform.Controllers
         }
 
         // POST: BasketProducts/Delete/5
+        //Performs the actual deletion; restricted to "supplier" role 
+        [Authorize(Roles = "Supplier")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -208,6 +227,7 @@ namespace ECommercePlatform.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        // Helper method to verify if a record exists 
 
         private bool BasketProductsExists(int id)
         {

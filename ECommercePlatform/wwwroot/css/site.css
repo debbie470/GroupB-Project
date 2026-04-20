@@ -1,4 +1,4 @@
-: root
+﻿: root
 
 {
     --font-size: 14px;
@@ -672,4 +672,79 @@ h1:hover {
             color: #9b1d1d;
             border-color: #9b1d1d;
         }
+
+/* ===== PRODUCT TABLE → CARD STYLE ===== */
+
+.product-table {
+    width: 100%;
+    border-collapse: separate !important;
+    border-spacing: 0 20px !important;
+}
+
+    /* Hide header */
+    .product-table thead {
+        display: none;
+    }
+
+    /* Each row becomes a card */
+    .product-table tbody tr {
+        display: block !important;
+        background: var(--card, #fff);
+        border-radius: 14px;
+        padding: 16px;
+        margin-bottom: 20px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        transition: 0.25s ease;
+    }
+
+        .product-table tbody tr:hover {
+            transform: translateY(-5px);
+        }
+
+    /* Kill table layout */
+    .product-table tbody td {
+        display: inline-block !important;
+        border: none !important;
+        padding: 10px;
+        vertical-align: top;
+    }
+
+    /* Layout columns */
+    .product-table td:nth-child(1) {
+        width: 20%;
+        font-weight: bold;
+    }
+
+    .product-table td:nth-child(2) {
+        width: 10%;
+        color: #666;
+    }
+
+    .product-table td:nth-child(3) {
+        width: 10%;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .product-table td:nth-child(4) {
+        width: 20%;
+    }
+
+    .product-table td:nth-child(5) {
+        width: 10%;
+    }
+
+    .product-table td:nth-child(6) {
+        width: 25%;
+    }
+
+/* Image fix */
+.product-image {
+    width: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
 
