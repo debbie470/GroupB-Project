@@ -9,65 +9,61 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            
-            <th>
-                @Html.DisplayNameFor(model => model.Subtotal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Delivery)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Collection)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DeliveryType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.OrderTrackingStatus)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CollectionDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.OrderDate)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            
-            <td>
-                @Html.DisplayFor(modelItem => item.Subtotal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Delivery)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Collection)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DeliveryType)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OrderTrackingStatus)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CollectionDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OrderDate)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.OrdersId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.OrdersId">Details</a> |
+<div class="orders-container">
+
+    @foreach (var item in Model)
+    {
+        <div class="order-card">
+
+            <!-- TOP SECTION -->
+            <div class="order-header">
+                <h4>Order #@item.OrdersId</h4>
+                <span class="status">@item.OrderTrackingStatus</span>
+            </div>
+
+            <!-- BODY -->
+            <div class="order-body">
+
+                <div class="order-row">
+                    <span>Subtotal</span>
+                    <span>£@item.Subtotal</span>
+                </div>
+
+                <div class="order-row">
+                    <span>Delivery</span>
+                    <span>£@item.Delivery</span>
+                </div>
+
+                <div class="order-row">
+                    <span>Collection</span>
+                    <span>@item.Collection</span>
+                </div>
+
+                <div class="order-row">
+                    <span>Delivery Type</span>
+                    <span>@item.DeliveryType</span>
+                </div>
+
+                <div class="order-row">
+                    <span>Order Date</span>
+                    <span>@item.OrderDate</span>
+                </div>
+
+                <div class="order-row">
+                    <span>Collection Date</span>
+                    <span>@item.CollectionDate</span>
+                </div>
+
+            </div>
+
+            <!-- ACTIONS -->
+            <div class="order-actions">
+                <a asp-action="Edit" asp-route-id="@item.OrdersId">Edit</a>
+                <a asp-action="Details" asp-route-id="@item.OrdersId">Details</a>
                 <a asp-action="Delete" asp-route-id="@item.OrdersId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+            </div>
+
+        </div>
+    }
+
+</div>

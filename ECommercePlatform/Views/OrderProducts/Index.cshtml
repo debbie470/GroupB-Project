@@ -1,47 +1,29 @@
 ﻿@model IEnumerable<ECommercePlatform.Models.OrderProducts>
 
-@{
-    ViewData["Title"] = "Index";
-}
+<h1 class="section-title">Order Products</h1>
 
-<h1>Index</h1>
+<div class="order-product-container">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Quantity)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Products)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Orders)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Products.ProductsId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Orders.OrdersId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.OrderProductsId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.OrderProductsId">Details</a> |
+    @foreach (var item in Model)
+    {
+        <div class="order-product-card">
+
+            <div class="op-header">
+                <h4>@item.Products.ProductName</h4>
+            </div>
+
+            <div class="op-body">
+                <p><strong>Quantity:</strong> @item.Quantity</p>
+                <p><strong>Order ID:</strong> #@item.OrdersId</p>
+            </div>
+
+            <div class="op-actions">
+                <a asp-action="Edit" asp-route-id="@item.OrderProductsId">Edit</a>
+                <a asp-action="Details" asp-route-id="@item.OrderProductsId">Details</a>
                 <a asp-action="Delete" asp-route-id="@item.OrderProductsId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+            </div>
+
+        </div>
+    }
+
+</div>

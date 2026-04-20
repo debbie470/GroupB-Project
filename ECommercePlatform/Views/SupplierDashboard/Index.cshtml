@@ -1,26 +1,33 @@
 ﻿@model IEnumerable<ECommercePlatform.Models.Products>
 
-@{
-    ViewData["Title"] = "Supplier Dashboard";
-}
+<h1 class="section-title">Supplier Dashboard</h1>
 
-<h1>Supplier Dashboard</h1>
+<!-- STATS CARDS -->
+<div class="dashboard-stats">
 
-<p>
-    <a asp-controller="Products" asp-action="Index">View All Your Products</a>
-</p>
+    <div class="stat-card">
+        <h3>@Model.Count()</h3>
+        <p>Total Products</p>
+    </div>
 
-<p><strong>Total Products:</strong> @ViewBag.TotalProducts</p>
-<p><strong>Low Stock Products:</strong> @ViewBag.LowStockCount</p>
-<p><strong>Total Stock Units:</strong> @ViewBag.TotalStock</p>
+    <div class="stat-card">
+        <h3>@Model.Count(x => x.Stock <= 10)</h3>
+        <p>Low Stock Products</p>
+    </div>
 
-@if (!Model.Any())
-{
-    <p>You do not have any products yet.</p>
-}
-else
-{
-    <table class="table">
+    <div class="stat-card">
+        <h3>@Model.Sum(x => x.Stock)</h3>
+        <p>Total Stock Units</p>
+    </div>
+
+</div>
+
+<!-- PRODUCTS SECTION -->
+<h2 class="sub-title">Your Products</h2>
+
+<div class="dashboard-table">
+
+    <table>
         <thead>
             <tr>
                 <th>Product</th>
@@ -28,53 +35,29 @@ else
                 <th>Stock</th>
             </tr>
         </thead>
+
         <tbody>
-            @foreach (var item in Model.Take(5))
+            @foreach (var item in Model)
             {
                 <tr>
                     <td>@item.ProductName</td>
-                    <td>@item.Price.ToString("0.00")</td>
-                    <td>@item.Stock</td>
+                    <td>£@item.Price</td>
+                    <td>
+                        <span class="stock-badge @(item.Stock <= 10 ? "low" : "ok")">
+                            @item.Stock
+                        </span>
+                    </td>
                 </tr>
             }
         </tbody>
+
     </table>
-}
 
-<h2>Recent Orders</h2>
+</div>
 
-@if (ViewBag.RecentOrders == null || ((List<ECommercePlatform.Models.Orders>)ViewBag.RecentOrders).Count == 0)
-{
+<!-- RECENT ORDERS -->
+<h2 class="sub-title">Recent Orders</h2>
+
+<div class="empty-box">
     <p>No recent orders found.</p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Order ID</th>
-                <th>Order Date</th>
-                <th>Status</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var order in ((List<ECommercePlatform.Models.Orders>)ViewBag.RecentOrders).Take(5))
-            {
-                <tr>
-                    <td>@order.OrdersId</td>
-                    <td>@order.OrderDate</td>
-                    <td>@order.OrderTrackingStatus</td>
-                    <td>@order.Subtotal.ToString("0.00")</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <p>
-        <a asp-controller="Orders" asp-action="Index">View All your Orders</a>
-    </p>
-}
-
-
-
+</div>

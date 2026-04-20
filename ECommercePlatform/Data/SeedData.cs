@@ -178,6 +178,62 @@ namespace ECommercePlatform.Data
                         SuppliersId = UkBigFarm.SuppliersId,
                         ImagePath = "/image/rice.jpg"
                       },
+                       new Products
+                       {
+                        ProductName = "Carrot",
+                        Stock = 150,
+                        Price = 1.20m,
+                        SuppliersId = UkBigFarm.SuppliersId,
+                        ImagePath = "/image/Carrot.jpg"
+                       },
+                        new Products
+                        {
+                        ProductName = "Grapes",
+                        Stock = 100,
+                        Price = 0.40m,
+                        SuppliersId = FreshFarm.SuppliersId,
+                        ImagePath = "/image/grapes.jpg"
+                        },
+                        new Products
+                        {
+                        ProductName = "Corn",
+                        Stock = 200,
+                        Price = 0.50m,
+                        SuppliersId = SandwellCollegeFarm.SuppliersId,
+                        ImagePath = "/image/corn.jpg"
+                        },
+                        new Products
+                        {
+                        ProductName = "Beans",
+                        Stock = 200,
+                        Price = 0.50m,
+                        SuppliersId = SandwellCollegeFarm.SuppliersId,
+                        ImagePath = "/image/bean.jpg"
+                        },
+                         new Products
+                         {
+                        ProductName = "Egg",
+                        Stock = 150,
+                        Price = 1.20m,
+                        SuppliersId = UkBigFarm.SuppliersId,
+                        ImagePath = "/image/egg.jpg"
+                        },
+                         new Products
+                       {
+                        ProductName = "Strawberry",
+                        Stock = 150,
+                        Price = 1.20m,
+                        SuppliersId = UkBigFarm.SuppliersId,
+                        ImagePath = "/image/strawberry.jpg"
+                        },
+                         new Products
+                         {
+                         ProductName = "Tomatoe",
+                         Stock = 150,
+                         Price = 1.20m,
+                         SuppliersId = UkBigFarm.SuppliersId,
+                         ImagePath = "/image/tomatoes.jpg"
+                         },
                 };
                 await context.Products.AddRangeAsync(products);
                 await context.SaveChangesAsync();

@@ -1,47 +1,35 @@
 ﻿@model IEnumerable<ECommercePlatform.Models.BasketProducts>
 
-@{
-    ViewData["Title"] = "Index";
-}
+<h1 class="section-title">Your Basket</h1>
 
-<h1>Index</h1>
+<div class="basket-container">
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Quantity)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Products)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Basket)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quantity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Products.ProductsId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Basket.BasketId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.BasketProductsId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.BasketProductsId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.BasketProductsId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    @foreach (var item in Model)
+    {
+        <div class="basket-card">
+
+            <!-- Product Info -->
+            <div class="basket-header">
+                <h4>@item.Products.ProductName</h4>
+            </div>
+
+            <!-- Body -->
+            <div class="basket-body">
+                <p><strong>Price:</strong> £@item.Products.Price.ToString("0.00")</p>
+                <p><strong>Quantity:</strong> @item.Quantity</p>
+                <p><strong>Total:</strong> £@((item.Products.Price * item.Quantity).ToString("0.00"))</p>
+            </div>
+
+            <!-- Actions -->
+            <div class="basket-actions">
+                <a asp-controller="BasketProducts"
+                   asp-action="Delete"
+                   asp-route-id="@item.BasketProductsId">
+                    Remove
+                </a>
+            </div>
+
+        </div>
+    }
+
+</div>

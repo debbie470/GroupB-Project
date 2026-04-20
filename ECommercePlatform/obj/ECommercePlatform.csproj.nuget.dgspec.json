@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj": {}
+    "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj": {}
   },
   "projects": {
-    "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj": {
+    "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj",
+        "projectUniqueName": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj",
         "projectName": "ECommercePlatform",
-        "projectPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj",
-        "packagesPath": "C:\\Users\\712770\\.nuget\\packages\\",
-        "outputPath": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\",
+        "projectPath": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj",
+        "packagesPath": "C:\\Users\\Digi-T-Y2-2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\712770\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Digi-T-Y2-2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
