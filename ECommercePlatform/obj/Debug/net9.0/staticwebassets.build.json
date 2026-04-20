@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gM+ylm1VwF9781f9aJitbJeZfiZKoZ6XIpAHri0gupI=",
+  "Hash": "qDX0aMYWkQAPHWqKB7aEISVG4ELMsliCuQqycb6x9Oc=",
   "Source": "ECommercePlatform",
   "BasePath": "_content/ECommercePlatform",
   "Mode": "Default",
@@ -2327,12 +2327,12 @@
       "OriginalItemSpec": "C:\\Users\\712770\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\9.0.12\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
+      "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-vspzfemry7.gz",
       "SourceId": "ECommercePlatform",
       "SourceType": "Discovered",
       "ContentRoot": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ECommercePlatform",
-      "RelativePath": "css/site#[.{fingerprint=pfx7oi5wdv}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=vspzfemry7}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2341,8 +2341,8 @@
       "RelatedAsset": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qhuzt53oni",
-      "Integrity": "4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=",
+      "Fingerprint": "m7ik8kuhpg",
+      "Integrity": "zm5gxEtj1tykmnm1PvHY4lFFFbiZ137XAZmVp3ifrrk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css"
@@ -2719,8 +2719,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pfx7oi5wdv",
-      "Integrity": "BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=",
+      "Fingerprint": "vspzfemry7",
+      "Integrity": "X/SIBro+tmFb6O5JjkAyita4ZIwOnvorGRINvfyLiRc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2768,6 +2768,27 @@
       "OriginalItemSpec": "wwwroot\\images\\Apple.jpg"
     },
     {
+      "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\bean.jpg",
+      "SourceId": "ECommercePlatform",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\",
+      "BasePath": "_content/ECommercePlatform",
+      "RelativePath": "images/bean#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nq1h4wghdf",
+      "Integrity": "8ZjMSJePvr3uYqLrQbe6aYBSea9eWFAjqGGNSrpJV9Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bean.jpg"
+    },
+    {
       "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\Bread.jpg",
       "SourceId": "ECommercePlatform",
       "SourceType": "Discovered",
@@ -2808,6 +2829,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Carrot.jpg"
+    },
+    {
+      "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\corn.jpg",
+      "SourceId": "ECommercePlatform",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\",
+      "BasePath": "_content/ECommercePlatform",
+      "RelativePath": "images/corn#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cyuj3zukag",
+      "Integrity": "jK2118VrJebjoNLfMgUXsjRP8bcLgw+lRWA2DoKD+Zg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\corn.jpg"
     },
     {
       "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\grapes.jpg",
@@ -2871,6 +2913,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\rice.jpg"
+    },
+    {
+      "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\vegetables.jpg",
+      "SourceId": "ECommercePlatform",
+      "SourceType": "Discovered",
+      "ContentRoot": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\",
+      "BasePath": "_content/ECommercePlatform",
+      "RelativePath": "images/vegetables#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "is237l8q18",
+      "Integrity": "HvQeLXkSiqLdp67tAfUJ01GCrDOg4qpPRPESh+OcNiI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\vegetables.jpg"
     },
     {
       "Identity": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\js\\site.js",
@@ -5480,12 +5543,12 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-vspzfemry7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000301477238"
+          "Quality": "0.000275633958"
         }
       ],
       "ResponseHeaders": [
@@ -5495,15 +5558,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3316"
+          "Value": "3627"
         },
         {
           "Name": "ETag",
-          "Value": "\"4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=\""
+          "Value": "\"zm5gxEtj1tykmnm1PvHY4lFFFbiZ137XAZmVp3ifrrk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 07:47:22 GMT"
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5523,13 +5586,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=\""
+          "Value": "W/\"X/SIBro+tmFb6O5JjkAyita4ZIwOnvorGRINvfyLiRc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0="
+          "Value": "sha256-X/SIBro+tmFb6O5JjkAyita4ZIwOnvorGRINvfyLiRc="
         }
       ]
     },
@@ -5544,7 +5607,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13214"
+          "Value": "14742"
         },
         {
           "Name": "Content-Type",
@@ -5552,11 +5615,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=\""
+          "Value": "\"X/SIBro+tmFb6O5JjkAyita4ZIwOnvorGRINvfyLiRc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 07:47:22 GMT"
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5566,13 +5629,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0="
+          "Value": "sha256-X/SIBro+tmFb6O5JjkAyita4ZIwOnvorGRINvfyLiRc="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-vspzfemry7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5581,7 +5644,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3316"
+          "Value": "3627"
         },
         {
           "Name": "Content-Type",
@@ -5589,11 +5652,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=\""
+          "Value": "\"zm5gxEtj1tykmnm1PvHY4lFFFbiZ137XAZmVp3ifrrk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 07:47:22 GMT"
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5611,18 +5674,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw="
+          "Value": "sha256-zm5gxEtj1tykmnm1PvHY4lFFFbiZ137XAZmVp3ifrrk="
         }
       ]
     },
     {
-      "Route": "css/site.pfx7oi5wdv.css",
-      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
+      "Route": "css/site.vspzfemry7.css",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-vspzfemry7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000301477238"
+          "Quality": "0.000275633958"
         }
       ],
       "ResponseHeaders": [
@@ -5632,15 +5695,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3316"
+          "Value": "3627"
         },
         {
           "Name": "ETag",
-          "Value": "\"4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=\""
+          "Value": "\"zm5gxEtj1tykmnm1PvHY4lFFFbiZ137XAZmVp3ifrrk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 07:47:22 GMT"
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5660,13 +5723,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=\""
+          "Value": "W/\"X/SIBro+tmFb6O5JjkAyita4ZIwOnvorGRINvfyLiRc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pfx7oi5wdv"
+          "Value": "vspzfemry7"
         },
         {
           "Name": "label",
@@ -5674,12 +5737,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0="
+          "Value": "sha256-X/SIBro+tmFb6O5JjkAyita4ZIwOnvorGRINvfyLiRc="
         }
       ]
     },
     {
-      "Route": "css/site.pfx7oi5wdv.css",
+      "Route": "css/site.vspzfemry7.css",
       "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5689,7 +5752,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13214"
+          "Value": "14742"
         },
         {
           "Name": "Content-Type",
@@ -5697,11 +5760,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0=\""
+          "Value": "\"X/SIBro+tmFb6O5JjkAyita4ZIwOnvorGRINvfyLiRc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 07:47:22 GMT"
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5711,7 +5774,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pfx7oi5wdv"
+          "Value": "vspzfemry7"
         },
         {
           "Name": "label",
@@ -5719,13 +5782,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-BZVoOfE5oxtQBti5iEOWp4RocAtvyGzCz5lueMERfY0="
+          "Value": "sha256-X/SIBro+tmFb6O5JjkAyita4ZIwOnvorGRINvfyLiRc="
         }
       ]
     },
     {
-      "Route": "css/site.pfx7oi5wdv.css.gz",
-      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-pfx7oi5wdv.gz",
+      "Route": "css/site.vspzfemry7.css.gz",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\vuzw2ylh4n-vspzfemry7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5734,7 +5797,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3316"
+          "Value": "3627"
         },
         {
           "Name": "Content-Type",
@@ -5742,11 +5805,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw=\""
+          "Value": "\"zm5gxEtj1tykmnm1PvHY4lFFFbiZ137XAZmVp3ifrrk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 07:47:22 GMT"
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5764,7 +5827,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pfx7oi5wdv"
+          "Value": "vspzfemry7"
         },
         {
           "Name": "label",
@@ -5772,7 +5835,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4tmXpxIJr5TfrjVo7hdjomKHJqeFEgu+ef2wQgyK4kw="
+          "Value": "sha256-zm5gxEtj1tykmnm1PvHY4lFFFbiZ137XAZmVp3ifrrk="
         }
       ]
     },
@@ -15284,6 +15347,88 @@
       ]
     },
     {
+      "Route": "images/bean.jpg",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\bean.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9271"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZjMSJePvr3uYqLrQbe6aYBSea9eWFAjqGGNSrpJV9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZjMSJePvr3uYqLrQbe6aYBSea9eWFAjqGGNSrpJV9Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/bean.nq1h4wghdf.jpg",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\bean.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9271"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ZjMSJePvr3uYqLrQbe6aYBSea9eWFAjqGGNSrpJV9Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nq1h4wghdf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/bean.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ZjMSJePvr3uYqLrQbe6aYBSea9eWFAjqGGNSrpJV9Q="
+        }
+      ]
+    },
+    {
       "Route": "images/Bread.9cx5vt8ld4.jpg",
       "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\Bread.jpg",
       "Selectors": [],
@@ -15444,6 +15589,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-jgzAB90c5ahHDpOEktvVHig8u0XLtvfAPBs6q9bIR2A="
+        }
+      ]
+    },
+    {
+      "Route": "images/corn.cyuj3zukag.jpg",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\corn.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jK2118VrJebjoNLfMgUXsjRP8bcLgw+lRWA2DoKD+Zg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cyuj3zukag"
+        },
+        {
+          "Name": "label",
+          "Value": "images/corn.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jK2118VrJebjoNLfMgUXsjRP8bcLgw+lRWA2DoKD+Zg="
+        }
+      ]
+    },
+    {
+      "Route": "images/corn.jpg",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\corn.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jK2118VrJebjoNLfMgUXsjRP8bcLgw+lRWA2DoKD+Zg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jK2118VrJebjoNLfMgUXsjRP8bcLgw+lRWA2DoKD+Zg="
         }
       ]
     },
@@ -15690,6 +15917,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-+avWNV5aGrwO3YVP2hZk4HFgakuzIF0FJk/m4EJiHRc="
+        }
+      ]
+    },
+    {
+      "Route": "images/vegetables.is237l8q18.jpg",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\vegetables.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18409"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HvQeLXkSiqLdp67tAfUJ01GCrDOg4qpPRPESh+OcNiI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "is237l8q18"
+        },
+        {
+          "Name": "label",
+          "Value": "images/vegetables.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HvQeLXkSiqLdp67tAfUJ01GCrDOg4qpPRPESh+OcNiI="
+        }
+      ]
+    },
+    {
+      "Route": "images/vegetables.jpg",
+      "AssetFile": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\vegetables.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18409"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HvQeLXkSiqLdp67tAfUJ01GCrDOg4qpPRPESh+OcNiI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 20 Apr 2026 10:10:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HvQeLXkSiqLdp67tAfUJ01GCrDOg4qpPRPESh+OcNiI="
         }
       ]
     },

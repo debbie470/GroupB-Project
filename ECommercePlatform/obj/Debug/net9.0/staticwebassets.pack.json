@@ -25,6 +25,14 @@
       "PackagePath": "staticwebassets\\images\\Carrot.jpg"
     },
     {
+      "Id": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\bean.jpg",
+      "PackagePath": "staticwebassets\\images\\bean.jpg"
+    },
+    {
+      "Id": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\corn.jpg",
+      "PackagePath": "staticwebassets\\images\\corn.jpg"
+    },
+    {
       "Id": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\grapes.jpg",
       "PackagePath": "staticwebassets\\images\\grapes.jpg"
     },
@@ -35,6 +43,10 @@
     {
       "Id": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\rice.jpg",
       "PackagePath": "staticwebassets\\images\\rice.jpg"
+    },
+    {
+      "Id": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\vegetables.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables.jpg"
     },
     {
       "Id": "\\\\dom.sandwell.ac.uk\\Student\\HomeEven\\712770\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\js\\site.js",

@@ -1651,3 +1651,4 @@ C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\De
 \\dom.sandwell.ac.uk\Student\HomeEven\712770\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ECommerc.8B9E5424.Up2Date
 \\dom.sandwell.ac.uk\Student\HomeEven\712770\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ECommercePlatform.genruntimeconfig.cache
 \\dom.sandwell.ac.uk\Student\HomeEven\712770\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ref\ECommercePlatform.dll
+\\dom.sandwell.ac.uk\Student\HomeEven\712770\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\vuzw2ylh4n-vspzfemry7.gz

@@ -63,11 +63,14 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\Apple.jpg
+wwwroot\images\bean.jpg
 wwwroot\images\Bread.jpg
 wwwroot\images\Carrot.jpg
+wwwroot\images\corn.jpg
 wwwroot\images\grapes.jpg
 wwwroot\images\milk.jpg
 wwwroot\images\rice.jpg
+wwwroot\images\vegetables.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
