@@ -1,63 +1,73 @@
-﻿@model IEnumerable<ECommercePlatform.Models.Products>
+﻿@model IEnumerable<ECommercePlatform.Models.Products> // Specifies that the view expects a collection of Product objects as its data source
 
-<h1 class="section-title">Supplier Dashboard</h1>
-
-<!-- STATS CARDS -->
+<h1 class="section-title">Supplier Dashboard</h1> <!-- Main title of the dashboard with a CSS class for custom styling -->
+<!-- STATS CARDS --> <!-- HTML comment indicating the start of the statistics summary section -->
 <div class="dashboard-stats">
+    <!-- Container div to hold and align the statistic cards -->
 
     <div class="stat-card">
-        <h3>@Model.Count()</h3>
-        <p>Total Products</p>
-    </div>
+        <!-- Individual card container for displaying a specific metric -->
+        <h3>@Model.Count()</h3> <!-- Displays the total count of products in the model using C# LINQ -->
+        <p>Total Products</p> <!-- Descriptive label for the total products count -->
+    </div> <!-- Closing tag for the total products stat card -->
 
     <div class="stat-card">
-        <h3>@Model.Count(x => x.Stock <= 10)</h3>
-        <p>Low Stock Products</p>
-    </div>
+        <!-- Individual card container for low stock warning metric -->
+        <h3>@Model.Count(x => x.Stock <= 10)</h3> <!-- Calculates and displays how many products have 10 or fewer units remaining -->
+        <p>Low Stock Products</p> <!-- Descriptive label for the low stock count -->
+    </div> <!-- Closing tag for the low stock stat card -->
 
     <div class="stat-card">
-        <h3>@Model.Sum(x => x.Stock)</h3>
-        <p>Total Stock Units</p>
-    </div>
+        <!-- Individual card container for the total inventory quantity -->
+        <h3>@Model.Sum(x => x.Stock)</h3> <!-- Aggregates the stock value of every product to show the total number of units available -->
+        <p>Total Stock Units</p> <!-- Descriptive label for the total stock volume -->
+    </div> <!-- Closing tag for the total stock stat card -->
 
-</div>
-
-<!-- PRODUCTS SECTION -->
-<h2 class="sub-title">Your Products</h2>
+</div> <!-- Closing tag for the dashboard stats wrapper -->
+<!-- PRODUCTS SECTION --> <!-- HTML comment indicating the start of the product list section -->
+<h2 class="sub-title">Your Products</h2> <!-- Secondary heading for the product inventory table -->
 
 <div class="dashboard-table">
+    <!-- Wrapper div for the table to handle responsive styling or scrolling -->
 
     <table>
+        <!-- Starts the HTML table to display product details -->
         <thead>
+            <!-- Table header section containing column titles -->
             <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Stock</th>
-            </tr>
-        </thead>
+                <!-- Defines the header row -->
+                <th>Product</th> <!-- Column header for the name of the product -->
+                <th>Price</th> <!-- Column header for the unit price -->
+                <th>Stock</th> <!-- Column header for current inventory levels -->
+            </tr> <!-- Closing tag for the header row -->
+        </thead> <!-- Closing tag for the table head -->
 
         <tbody>
-            @foreach (var item in Model)
-            {
+            <!-- Table body section where dynamic data will be injected -->
+            @foreach (var item in Model) // Loops through each product in the Model collection
+            { // Opening brace for the foreach loop
                 <tr>
-                    <td>@item.ProductName</td>
-                    <td>£@item.Price</td>
+                    <!-- Starts a new row for the current product item -->
+                    <td>@item.ProductName</td> <!-- Displays the name of the current product -->
+                    <td>£@item.Price</td> <!-- Displays the price of the product with a currency symbol -->
                     <td>
+                        <!-- Starts the cell for stock status -->
                         <span class="stock-badge @(item.Stock <= 10 ? "low" : "ok")">
-                            @item.Stock
-                        </span>
-                    </td>
-                </tr>
-            }
-        </tbody>
+                            <!-- Applies a "low" class if stock is 10 or less, otherwise "ok" for dynamic styling -->
+                            @item.Stock <!-- Displays the numerical stock value -->
+                        </span> <!-- Ends the stock badge span -->
+                    </td> <!-- Ends the stock cell -->
+                </tr> <!-- Closing tag for the product row -->
+            } 
+        </tbody> <!-- Closing tag for the table body -->
 
-    </table>
+    </table> <!-- Closing tag for the product table -->
 
-</div>
-
-<!-- RECENT ORDERS -->
-<h2 class="sub-title">Recent Orders</h2>
+</div> <!-- Closing tag for the dashboard table wrapper -->
+<!-- RECENT ORDERS --> <!-- HTML comment indicating the start of the orders section -->
+<h2 class="sub-title">Recent Orders</h2> <!-- Secondary heading for the orders section -->
 
 <div class="empty-box">
-    <p>No recent orders found.</p>
-</div>
+    <!-- Container for a placeholder state when no data is available -->
+    <p>No recent orders found.</p> <!-- Message displayed to the user when the order list is empty -->
+</div> <!-- Closing tag for the empty box div -->

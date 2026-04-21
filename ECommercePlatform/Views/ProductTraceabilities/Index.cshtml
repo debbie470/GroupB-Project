@@ -1,59 +1,79 @@
-﻿@model IEnumerable<ECommercePlatform.Models.ProductTraceability>
+﻿@model IEnumerable<ECommercePlatform.Models.ProductTraceability> // Specifies that the view expects a list of ProductTraceability objects as its model
 
 @{
-    ViewData["Title"] = "Index";
-}
+    // Starts a Razor code block for setting view-specific data
+    ViewData["Title"] = "Index"; // Sets the page title to "Index" for display in the browser tab via the layout
+} 
 
-<h1>Index</h1>
+<h1>Index</h1> <!-- Main heading for the traceability records list page -->
 
 <p>
-    <a asp-action="Create">Create New</a>
-</p>
+    <!-- Paragraph wrapper for the create action link -->
+    <a asp-action="Create">Create New</a> <!-- Link that directs the user to the 'Create' action to add a new record -->
+</p> <!-- Ends the paragraph wrapper -->
+
 <table class="table">
+    <!-- Starts an HTML table with Bootstrap styling for structured data display -->
     <thead>
+        <!-- Table header section containing column titles -->
         <tr>
+            <!-- Defines the header row -->
             <th>
-                @Html.DisplayNameFor(model => model.Origin)
-            </th>
+                <!-- Header cell for the Origin column -->
+                @Html.DisplayNameFor(model => model.Origin) <!-- Displays the name of the 'Origin' property from the model -->
+            </th> <!-- Ends the Origin header cell -->
             <th>
-                @Html.DisplayNameFor(model => model.BatchNumber)
-            </th>
+                <!-- Header cell for the Batch Number column -->
+                @Html.DisplayNameFor(model => model.BatchNumber) <!-- Displays the name of the 'BatchNumber' property -->
+            </th> <!-- Ends the Batch Number header cell -->
             <th>
-                @Html.DisplayNameFor(model => model.HarvestDate)
-            </th>
+                <!-- Header cell for the Harvest Date column -->
+                @Html.DisplayNameFor(model => model.HarvestDate) <!-- Displays the name of the 'HarvestDate' property -->
+            </th> <!-- Ends the Harvest Date header cell -->
             <th>
-                @Html.DisplayNameFor(model => model.Certifications)
-            </th>
+                <!-- Header cell for the Certifications column -->
+                @Html.DisplayNameFor(model => model.Certifications) <!-- Displays the name of the 'Certifications' property -->
+            </th> <!-- Ends the Certifications header cell -->
             <th>
-                @Html.DisplayNameFor(model => model.Products)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
+                <!-- Header cell for the associated Product column -->
+                @Html.DisplayNameFor(model => model.Products) <!-- Displays the name of the 'Products' navigation property -->
+            </th> <!-- Ends the Product header cell -->
+            <th></th> <!-- Empty header cell for the action links column (Edit, Details, Delete) -->
+        </tr> <!-- Ends the header row -->
+    </thead> <!-- Ends the table header section -->
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Origin)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.BatchNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.HarvestDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Certifications)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Products.ProductsId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ProductTraceabilityId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProductTraceabilityId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProductTraceabilityId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        <!-- Table body section where dynamic record data is rendered -->
+        @foreach (var item in Model)
+        { // Loops through every ProductTraceability record in the provided collection
+            <tr>
+                <!-- Starts a new row for each individual traceability record -->
+                <td>
+                    <!-- Data cell for the Origin value -->
+                    @Html.DisplayFor(modelItem => item.Origin) <!-- Renders the 'Origin' value for the current item -->
+                </td> <!-- Ends the Origin data cell -->
+                <td>
+                    <!-- Data cell for the Batch Number value -->
+                    @Html.DisplayFor(modelItem => item.BatchNumber) <!-- Renders the 'BatchNumber' value for the current item -->
+                </td> <!-- Ends the Batch Number data cell -->
+                <td>
+                    <!-- Data cell for the Harvest Date value -->
+                    @Html.DisplayFor(modelItem => item.HarvestDate) <!-- Renders the 'HarvestDate' value for the current item -->
+                </td> <!-- Ends the Harvest Date data cell -->
+                <td>
+                    <!-- Data cell for the Certifications value -->
+                    @Html.DisplayFor(modelItem => item.Certifications) <!-- Renders the 'Certifications' value for the current item -->
+                </td> <!-- Ends the Certifications data cell -->
+                <td>
+                    <!-- Data cell for the related Product ID -->
+                    @Html.DisplayFor(modelItem => item.Products.ProductsId) <!-- Renders the ID of the related product record -->
+                </td> <!-- Ends the Product ID data cell -->
+                <td>
+                    <!-- Data cell containing action links for the record -->
+                    <a asp-action="Edit" asp-route-id="@item.ProductTraceabilityId">Edit</a> | <!-- Link to edit this specific record using its unique ID -->
+                    <a asp-action="Details" asp-route-id="@item.ProductTraceabilityId">Details</a> | <!-- Link to view full details of this specific record -->
+                    <a asp-action="Delete" asp-route-id="@item.ProductTraceabilityId">Delete</a> <!-- Link to the delete confirmation page for this record -->
+                </td> <!-- Ends the action links data cell -->
+            </tr> <!-- Ends the row for the current record -->
+        } 
+    </tbody> <!-- Ends the table body section -->
+</table> <!-- Ends the HTML table -->

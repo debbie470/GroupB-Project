@@ -1,25 +1,32 @@
-﻿@model ErrorViewModel
+﻿@model ErrorViewModel // Declares that the view uses the ErrorViewModel class to display error details
+
 @{
-    ViewData["Title"] = "Error";
-}
+    // Starts a Razor code block for setting view-specific properties
+    ViewData["Title"] = "Error"; // Assigns the string "Error" to the Title key in ViewData for the layout to use
+} 
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+<h1 class="text-danger">Error.</h1> <!-- Displays a level 1 heading styled with Bootstrap's red danger color -->
 
-@if (Model.ShowRequestId)
-{
+<h2 class="text-danger">An error occurred while processing your request.</h2> <!-- Displays a secondary heading informing the user of the failure -->
+@if (Model.ShowRequestId) // Checks the model's logic to determine if the Request ID should be visible
+{ // Opening brace for the conditional if statement
     <p>
-        <strong>Request ID:</strong> <code>@Model.RequestId</code>
-    </p>
-}
+        <!-- Starts a paragraph to display technical identification details -->
+        <strong>Request ID:</strong> <code>@Model.RequestId</code> <!-- Shows the unique identifier for the specific web request that failed -->
+    </p> <!-- Ends the paragraph -->
+} 
 
-<h3>Development Mode</h3>
+<h3>Development Mode</h3> <!-- Heading for the section explaining the application's environment modes -->
+
 <p>
-    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred.
-</p>
+    <!-- Starts a paragraph describing the benefits of Development mode -->
+    Swapping to <strong>Development</strong> environment will display more detailed information about the error that occurred. <!-- Informs user that more data is available in dev mode -->
+</p> <!-- Ends the paragraph -->
+
 <p>
-    <strong>The Development environment shouldn't be enabled for deployed applications.</strong>
-    It can result in displaying sensitive information from exceptions to end users.
-    For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong>
-    and restarting the app.
-</p>
+    <!-- Starts a security warning paragraph regarding environment settings -->
+    <strong>The Development environment shouldn't be enabled for deployed applications.</strong> <!-- Warns that dev mode is unsafe for production -->
+    It can result in displaying sensitive information from exceptions to end users. <!-- Explains the privacy risk of showing stack traces to public users -->
+    For local debugging, enable the <strong>Development</strong> environment by setting the <strong>ASPNETCORE_ENVIRONMENT</strong> environment variable to <strong>Development</strong> <!-- Instructions on how to switch modes -->
+    and restarting the app. <!-- Reminder that environment changes require an application reload -->
+</p> <!-- Ends the warning paragraph -->

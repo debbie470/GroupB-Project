@@ -59,6 +59,20 @@
                 </div>
             </div>
         </div>
+        <!-- CARD 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="flip-card">
+                <div class="flip-inner">
+                    <div class="flip-front">
+                        <div class="feature-icon">🌍</div>
+                        <h4>Eco-Friendly</h4>
+                    </div>
+                    <div class="flip-back">
+                        <p>Sustainable packaging and reduced carbon footprint. We care for our planet as much as you do.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -74,3 +88,847 @@
         and easier to navigate.
     </p>
 </div>
+
+
+
+
+            <div>
+                <a asp-controller="Products" asp-action="Index">Shop Now</a>
+
+                
+            </div>
+                <a asp-controller="Suppliers" asp-action="Index" class="btn btn-outline-success">
+                View Farm →
+                </a>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Local Farmers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5,000+</span>
+                    <span class="stat-label">Products</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25K+</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+    <div class="container">
+        <p>🎉 <strong>Free delivery</strong> on orders over £50 | Use code <strong>FRESH10</strong> for 10% off your first order!</p>
+    </div>
+</div>
+
+
+<!-- PRODUCT CATEGORIES -->
+<section class="categories-section">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-tag">Browse Our Selection</span>
+            <h2>Shop by Category</h2>
+            <p>Explore our wide range of locally sourced products</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('/images/vegetables.jpg');">
+                        <div class="category-overlay">
+                            <span class="category-count">120+ Products</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h4>Fresh Vegetables</h4>
+                        <p>Seasonal vegetables straight from local farms</p>
+                        <a asp-controller="Products" asp-action="Index" class="btn btn-outline-success">
+                            Shop Now →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('/images/fruits.jpg');">
+                        <div class="category-overlay">
+                            <span class="category-count">85+ Products</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h4>Organic Fruits</h4>
+                        <p>Sweet, ripe fruits picked at peak freshness</p>
+                        <a asp-controller="Products" asp-action="Index" class="btn btn-outline-success">
+                            Shop Now →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('/images/egg.jpg');">
+                        <div class="category-overlay">
+                            <span class="category-count">45+ Products</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h4>Dairy & Eggs</h4>
+                        <p>Farm-fresh milk, cheese, and free-range eggs</p>
+                        <a asp-controller="Products" asp-action="Index" class="btn btn-outline-success">
+                            Shop Now →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('/images/meat.jpg');">
+                        <div class="category-overlay">
+                            <span class="category-count">60+ Products</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h4>Meat & Poultry</h4>
+                        <p>Ethically raised, locally sourced meats</p>
+                        <a asp-controller="Products" asp-action="Index" class="btn btn-outline-success">
+                            Shop Now →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('/images/Bread.jpg');">
+                        <div class="category-overlay">
+                            <span class="category-count">35+ Products</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h4>Bakery & Bread</h4>
+                        <p>Artisan breads and baked goods made daily</p>
+                        <a asp-controller="Products" asp-action="Index" class="btn btn-outline-success">
+                            Shop Now →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="category-card">
+                    <div class="category-image" style="background-image: url('/images/honey.jpg');">
+                        <div class="category-overlay">
+                            <span class="category-count">25+ Products</span>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <h4>Honey & Preserves</h4>
+                        <p>Raw honey and homemade jams & preserves</p>
+                        <a asp-controller="Products" asp-action="Index" class="btn btn-outline-success">
+                            Shop Now →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="featured-products">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-tag">Handpicked for You</span>
+            <h2>Featured Products</h2>
+            <p>Our most popular items this week</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="product-badge">Best Seller</div>
+                    <div class="product-image">
+                        <img src="/images/vine.jpg" alt="Organic Tomatoes">
+                        <div class="product-actions">
+                            <button class="btn-wishlist" title="Add to Wishlist">♡</button>
+                            <button class="btn-quickview" title="Quick View">👁</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Vegetables</span>
+                        <h5>Organic Vine Tomatoes</h5>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(128 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">£3.49</span>
+                            <span class="original-price">£4.29</span>
+                            <span class="discount">-19%</span>
+                        </div>
+                        <a href="/Baskets" class="btn btn-success btn-block">Add to Cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="product-badge new">New</div>
+                    <div class="product-image">
+                        <img src="/images/egg.jpg" alt="Free Range Eggs">
+                        <div class="product-actions">
+                            <button class="btn-wishlist" title="Add to Wishlist">♡</button>
+                            <button class="btn-quickview" title="Quick View">👁</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Dairy & Eggs</span>
+                        <h5>Free Range Eggs (12 pack)</h5>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(94 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">£4.99</span>
+                        </div>
+                        <a href="/Baskets" class="btn btn-success btn-block">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/images/honey.jpg" alt="Local Honey">
+                        <div class="product-actions">
+                            <button class="btn-wishlist" title="Add to Wishlist">♡</button>
+                            <button class="btn-quickview" title="Quick View">👁</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Honey & Preserves</span>
+                        <h5>Raw Wildflower Honey</h5>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(76 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">£8.99</span>
+                        </div>
+                        <a href="/Baskets" class="btn btn-success btn-block">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="product-card">
+                    <div class="product-badge sale">Sale</div>
+                    <div class="product-image">
+                        <img src="/images/Bread.jpg" alt="Sourdough Bread">
+                        <div class="product-actions">
+                            <button class="btn-wishlist" title="Add to Wishlist">♡</button>
+                            <button class="btn-quickview" title="Quick View">👁</button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <span class="product-category">Bakery</span>
+                        <h5>Artisan Sourdough Loaf</h5>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(112 reviews)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">£4.49</span>
+                            <span class="original-price">£5.49</span>
+                            <span class="discount">-18%</span>
+                        </div>
+                        <a href="/Baskets" class="btn btn-success btn-block">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="/Products" class="btn btn-outline-success btn-lg">View All Products →</a>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-tag">Simple & Easy</span>
+            <h2>How It Works</h2>
+            <p>Getting fresh local produce has never been easier</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">🔍</div>
+                    <h4>Browse Products</h4>
+                    <p>Explore our wide selection of locally sourced produce and products from trusted farmers.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🛒</div>
+                    <h4>Add to Cart</h4>
+                    <p>Select your favourite items and add them to your cart with just one click.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">📅</div>
+                    <h4>Choose Delivery</h4>
+                    <p>Pick a convenient delivery slot or opt for collection at your nearest hub location.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">🎉</div>
+                    <h4>Enjoy Fresh Food</h4>
+                    <p>Receive your order and enjoy the freshest local produce delivered to your door.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="about-images">
+                    <img src="/images/localfood.png" alt="Local Farm" class="about-img-main">
+                    <img src="/images/vegetables.jpg" alt="Fresh Produce" class="about-img-secondary">
+                    <div class="experience-badge">
+                        <span class="years">6+</span>
+                        <span class="text">Years Serving<br>Our Community</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <span class="section-tag">Our Story</span>
+                    <h2>Why Choose Greenfield Local Hub?</h2>
+                    <p class="lead">
+                        We believe in building a stronger community through sustainable, local food systems.
+                    </p>
+                    <p>
+                        These design choices create a professional, trustworthy, and user-friendly experience.
+                        A consistent colour scheme using natural greens and light neutrals creates a welcoming atmosphere
+                        that reflects local farming and fresh produce. Balanced contrast improves readability and reduces
+                        eye strain, while slightly rounded buttons provide a modern and intuitive interface.
+                    </p>
+                    <p>
+                        Interactive visuals help highlight featured products and producers, making the experience more engaging
+                        and easier to navigate.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <span class="check-icon">✓</span>
+                            <span>100% locally sourced products</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="check-icon">✓</span>
+                            <span>Supporting 150+ local farmers</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="check-icon">✓</span>
+                            <span>Sustainable & eco-friendly packaging</span>
+                        </div>
+                        <div class="about-feature">
+                            <span class="check-icon">✓</span>
+                            <span>Fair prices for farmers & customers</span>
+                        </div>
+                    </div>
+                    <a href="/Home/Privacy" class="btn btn-success btn-lg mt-3">
+                        Learn More About Us →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MEET OUR FARMERS -->
+<section class="farmers-section">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-tag">The People Behind Your Food</span>
+            <h2>Meet Our Farmers</h2>
+            <p>Get to know the dedicated people who grow your food with care</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="farmer-card">
+                    <div class="farmer-image">
+                        <img src="/images/girl.png" alt="Sarah Mitchell">
+                    </div>
+                    <div class="farmer-content">
+                        <h4>Sarah Mitchell</h4>
+                        <span class="farmer-specialty">Organic Vegetables</span>
+                        <p>Third-generation farmer specialising in heirloom tomatoes and leafy greens. Certified organic since 2010.</p>
+                        <div class="farmer-products">
+                            <span>🍅 Tomatoes</span>
+                            <span>🥬 Lettuce</span>
+                            <span>🥒 Cucumbers</span>
+                        </div>
+                        <a href="/Suppliers" class="btn btn-outline-success btn-sm">
+                            View Farm →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="farmer-card">
+                    <div class="farmer-image">
+                        
+                        <img src="/images/boy.png" alt="James & Mary Thompson">
+                    </div>
+                    <div class="farmer-content">
+                        <h4>James & Mary Thompson</h4>
+                        <span class="farmer-specialty">Free Range Eggs & Poultry</span>
+                        <p>Family-run farm with 500+ free-range hens. Award-winning eggs featured in local restaurants.</p>
+                        <div class="farmer-products">
+                            <span>🥚 Eggs</span>
+                            <span>🍗 Chicken</span>
+                            <span>🦆 Duck</span>
+                        </div>
+                        <a href="/Suppliers" class="btn btn-outline-success btn-sm">
+                            View Farm →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="farmer-card">
+                    <div class="farmer-image">
+                        <img src="/images/boy.png" alt="Robert Chen">
+                    </div>
+                    <div class="farmer-content">
+                        <h4>Robert Chen</h4>
+                        <span class="farmer-specialty">Artisan Honey & Bees</span>
+                        <p>Master beekeeper managing 50+ hives across the region. Raw, unfiltered honey with unique flavour profiles.</p>
+                        <div class="farmer-products">
+                            <span>🍯 Honey</span>
+                            <span>🐝 Beeswax</span>
+                            <span>🌸 Pollen</span>
+                        </div>
+                        <a href="/Suppliers" class="btn btn-outline-success btn-sm">
+                            View Farm →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="/Suppliers" class="btn btn-outline-success btn-sm">
+                View Farm →
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-tag">What People Say</span>
+            <h2>Customer Reviews</h2>
+            <p>Don't just take our word for it — hear from our community</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "The quality of produce is exceptional. I love knowing exactly where my food comes from and supporting local farmers. The delivery is always on time and the packaging is eco-friendly!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="/images/icon.png" alt="Emma Wilson">
+                        <div class="author-info">
+                            <h5>Emma Wilson</h5>
+                            <span>Customer since 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "As a restaurant owner, I need reliable suppliers. Greenfield Local Hub has been fantastic — consistent quality, fair prices, and they really care about the community."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="/images/icon.png" alt="Michael Brooks">
+                        <div class="author-info">
+                            <h5>Michael Brooks</h5>
+                            <span>The Green Table Restaurant</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "My kids now actually want to eat vegetables! The difference in taste compared to supermarket produce is incredible. We're customers for life."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="/images/icon.png" alt="Sarah & David Miller">
+                        <div class="author-info">
+                            <h5>Sarah & David Miller</h5>
+                            <span>Customer since 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="stats-section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-card">
+                    <div class="stat-icon">🌱</div>
+                    <div class="stat-number" data-count="150">150+</div>
+                    <div class="stat-label">Local Farmers</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-card">
+                    <div class="stat-icon">📦</div>
+                    <div class="stat-number" data-count="5000">5,000+</div>
+                    <div class="stat-label">Products Available</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-card">
+                    <div class="stat-icon">😊</div>
+                    <div class="stat-number" data-count="25000">25,000+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="stat-card">
+                    <div class="stat-icon">🚚</div>
+                    <div class="stat-number" data-count="100000">100,000+</div>
+                    <div class="stat-label">Orders Delivered</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SUBSCRIPTION BOX -->
+<section class="subscription-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="subscription-content">
+                    <span class="section-tag">Convenience Delivered</span>
+                    <h2>Weekly Farm Boxes</h2>
+                    <p class="lead">Get a curated selection of seasonal produce delivered to your door every week.</p>
+                    <ul class="subscription-features">
+                        <li>✓ Handpicked seasonal produce</li>
+                        <li>✓ Flexible subscription — pause or cancel anytime</li>
+                        <li>✓ Free delivery on all subscription boxes</li>
+                        <li>✓ Recipe cards included each week</li>
+                        <li>✓ Save up to 20% compared to individual items</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="subscription-boxes">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="box-card">
+                                <div class="box-badge">Most Popular</div>
+                                <h4>Family Box</h4>
+                                <div class="box-price">£35<span>/week</span></div>
+                                <ul>
+                                    <li>Feeds 4-5 people</li>
+                                    <li>10-12 seasonal items</li>
+                                    <li>Mix of vegetables & fruits</li>
+                                </ul>
+                                <a href="https://buy.stripe.com/test_aFaaEQaQm5XI1Fe003bsc01"
+                                   class="btn btn-outline-success btn-block"
+                                   target="_blank">
+                                    Subscribe Now
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="box-card">
+                                <h4>Couple Box</h4>
+                                <div class="box-price">£22<span>/week</span></div>
+                                <ul>
+                                    <li>Feeds 2 people</li>
+                                    <li>6-8 seasonal items</li>
+                                    <li>Perfect for small households</li>
+                                </ul>
+                                <a href="https://buy.stripe.com/test_4gM28k6A63PAdnWdQTbsc00"
+                                   class="btn btn-success btn-block"
+                                   target="_blank">
+                                    Subscribe Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-2">
+                        <a href="https://buy.stripe.com/test_4gM28k6A63PAdnWdQTbsc00"
+                           class="btn-link"
+                           target="_blank">
+                            View all subscription options →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG/NEWS SECTION -->
+<section class="blog-section">
+    <div class="row blog-masonry">
+        <div class="section-header text-center">
+            <span class="section-tag">From Our Blog</span>
+            <h2>Latest News & Tips</h2>
+            <p>Stay updated with farming news, recipes, and sustainable living tips</p>
+        </div>
+        <div class="row">
+            <div class="row blog-masonry">
+
+                <!-- BLOG 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+
+                        <div class="blog-image">
+                            <img src="/images/blog1.jpg" alt="Seasonal Eating Guide">
+                            <span class="blog-category">Guides</span>
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span>📅 15 January 2024</span>
+                                <span>⏱ 5 min read</span>
+                            </div>
+
+                            <h4>The Complete Guide to Seasonal Eating in the UK</h4>
+
+                            <p>Discover what's in season each month and how to make the most of locally grown produce all year round.</p>
+
+                            <a href="https://www.bbc.co.uk/food/articles/seasonal_calendar"
+                               target="_blank"
+                               class="btn-link">
+                                Read More →
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- BLOG 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+
+                        <div class="blog-image">
+                            <img src="/images/blog2.jpg" alt="Farm Visit">
+                            <span class="blog-category">Community</span>
+                        </div>
+
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span>📅 10 January 2024</span>
+                                <span>⏱ 4 min read</span>
+                            </div>
+
+                            <h4>Behind the Scenes: A Day at Mitchell's Organic Farm</h4>
+
+                            <p>Join us as we visit one of our partner farms and learn about sustainable farming practices.</p>
+
+                            <a href="https://www.soilassociation.org/farming/"
+                               target="_blank"
+                               class="btn-link">
+                                Read More →
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- BLOG 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="blog-card">
+
+                        <div class="blog-image">
+                            <img src="/images/blog3.jpg" alt="Winter Recipes">
+                            <span class="blog-category">Recipes</span>
+                        </div>
+
+                        <div class="blog-content">
+
+                            <div class="blog-meta">
+                                <span>📅 5 January 2024</span>
+                                <span>⏱ 8 min read</span>
+                            </div>
+
+                            <h4>10 Hearty Winter Recipes Using Local Ingredients</h4>
+
+                            <p>
+                                Warm up this winter with these delicious recipes featuring seasonal vegetables from our farmers.
+                            </p>
+
+                            <a href="https://www.bbcgoodfood.com/recipes/collection/winter-recipes"
+                               target="_blank"
+                               class="btn-link">
+                                Read More →
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        <div class="text-center mt-4">
+                <a href="https://www.theguardian.com/food" target="_blank" class="btn btn-outline-success btn-lg">
+                    View All Articles →
+                </a>
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
+    <div class="container">
+        <div class="newsletter-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3>Join Our Community</h3>
+                    <p>Subscribe to our newsletter for exclusive offers, seasonal recipes, and updates from our local farmers.</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-success" type="submit">Subscribe</button>
+                        </div>
+                        <small class="text-muted">🔒 We respect your privacy. Unsubscribe at any time.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="faq-section">
+    <div class="container">
+        <div class="section-header text-center">
+            <span class="section-tag">Got Questions?</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about our service</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                How does delivery work?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We deliver Tuesday through Saturday to postcodes within a 30-mile radius of our hub. You can choose your preferred delivery day and time slot during checkout. Same-day delivery is available for orders placed before 10am on select items.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Are all products organic?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Not all products are certified organic, but all are locally sourced and grown using sustainable practices. Products that are certified organic are clearly labelled. We prioritise quality and sustainability over labels.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Can I return or exchange products?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Absolutely! If you're not satisfied with any product, contact us within 48 hours of delivery. We'll either replace the item or provide a full refund. Your satisfaction is our priority.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                How do I become a supplier?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We're always looking for quality local producers to join our network. Visit our <a href="/Farmers/Join">Become a Supplier</a> page to learn about our requirements and apply. Our team will review your application and get in touch within 5 business days.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                Do you offer corporate or wholesale accounts?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes! We work with restaurants, cafes, offices, and other businesses. Contact our B2B team at <a href="mailto:business@greenfieldlocalhub.com">business@greenfieldlocalhub.com</a> for information about wholesale pricing and dedicated account management.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="contact-cta">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h3>Still Have Questions?</h3>
+                <p>Our friendly team is here to help. Reach out to us anytime.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="/Suppliers" class="btn btn-light btn-lg">Contact Us</a>
+                <a href="tel:+441onal234567890" class="btn btn-outline-light btn-lg">📞 01onal 234 567890</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PARTNERS / TRUST BADGES -->
+<section class="partners-section">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h5 class="text-muted">Certified & Trusted By</h5>
+        </div>
+        <div class="partners-logos">
+            <img src="/images/organicsoil.jpg" alt="Soil Association Organic">
+            <img src="/images/rspca.png" alt="RSPCA Assured">
+            <img src="/images/redtractor.png" alt="Red Tractor">
+            <img src="/images/leaf.png" alt="LEAF Marque">
+            <img src="/images/localfood.png" alt="Local Food Britain">
+        </div>
+    </div>
+</section>

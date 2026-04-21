@@ -340,7 +340,6 @@ C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\6fhx42dqdr-61n19gt1b8.gz
-C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\g6ngiumc0c-dhwfk2tsns.gz
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\pt23n608le-t1cqhe9u97.gz
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\ci0thz2y7f-c2jlpeoesf.gz
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\budunv9wmr-sejl45xvog.gz
@@ -418,7 +417,6 @@ C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ECommercePlatform.pdb
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ECommercePlatform.genruntimeconfig.cache
 C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ref\ECommercePlatform.dll
-C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\vuzw2ylh4n-0ehn989tix.gz
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\bin\Debug\net9.0\appsettings.json
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\bin\Debug\net9.0\ECommercePlatform.staticwebassets.runtime.json
@@ -823,3 +821,5 @@ C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\De
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\ref\ECommercePlatform.dll
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\nz8srdjjew-{0}-si20aub9zt-si20aub9zt.gz
 C:\Users\abdul\OneDrive\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\w0jsgsw93w-{0}-0hh42w6oje-0hh42w6oje.gz
+C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\g6ngiumc0c-0hh42w6oje.gz
+C:\Users\Digi-T-Y2-2\Documents\GitHub\GroupB-Project\ECommercePlatform\obj\Debug\net9.0\compressed\vuzw2ylh4n-65m69y32ft.gz

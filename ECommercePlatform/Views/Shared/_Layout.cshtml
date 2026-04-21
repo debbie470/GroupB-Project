@@ -1,217 +1,253 @@
-﻿<!-- Settings Button -->
+﻿<!-- Settings Button --> <!-- Header comment for the settings button section -->
 <button type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleSettings()">
-    ⚙️ Settings
-</button>
-
-<!-- Settings Panel -->
+    <!-- Button to trigger the settings panel toggle -->
+    ⚙️ Settings <!-- Label for the settings button with an icon -->
+</button> <!-- Closing tag for the settings button -->
+<!-- Settings Panel --> <!-- Header comment for the settings panel container -->
 <div id="settingsPanel" class="settings-panel">
-    <h5>⚙️ Settings</h5>
-    <hr />
-    <button class="btn btn-sm btn-dark w-100 mb-2" onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
-    <button class="btn btn-sm btn-primary w-100 mb-2" onclick="speakPage()">🔊 Read Page</button>
-    <button class="btn btn-sm btn-danger w-100" onclick="stopSpeaking()">⛔ Stop Speech</button>
-    <h6>Font Size</h6>
-    <button onclick="setFontSize('14px')">Small</button>
-    <button onclick="setFontSize('16px')">Medium</button>
-    <button onclick="setFontSize('18px')">Large</button>
-</div>
+    <!-- Hidden container for user preferences -->
+    <h5>⚙️ Settings</h5> <!-- Title for the settings panel -->
+    <hr /> <!-- Horizontal line separator -->
+    <button class="btn btn-sm btn-dark w-100 mb-2" onclick="toggleTheme()">🌙 Toggle Dark Mode</button> <!-- Button to switch between light and dark themes -->
+    <button class="btn btn-sm btn-primary w-100 mb-2" onclick="speakPage()">🔊 Read Page</button> <!-- Button to trigger text-to-speech for the main content -->
+    <button class="btn btn-sm btn-danger w-100" onclick="stopSpeaking()">⛔ Stop Speech</button> <!-- Button to cancel any active speech synthesis -->
+    <h6>Font Size</h6> <!-- Label for the font size adjustment section -->
+    <button onclick="setFontSize('14px')">Small</button> <!-- Button to set font size to 14px -->
+    <button onclick="setFontSize('16px')">Medium</button> <!-- Button to set font size to 16px -->
+    <button onclick="setFontSize('18px')">Large</button> <!-- Button to set font size to 18px -->
+</div> <!-- Closing tag for the settings panel -->
 
 <script>
-    // ---------------- SETTINGS TOGGLE ----------------
-    window.toggleSettings = function () {
-        const panel = document.getElementById("settingsPanel");
-        if (!panel) return;
-        panel.classList.toggle("show");  // Toggle display of the settings panel
-    };
+    // Opening tag for JavaScript logic
+       // ---------------- SETTINGS TOGGLE ---------------- // Logic for opening/closing the settings menu
+       window.toggleSettings = function () { // Assign function to window to make it globally accessible
+           const panel = document.getElementById("settingsPanel"); // Find the settings panel element by its ID
+           if (!panel) return; // Exit the function if the panel element is not found
+           panel.classList.toggle("show");  // Add or remove the 'show' CSS class to toggle visibility
+       }; // End of toggleSettings function
 
-    // ---------------- DARK MODE ----------------
-    function applyTheme(isDark) {
-        document.body.classList.toggle("dark-mode", isDark);
-        localStorage.setItem("theme", isDark ? "dark" : "light");
-    }
+       // ---------------- DARK MODE ---------------- // Logic for handling the dark theme
+       function applyTheme(isDark) { // Function to apply a specific theme state
+           document.body.classList.toggle("dark-mode", isDark); // Add 'dark-mode' class to body if isDark is true, otherwise remove it
+           localStorage.setItem("theme", isDark ? "dark" : "light"); // Save the user's theme preference to local storage
+       } // End of applyTheme function
 
-    window.toggleTheme = function () {
-        const isDark = !document.body.classList.contains("dark-mode");
-        applyTheme(isDark);
-    };
+       window.toggleTheme = function () { // Global function to switch the current theme
+           const isDark = !document.body.classList.contains("dark-mode"); // Check if dark mode is currently NOT active
+           applyTheme(isDark); // Call applyTheme with the toggled state
+       }; // End of toggleTheme function
 
-    // Apply the saved theme on page load
-    document.addEventListener("DOMContentLoaded", function () {
-        const savedTheme = localStorage.getItem("theme");
-        const isDark = savedTheme === "dark";
-        applyTheme(isDark);
-    });
+       // Apply the saved theme on page load // Persistence logic
+       document.addEventListener("DOMContentLoaded", function () { // Wait for the HTML to be fully loaded
+           const savedTheme = localStorage.getItem("theme"); // Retrieve the saved theme from local storage
+           const isDark = savedTheme === "dark"; // Determine if the saved setting was 'dark'
+           applyTheme(isDark); // Apply the saved theme state
+       }); // End of page load theme logic
 
-    // ---------------- TEXT TO SPEECH ----------------
-    window.speakPage = function () {
-        window.speechSynthesis.cancel();
+       // ---------------- TEXT TO SPEECH ---------------- // Accessibility logic for reading text
+       window.speakPage = function () { // Global function to read page content aloud
+           window.speechSynthesis.cancel(); // Stop any current speech before starting new one
 
-        const main = document.querySelector("main");
-        const text = main ? main.innerText : document.body.innerText;
+           const main = document.querySelector("main"); // Attempt to find the main content area
+           const text = main ? main.innerText : document.body.innerText; // Get text from <main> or fall back to the whole body
 
-        const speech = new SpeechSynthesisUtterance(text);
-        speech.rate = 1;
-        speech.pitch = 1;
-        speech.lang = "en-GB";
+           const speech = new SpeechSynthesisUtterance(text); // Create a new speech request with the gathered text
+           speech.rate = 1; // Set the speaking speed (1 is normal)
+           speech.pitch = 1; // Set the voice pitch (1 is normal)
+           speech.lang = "en-GB"; // Set the language/accent to British English
 
-        window.speechSynthesis.speak(speech);
-    };
+           window.speechSynthesis.speak(speech); // Tell the browser to start speaking
+       }; // End of speakPage function
 
-    window.stopSpeaking = function () {
-        window.speechSynthesis.cancel();
-    };
+       window.stopSpeaking = function () { // Global function to halt speech
+           window.speechSynthesis.cancel(); // Use browser API to stop all speech synthesis
+       }; // End of stopSpeaking function
 
-    window.setFontSize = function (size) {
-        console.log("Font size:", size); // debug
+       window.setFontSize = function (size) { // Global function to update the font size
+           console.log("Font size:", size); // Log the selected size for debugging purposes
 
-        document.documentElement.style.setProperty('--font-size', size);
-        localStorage.setItem('fontSize', size);
-    };
+           document.documentElement.style.setProperty('--font-size', size); // Update the CSS variable on the root element
+           localStorage.setItem('fontSize', size); // Save the font size preference to local storage
+       }; // End of setFontSize function
 
-    // Apply saved font size on load
-    document.addEventListener("DOMContentLoaded", function () {
-        const savedSize = localStorage.getItem("fontSize");
-        if (savedSize) {
-            document.documentElement.style.setProperty('--font-size', savedSize);
-        }
-    });
-</script>
+       // Apply saved font size on load // Persistence logic for typography
+       document.addEventListener("DOMContentLoaded", function () { // Wait for the page to load
+           const savedSize = localStorage.getItem("fontSize"); // Get the saved font size from local storage
+           if (savedSize) { // If a size was previously saved
+               document.documentElement.style.setProperty('--font-size', savedSize); // Re-apply that size to the document
+           } // End if
+       }); // End of page load font logic
+</script> <!-- Closing script tag -->
 
 <style>
-    /* Example styles for the settings panel */
-    .settings-panel {
-        position: fixed;
-        top: 70px;
-        right: 20px;
-        width: 220px;
-        background: #ffffff;
-        border-radius: 12px;
-        padding: 15px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        display: none;
-        z-index: 9999;
+    /* Opening tag for CSS styles */
+    /* Example styles for the settings panel */ /* Comment regarding panel layout */
+    .settings-panel { /* Main container styling for settings */
+        position: fixed; /* Sticks the panel to the screen relative to the viewport */
+        top: 70px; /* Position 70px from the top */
+        right: 20px; /* Position 20px from the right */
+        width: 220px; /* Fixed width of the panel */
+        background: #ffffff; /* White background color */
+        border-radius: 12px; /* Rounded corners */
+        padding: 15px; /* Internal spacing */
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+        display: none; /* Hidden by default */
+        z-index: 9999; /* Ensures it appears on top of other content */
     }
+        /* End of .settings-panel styles */
 
-        .settings-panel.show {
-            display: block;
+        .settings-panel.show { /* Styles applied when the 'show' class is added via JS */
+            display: block; /* Changes from hidden to visible */
         }
+    /* End of .settings-panel.show styles */
 
-    /* Dark Mode styles */
-    body.dark-mode {
-        background: #121212;
-        color: #f5f5f5;
+    /* Dark Mode styles */ /* Comment for theme overrides */
+    body.dark-mode { /* Styles for the page when dark mode is enabled */
+        background: #121212; /* Dark background color */
+        color: #f5f5f5; /* Light text color for contrast */
     }
+        /* End of body.dark-mode styles */
 
-        /* Optional: Customize dark mode theme colors for specific elements */
-        body.dark-mode .settings-panel {
-            background: #333;
-            color: #fff;
+        /* Optional: Customize dark mode theme colors for specific elements */ /* Specific overrides */
+        body.dark-mode .settings-panel { /* Override panel appearance in dark mode */
+            background: #333; /* Darker gray background */
+            color: #fff; /* White text color */
         }
-</style>
+    /* End of panel dark mode override */
+</style> <!-- Closing style tag -->
 
 <!DOCTYPE html>
+ <!-- Declares the document as HTML5 -->
 <html lang="en">
+ <!-- Root element specifying English as the language -->
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ECommercePlatform</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/ECommercePlatform.styles.css" asp-append-version="true" />
-</head>
+    <!-- Metadata and resource links container -->
+    <meta charset="utf-8" /> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures responsive scaling on mobile -->
+    <title>@ViewData["Title"] - ECommercePlatform</title> <!-- Dynamic title provided by the server -->
+    <script type="importmap"></script> <!-- Placeholder for modern JavaScript module mapping -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> <!-- Links to Bootstrap framework CSS -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> <!-- Main site CSS with cache-busting versioning -->
+    <link rel="stylesheet" href="~/ECommercePlatform.styles.css" asp-append-version="true" /> <!-- Component-specific styles with versioning -->
+</head> <!-- Closing head tag -->
 <body>
+    <!-- Visible content container -->
     <header>
+        <!-- Top section of the page containing navigation -->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <!-- Bootstrap navigation bar -->
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ECommercePlatform</a>
+                <!-- Full-width container inside nav -->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ECommercePlatform</a> <!-- Site logo/brand link to Home -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!-- Hamburger menu button for small screens -->
+                    <span class="navbar-toggler-icon"></span> <!-- Standard icon for the toggler button -->
+                </button> <!-- Closing toggler button tag -->
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <!-- Container for links that collapses on mobile -->
                     <ul class="navbar-nav flex-grow-1">
+                        <!-- Navigation list starting on the left -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
+                            <!-- List item for Home link -->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> <!-- Link to Home page -->
+                        </li> <!-- Closing nav-item -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        
+                            <!-- List item for Privacy link -->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> <!-- Link to Privacy page -->
+                        </li> <!-- Closing nav-item -->
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Baskets" asp-action="Index">🛒</a>
-                        </li>
+                            <!-- List item for Baskets link -->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Baskets" asp-action="Index">🛒</a> <!-- Cart link with emoji icon -->
+                        </li> <!-- Closing nav-item -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="LoyaltyRewards" asp-action="Index">LoyaltyRewards</a>
-                        </li>
-                        
+                            <!-- List item for Rewards link -->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="LoyaltyRewards" asp-action="Index">LoyaltyRewards</a> <!-- Link to Rewards -->
+                        </li> <!-- Closing nav-item -->
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Deliveryinfoes" asp-action="Index">Deliveryinfoes</a>
-                        </li>
-                        
+                            <!-- List item for Delivery link -->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Deliveryinfoes" asp-action="Index">Deliveryinfoes</a> <!-- Link to Delivery Info -->
+                        </li> <!-- Closing nav-item -->
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
-                        </li>
+                            <!-- List item for Products link -->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index">Products</a> <!-- Link to Products list -->
+                        </li> <!-- Closing nav-item -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Suppliers" asp-action="Index">Suppliers</a>
-                        </li>
+                            <!-- List item for Suppliers link -->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Suppliers" asp-action="Index">Suppliers</a> <!-- Link to Suppliers list -->
+                        </li> <!-- Closing nav-item -->
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="SupplierDashboard" asp-action="Index">SupplierDashboard</a>
-                        </li>
-                        @if (User.Identity.IsAuthenticated && User.IsInRole("Supplier"))
-                        {
-                           
+                            <!-- List item for Dashboard link -->
+                            <a class="nav-link text-dark" asp-area="" asp-controller="SupplierDashboard" asp-action="Index">SupplierDashboard</a> <!-- Link to the dashboard -->
+                        </li> <!-- Closing nav-item -->
+
+                        @if (User.Identity.IsAuthenticated && User.IsInRole("Supplier")) // Server-side check if user is a logged-in Supplier
+                        { // Start of protected navigation block
+
 
                             <li class="nav-item">
+                                <!-- Protected list item -->
                                 <a class="nav-link" asp-controller="OrderProducts" asp-action="Index">
-                                    OrderProducts
-                                </a>
-                            </li>
+                                    <!-- Link to view ordered products -->
+                                    OrderProducts <!-- Label text -->
+                                </a> <!-- End link -->
+                            </li> <!-- End item -->
 
-                            
+
                             <li class="nav-item">
+                                <!-- Protected list item -->
                                 <a class="nav-link" asp-controller="BasketProducts" asp-action="Index">
-                                    BasketProducts
-                                </a>
-                            </li>
+                                    <!-- Link to view products in baskets -->
+                                    BasketProducts <!-- Label text -->
+                                </a> <!-- End link -->
+                            </li> <!-- End item -->
                             <li class="nav-item">
+                                <!-- Protected list item -->
                                 <a class="nav-link" asp-controller="Orders" asp-action="Index">
-                                    Orders
-                                </a>
-                            </li>
-                        }
-                    </ul>
-                    <partial name="_LoginPartial" />
-                </div>
-            </div>
-        </nav>
-    </header>
+                                    <!-- Link to view all orders -->
+                                    Orders <!-- Label text -->
+                                </a> <!-- End link -->
+                            </li> <!-- End item -->
+                        } 
+                    </ul> <!-- End of navigation list -->
+                    <partial name="_LoginPartial" /> <!-- Renders the login/logout links from a partial view -->
+                </div> <!-- End navbar-collapse -->
+            </div> <!-- End container-fluid -->
+        </nav> <!-- End nav -->
+    </header> <!-- End header -->
     <div class="container">
+        <!-- Main content wrapper -->
         <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+            <!-- Accessible main content tag with bottom padding -->
+            @RenderBody() <!-- Injects the content of the current view into the layout -->
+        </main> <!-- End main -->
+    </div> <!-- End container -->
 
     <footer class="footer mt-5" style="background:#2E7D32; padding:20px 0; color:#D1D5DB;">
+        <!-- Footer with inline styles for layout and colors -->
         <div class="container">
+            <!-- Centered container for footer content -->
             <div class="row">
-                <!-- BRAND -->
+                <!-- Row to organize footer columns -->
+                <!-- BRAND --> <!-- Comment identifying the branding column -->
                 <div class="col-md-6">
-                    <h6 style="font-weight:700; margin-bottom:8px;">ECommercePlatform</h6>
-                    <p style="font-size:13px; margin:0;">Local marketplace for fresh produce.</p>
-                </div>
-
-                <!-- CONTACT -->
+                    <!-- Left column for branding -->
+                    <h6 style="font-weight:700; margin-bottom:8px;">ECommercePlatform</h6> <!-- Bold title for the footer brand -->
+                    <p style="font-size:13px; margin:0;">Local marketplace for fresh produce.</p> <!-- Tagline for the site -->
+                </div> <!-- End branding column -->
+                <!-- CONTACT --> <!-- Comment identifying the contact column -->
                 <div class="col-md-6 text-end">
-                    <p style="font-size:13px; margin:0;">📧 support@glh.co.uk</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-</body>
-
-
+                    <!-- Right-aligned column for contact info -->
+                    <p style="font-size:13px; margin:0;">📧 support@glh.co.uk</p> <!-- Support email with emoji -->
+                </div> <!-- End contact column -->
+            </div> <!-- End row -->
+        </div> <!-- End container -->
+    </footer> <!-- End footer -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script> <!-- Link to jQuery library -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script> <!-- Link to Bootstrap JavaScript bundle (includes Popper) -->
+    <script src="~/js/site.js" asp-append-version="true"></script> <!-- Link to main site JavaScript file with versioning -->
+    @await RenderSectionAsync("Scripts", required: false) <!-- Renders additional script sections defined in child views -->
+</body> <!-- End body -->

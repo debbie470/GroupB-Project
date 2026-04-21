@@ -1,41 +1,64 @@
-﻿@model IEnumerable<ECommercePlatform.Models.Suppliers>
+﻿@model IEnumerable<ECommercePlatform.Models.Suppliers> // Defines the data type expected by the view as a collection of Supplier objects
 
-<h1 class="section-title">Suppliers</h1>
-<p>Total Suppliers: @Model.Count()</p>
-<input type="text" id="searchBox" placeholder="Search suppliers..." class="form-control" />
+<h1 class="section-title">Suppliers</h1> <!-- Main heading for the page with a CSS class for styling -->
+
+<p>Total Suppliers: @Model.Count()</p> <!-- Displays the count of items in the Model collection using C# -->
+
+<input type="text" id="searchBox" placeholder="Search suppliers..." class="form-control" /> <!-- Input field for filtering the list with a bootstrap style -->
+
 <div class="supplier-container">
+    <!-- Wrapper container for all supplier cards -->
+    @foreach (var item in Model) // Start of a loop to iterate through every supplier in the collection
+    { // Opening brace for the foreach loop
 
-    @foreach (var item in Model)
-    {
         <div class="supplier-card">
+            <!-- Container for a single supplier's information card -->
+            <!-- Header --> <!-- Section comment for the card's header area -->
 
-            <!-- Header -->
             <div class="supplier-header">
-                <h4>@item.SupplierName</h4>
-            </div>
+                <!-- Wrapper for the top part of the card -->
 
-            <!-- Body -->
+                <h4>@item.SupplierName</h4> <!-- Displays the name of the current supplier -->
+
+            </div> <!-- End of the header div -->
+            <!-- Body --> <!-- Section comment for the card's main content area -->
+
             <div class="supplier-body">
-                <p><strong>Email:</strong> 📧 @item.SupplierEmail</p>
-                <p><strong>Info:</strong> ℹ @item.SupplierInformation</p>
-            </div>
+                <!-- Wrapper for the supplier's contact and descriptive info -->
 
-            <!-- Actions -->
+                <p><strong>Email:</strong> 📧 @item.SupplierEmail</p> <!-- Displays the supplier's email address with an icon -->
+
+                <p><strong>Info:</strong> ℹ @item.SupplierInformation</p> <!-- Displays the supplier's details or bio with an icon -->
+
+            </div> <!-- End of the body div -->
+            <!-- Actions --> <!-- Section comment for the action links (Edit, Delete, etc.) -->
+
             <div class="supplier-actions">
-                <a asp-action="Edit" asp-route-id="@item.SuppliersId">Edit</a>
-                <a asp-action="Details" asp-route-id="@item.SuppliersId">Details</a>
-                <a asp-action="Delete" asp-route-id="@item.SuppliersId">Delete</a>
-            </div>
-            <p><strong>Products:</strong> 12</p>
-        </div>
-        
-    }
+                <!-- Wrapper for the management links -->
 
-</div>
+                <a asp-action="Edit" asp-route-id="@item.SuppliersId">Edit</a> <!-- Link to the Edit page, passing the unique ID of the supplier -->
 
-<!-- IMAGE AFTER CARD -->
+                <a asp-action="Details" asp-route-id="@item.SuppliersId">Details</a> <!-- Link to the Details page, passing the unique ID of the supplier -->
+
+                <a asp-action="Delete" asp-route-id="@item.SuppliersId">Delete</a> <!-- Link to the Delete confirmation page, passing the supplier ID -->
+
+            </div> <!-- End of the actions div -->
+
+            <p><strong>Products:</strong> 12</p> <!-- Static placeholder showing a sample number of products associated -->
+
+        </div> <!-- End of the individual supplier card div -->
+    } 
+
+</div> <!-- End of the main supplier container div -->
+<!-- IMAGE AFTER CARD --> <!-- Section comment for the bottom image gallery -->
+
 <div class="supplier-image-bottom">
-    <img src="~/images/Happy.jpg" />
-    <img src="/images/Farmer.jpg"/>
-    <img src="~/images//supplier.jpg"/>
-</div>
+    <!-- Wrapper for the decorative images at the bottom of the page -->
+
+    <img src="~/images/Happy.jpg" /> <!-- Displays the 'Happy' image using the app-relative path (~) -->
+
+    <img src="/images/Farmer.jpg" /> <!-- Displays the 'Farmer' image using a root-relative path -->
+
+    <img src="~/images//supplier.jpg" /> <!-- Displays the 'supplier' image using the app-relative path -->
+
+</div> <!-- End of the image container div -->

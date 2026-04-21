@@ -1,42 +1,78 @@
-﻿@model ECommercePlatform.Models.Suppliers
+﻿@model ECommercePlatform.Models.Suppliers // Specifies that the view expects a single Suppliers model object
 
 @{
-    ViewData["Title"] = "Details";
-}
-
-<h1>Details</h1>
+    // Start of a Razor code block for setting page-specific metadata
+    ViewData["Title"] = "Details"; // Sets the page title to "Details" within the layout's title tag
+} 
+<h1>Details</h1> <!-- Main level 1 heading for the page -->
 
 <div>
-    <h4>Suppliers</h4>
-    <hr />
+    <!-- Container for the supplier information section -->
+
+    <h4>Suppliers</h4> <!-- Level 4 heading indicating the entity type -->
+
+    <hr /> <!-- Horizontal line to separate the header from the data list -->
+
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.UserId)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.UserId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SupplierName)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SupplierName)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SupplierEmail)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SupplierEmail)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SupplierInformation)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SupplierInformation)
-        </dd>
-    </dl>
-</div>
+        <!-- Starts a description list with a Bootstrap row class for side-by-side layout -->
+
+        <dt class="col-sm-2">
+            <!-- Defines the label column (2 units wide) for the User ID -->
+            @Html.DisplayNameFor(model => model.UserId) <!-- HTML Helper that gets the display name of the UserId property -->
+
+        </dt> <!-- End of User ID label column -->
+
+        <dd class="col-sm-10">
+            <!-- Defines the value column (10 units wide) for the User ID -->
+            @Html.DisplayFor(model => model.UserId) <!-- HTML Helper that displays the value of the UserId property -->
+
+        </dd> <!-- End of User ID value column -->
+
+        <dt class="col-sm-2">
+            <!-- Defines the label column for the Supplier Name -->
+            @Html.DisplayNameFor(model => model.SupplierName) <!-- Gets the display name of the SupplierName property -->
+
+        </dt> <!-- End of Supplier Name label column -->
+
+        <dd class="col-sm-10">
+            <!-- Defines the value column for the Supplier Name -->
+            @Html.DisplayFor(model => model.SupplierName) <!-- Displays the value of the SupplierName property -->
+
+        </dd> <!-- End of Supplier Name value column -->
+
+        <dt class="col-sm-2">
+            <!-- Defines the label column for the Supplier Email -->
+            @Html.DisplayNameFor(model => model.SupplierEmail) <!-- Gets the display name of the SupplierEmail property -->
+
+        </dt> <!-- End of Supplier Email label column -->
+
+        <dd class="col-sm-10">
+            <!-- Defines the value column for the Supplier Email -->
+            @Html.DisplayFor(model => model.SupplierEmail) <!-- Displays the value of the SupplierEmail property -->
+
+        </dd> <!-- End of Supplier Email value column -->
+
+        <dt class="col-sm-2">
+            <!-- Defines the label column for the Supplier Information -->
+            @Html.DisplayNameFor(model => model.SupplierInformation) <!-- Gets the display name of the SupplierInformation property -->
+
+        </dt> <!-- End of Supplier Information label column -->
+
+        <dd class="col-sm-10">
+            <!-- Defines the value column for the Supplier Information -->
+            @Html.DisplayFor(model => model.SupplierInformation) <!-- Displays the value of the SupplierInformation property -->
+
+        </dd> <!-- End of Supplier Information value column -->
+
+    </dl> <!-- End of the description list -->
+
+</div> <!-- End of the information container -->
+
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.SuppliersId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <!-- Container for the navigation action links -->
+
+    <a asp-action="Edit" asp-route-id="@Model?.SuppliersId">Edit</a> | <!-- Link to the Edit action, passing the unique ID of the supplier -->
+
+    <a asp-action="Index">Back to List</a> <!-- Link to go back to the main supplier list page -->
+
+</div> <!-- End of the navigation container -->

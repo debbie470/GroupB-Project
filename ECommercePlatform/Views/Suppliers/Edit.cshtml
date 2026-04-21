@@ -1,47 +1,90 @@
-﻿@model ECommercePlatform.Models.Suppliers
+﻿@model ECommercePlatform.Models.Suppliers // Specifies that the view expects a single Suppliers model object
 
 @{
-    ViewData["Title"] = "Edit";
-}
+    // Start of a Razor code block for setting view-specific data
+    ViewData["Title"] = "Edit"; // Sets the browser tab/page title to "Edit" via the ViewData dictionary
+} 
 
-<h1>Edit</h1>
+<h1>Edit</h1> <!-- Main page heading -->
 
-<h4>Suppliers</h4>
-<hr />
+<h4>Suppliers</h4> <!-- Sub-heading indicating the entity being edited -->
+
+<hr /> <!-- Horizontal line used as a visual separator -->
+
 <div class="row">
+    <!-- Bootstrap grid row to contain the form -->
+
     <div class="col-md-4">
+        <!-- Bootstrap column spanning 4 out of 12 units for medium-sized screens -->
+
         <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="SuppliersId" />
+            <!-- Form tag that will post data to the 'Edit' action method in the controller -->
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div> <!-- Displays a list of validation errors that are not specific to a single property -->
+
+            <input type="hidden" asp-for="SuppliersId" /> <!-- Hidden input to store the ID so the database knows which record to update -->
+
             <div class="form-group">
-                @Html.HiddenFor(model => model.UserId) <!-- Hides UserId input -->
-            </div>
+                <!-- Bootstrap wrapper for grouping a form label and input -->
+                @Html.HiddenFor(model => model.UserId) <!-- HTML helper that creates a hidden input for the UserId to maintain its value during postback -->
+
+            </div> <!-- End of the hidden UserId group -->
+
             <div class="form-group">
-                <label asp-for="SupplierName" class="control-label"></label>
-                <input asp-for="SupplierName" class="form-control" />
-                <span asp-validation-for="SupplierName" class="text-danger"></span>
-            </div>
+                <!-- Container for the Supplier Name input field -->
+
+                <label asp-for="SupplierName" class="control-label"></label> <!-- Generates a label linked to the SupplierName property -->
+
+                <input asp-for="SupplierName" class="form-control" /> <!-- Generates a text input styled with Bootstrap for the SupplierName -->
+
+                <span asp-validation-for="SupplierName" class="text-danger"></span> <!-- Placeholder for displaying validation error messages related to SupplierName -->
+
+            </div> <!-- End of the Supplier Name group -->
+
             <div class="form-group">
-                <label asp-for="SupplierEmail" class="control-label"></label>
-                <input asp-for="SupplierEmail" class="form-control" />
-                <span asp-validation-for="SupplierEmail" class="text-danger"></span>
-            </div>
+                <!-- Container for the Supplier Email input field -->
+
+                <label asp-for="SupplierEmail" class="control-label"></label> <!-- Generates a label linked to the SupplierEmail property -->
+
+                <input asp-for="SupplierEmail" class="form-control" /> <!-- Generates a text input for the SupplierEmail -->
+
+                <span asp-validation-for="SupplierEmail" class="text-danger"></span> <!-- Placeholder for displaying validation error messages related to SupplierEmail -->
+
+            </div> <!-- End of the Supplier Email group -->
+
             <div class="form-group">
-                <label asp-for="SupplierInformation" class="control-label"></label>
-                <input asp-for="SupplierInformation" class="form-control" />
-                <span asp-validation-for="SupplierInformation" class="text-danger"></span>
-            </div>
+                <!-- Container for the Supplier Information input field -->
+
+                <label asp-for="SupplierInformation" class="control-label"></label> <!-- Generates a label linked to the SupplierInformation property -->
+
+                <input asp-for="SupplierInformation" class="form-control" /> <!-- Generates a text input for the SupplierInformation -->
+
+                <span asp-validation-for="SupplierInformation" class="text-danger"></span> <!-- Placeholder for displaying validation error messages related to SupplierInformation -->
+
+            </div> <!-- End of the Supplier Information group -->
+
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+                <!-- Container for the form submission button -->
+
+                <input type="submit" value="Save" class="btn btn-primary" /> <!-- The button that triggers the form submission to the server -->
+
+            </div> <!-- End of the submit button group -->
+
+        </form> <!-- End of the HTML form -->
+
+    </div> <!-- End of the column div -->
+
+</div> <!-- End of the row div -->
 
 <div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <!-- Container for navigation links -->
 
+    <a asp-action="Index">Back to List</a> <!-- Link that redirects the user back to the main supplier list page -->
+
+</div> <!-- End of the navigation div -->
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+     <!-- Defines a section for scripts that will be injected into the layout's script area -->
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    } <!-- Asynchronously renders the client-side validation scripts (jQuery Validate) -->
+} <!-- End of the Scripts section -->

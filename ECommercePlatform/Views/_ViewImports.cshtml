@@ -1,3 +1,13 @@
-﻿@using ECommercePlatform
+﻿@*
+Makes the root namespace of the project available to the view for accessing classes
+*@
+@using ECommercePlatform 
+@*
+Imports the Models namespace so model classes can be referenced without full names
+*@
 @using ECommercePlatform.Models
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@*
+Enables all standard ASP.NET Core Tag Helpers (like asp-for, asp-action) in the views
+*@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers 
+

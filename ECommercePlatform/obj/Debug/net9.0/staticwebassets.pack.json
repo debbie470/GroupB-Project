@@ -37,6 +37,22 @@
       "PackagePath": "staticwebassets\\images\\bean.jpg"
     },
     {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\blog1.jpg",
+      "PackagePath": "staticwebassets\\images\\blog1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\blog2.jpg",
+      "PackagePath": "staticwebassets\\images\\blog2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\blog3.jpg",
+      "PackagePath": "staticwebassets\\images\\blog3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\boy.png",
+      "PackagePath": "staticwebassets\\images\\boy.png"
+    },
+    {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\corn.jpg",
       "PackagePath": "staticwebassets\\images\\corn.jpg"
     },
@@ -45,16 +61,56 @@
       "PackagePath": "staticwebassets\\images\\egg.jpg"
     },
     {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\fruits.jpg",
+      "PackagePath": "staticwebassets\\images\\fruits.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\girl.png",
+      "PackagePath": "staticwebassets\\images\\girl.png"
+    },
+    {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\grapes.jpg",
       "PackagePath": "staticwebassets\\images\\grapes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\honey.jpg",
+      "PackagePath": "staticwebassets\\images\\honey.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\icon.png",
+      "PackagePath": "staticwebassets\\images\\icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\leaf.png",
+      "PackagePath": "staticwebassets\\images\\leaf.png"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\localfood.png",
+      "PackagePath": "staticwebassets\\images\\localfood.png"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\meat.jpg",
+      "PackagePath": "staticwebassets\\images\\meat.jpg"
     },
     {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\milk.jpg",
       "PackagePath": "staticwebassets\\images\\milk.jpg"
     },
     {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\organicsoil.jpg",
+      "PackagePath": "staticwebassets\\images\\organicsoil.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\redtractor.png",
+      "PackagePath": "staticwebassets\\images\\redtractor.png"
+    },
+    {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\rice.jpg",
       "PackagePath": "staticwebassets\\images\\rice.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\rspca.png",
+      "PackagePath": "staticwebassets\\images\\rspca.png"
     },
     {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\strawberry.jpg",
@@ -71,6 +127,10 @@
     {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\vegetables.jpg",
       "PackagePath": "staticwebassets\\images\\vegetables.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\vine.jpg",
+      "PackagePath": "staticwebassets\\images\\vine.jpg"
     },
     {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\js\\site.js",
