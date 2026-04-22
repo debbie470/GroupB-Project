@@ -1,42 +1,76 @@
-﻿@model ECommercePlatform.Models.DeliveryInfo
+﻿@* Specifies the data model for displaying details of a specific delivery record *@
+@model ECommercePlatform.Models.DeliveryInfo
 
+@* Block for setting server-side metadata for the layout *@
 @{
+    @* Sets the browser tab title for the current view *@
     ViewData["Title"] = "Details";
 }
 
+@* Main heading for the details page *@
 <h1>Details</h1>
 
+@* Container for the delivery information section *@
 <div>
+    @* Sub-heading identifying the entity type *@
     <h4>DeliveryInfo</h4>
+
+    @* Visual separator line *@
     <hr />
+
+    @* Grid-based description list to display property labels and their corresponding values *@
     <dl class="row">
-        <dt class = "col-sm-2">
+        @* Column for the label of the Delivery Type *@
+        <dt class="col-sm-2">
+            @* Displays the metadata name for the DeliveryType field *@
             @Html.DisplayNameFor(model => model.DeliveryType)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the actual value of the Delivery Type *@
+        <dd class="col-sm-10">
+            @* Renders the delivery method stored in the model *@
             @Html.DisplayFor(model => model.DeliveryType)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Column for the label of the Scheduled Date and Time *@
+        <dt class="col-sm-2">
+            @* Displays the metadata name for the ScheduledDateTime field *@
             @Html.DisplayNameFor(model => model.ScheduledDateTime)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the actual value of the Scheduled Date and Time *@
+        <dd class="col-sm-10">
+            @* Renders the date and time assigned for the delivery *@
             @Html.DisplayFor(model => model.ScheduledDateTime)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Column for the label of the current delivery Status *@
+        <dt class="col-sm-2">
+            @* Displays the metadata name for the Status field *@
             @Html.DisplayNameFor(model => model.Status)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the actual value of the current delivery Status *@
+        <dd class="col-sm-10">
+            @* Renders the current state of the delivery (e.g., Pending, Delivered) *@
             @Html.DisplayFor(model => model.Status)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Column for the label of the associated parent Order *@
+        <dt class="col-sm-2">
+            @* Displays the metadata name for the Orders navigation property *@
             @Html.DisplayNameFor(model => model.Orders)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the actual value of the associated Order ID *@
+        <dd class="col-sm-10">
+            @* Renders the primary key ID of the linked order *@
             @Html.DisplayFor(model => model.Orders.OrdersId)
         </dd>
     </dl>
 </div>
+
+@* Action link navigation container *@
 <div>
+    @* Link to the Edit page, passing the specific DeliveryInfo ID as a route parameter *@
     <a asp-action="Edit" asp-route-id="@Model?.DeliveryInfoId">Edit</a> |
+
+    @* Link to navigate back to the main list of delivery records *@
     <a asp-action="Index">Back to List</a>
 </div>

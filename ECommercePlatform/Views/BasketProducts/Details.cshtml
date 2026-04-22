@@ -1,36 +1,65 @@
-﻿@model ECommercePlatform.Models.BasketProducts
+﻿@* Defines the model type for displaying details of a specific basket-product entry *@
+@model ECommercePlatform.Models.BasketProducts
 
+@* Block for setting page metadata *@
 @{
+    @* Sets the browser tab title *@
     ViewData["Title"] = "Details";
 }
 
+@* Main heading for the details page *@
 <h1>Details</h1>
 
+@* Container for the detailed record information *@
 <div>
+    @* Entity type identifier *@
     <h4>BasketProducts</h4>
+
+    @* Separator line *@
     <hr />
+
+    @* Grid-based description list to display property labels and values *@
     <dl class="row">
-        <dt class = "col-sm-2">
+        @* Label for the Quantity property *@
+        <dt class="col-sm-2">
+            @* Retrieves the display name attribute for Quantity *@
             @Html.DisplayNameFor(model => model.Quantity)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value for the Quantity property *@
+        <dd class="col-sm-10">
+            @* Renders the current Quantity value *@
             @Html.DisplayFor(model => model.Quantity)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Label for the linked Product *@
+        <dt class="col-sm-2">
+            @* Retrieves the display name attribute for Products *@
             @Html.DisplayNameFor(model => model.Products)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value for the linked Product ID *@
+        <dd class="col-sm-10">
+            @* Renders the specific ID of the associated product *@
             @Html.DisplayFor(model => model.Products.ProductsId)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Label for the linked Basket *@
+        <dt class="col-sm-2">
+            @* Retrieves the display name attribute for Basket *@
             @Html.DisplayNameFor(model => model.Basket)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value for the linked Basket ID *@
+        <dd class="col-sm-10">
+            @* Renders the specific ID of the associated basket *@
             @Html.DisplayFor(model => model.Basket.BasketId)
         </dd>
     </dl>
 </div>
+
+@* Action link container *@
 <div>
+    @* Link to the Edit page, passing the current record's ID as a route parameter *@
     <a asp-action="Edit" asp-route-id="@Model?.BasketProductsId">Edit</a> |
+
+    @* Link to navigate back to the main list view *@
     <a asp-action="Index">Back to List</a>
 </div>

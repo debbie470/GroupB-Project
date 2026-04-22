@@ -1,202 +1,198 @@
-﻿using ECommercePlatform.Data;
-using ECommercePlatform.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
+﻿using ECommercePlatform.Data; // Data access namespace for database context
+using ECommercePlatform.Models; // Namespace for application domain models
+using Microsoft.AspNetCore.Authorization; // Security and role-based access control
+using Microsoft.AspNetCore.Mvc; // ASP.NET Core MVC framework components
+using Microsoft.AspNetCore.Mvc.Rendering; // Helpers for UI components like dropdowns
+using Microsoft.EntityFrameworkCore; // Entity Framework Core for ORM functionality
+using System; // Base system types
+using System.Collections.Generic; // Generic collection types
+using System.Linq; // LINQ for data querying
+using System.Security.Claims; // Claims-based identity management
+using System.Threading.Tasks; // Asynchronous programming support
 
-namespace ECommercePlatform.Controllers
-{
-    public class ProductsController : Controller
-    {
-        private readonly ApplicationDbContext _context;
+namespace ECommercePlatform.Controllers // Controller organization namespace
+{ // Start of namespace
+    public class ProductsController : Controller // Controller class for product management
+    { // Start of class
+        private readonly ApplicationDbContext _context; // Database context field
 
-        public ProductsController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
+        public ProductsController(ApplicationDbContext context) // Constructor with dependency injection
+        { // Start of constructor
+            _context = context; // Initialize database context
+        } // End of constructor
 
         // GET: Products
-        public async Task<IActionResult> Index()
-        {
-            if (User.IsInRole("Supplier"))
-            {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                if (userId == null)
-                {
-                    return Unauthorized();
-                }
-                var supplier = await _context.Suppliers.FirstOrDefaultAsync(s => s.UserId == userId);
-                if (supplier == null)
-                {
-                    return NotFound();
-                }
-                var SuplierProducts = await _context.Products.Where(p => p.SuppliersId == supplier.SuppliersId).Include(p => p.Suppliers).ToListAsync();
-                return View(SuplierProducts);
-            }
-            else
-            {
-                var allProducts = await _context.Products.Include(p => p.Suppliers).ToListAsync();
-                return View(allProducts);
-            }
+        public async Task<IActionResult> Index() // List products based on role
+        { // Start of Index method
+            if (User.IsInRole("Supplier")) // Check if user is a Supplier
+            { // Start of Supplier logic
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get current User ID
+                if (userId == null) // Check for authentication
+                { // Start check
+                    return Unauthorized(); // Return 401 if not logged in
+                } // End check
+                var supplier = await _context.Suppliers.FirstOrDefaultAsync(s => s.UserId == userId); // Locate supplier record
+                if (supplier == null) // Check for supplier profile
+                { // Start check
+                    return NotFound(); // Return 404 if profile missing
+                } // End check
+                var SuplierProducts = await _context.Products.Where(p => p.SuppliersId == supplier.SuppliersId).Include(p => p.Suppliers).ToListAsync(); // Get supplier's products
+                return View(SuplierProducts); // Return filtered product list
+            } // End of Supplier logic
+            else // Default for other roles (e.g., Customers/Admin)
+            { // Start of default logic
+                var allProducts = await _context.Products.Include(p => p.Suppliers).ToListAsync(); // Get all products
+                return View(allProducts); // Return full product list
+            } // End of default logic
 
-        }
+        } // End of Index method
 
         // GET: Products/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        public async Task<IActionResult> Details(int? id) // Show specific product info
+        { // Start of Details method
+            if (id == null) // Validate ID input
+            { // Start check
+                return NotFound(); // Return 404
+            } // End check
 
-            var products = await _context.Products
-                .Include(p => p.Suppliers)
-                .FirstOrDefaultAsync(m => m.ProductsId == id);
-            if (products == null)
-            {
-                return NotFound();
-            }
+            var products = await _context.Products // Query products
+                .Include(p => p.Suppliers) // Include supplier information
+                .FirstOrDefaultAsync(m => m.ProductsId == id); // Find matching product
+            if (products == null) // Check existence
+            { // Start check
+                return NotFound(); // Return 404
+            } // End check
 
-            return View(products);
-        }
+            return View(products); // Return product details view
+        } // End of Details method
 
         // GET: Products/Create
-        public IActionResult Create()
-        {
-            
-            return View();
-        }
+        public IActionResult Create() // Show create product form
+        { // Start method
+
+            return View(); // Return empty form view
+        } // End method
 
         // POST: Products/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductsId,ProductName,Stock,Price,ImagePath")] Products products)
-        {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
-            {
-                return Unauthorized();
-            }
+        [HttpPost] // Restrict to HTTP POST
+        [ValidateAntiForgeryToken] // Security token check
+        public async Task<IActionResult> Create([Bind("ProductsId,ProductName,Stock,Price,ImagePath")] Products products) // Handle product creation
+        { // Start of Create POST
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Identify current user
+            if (userId == null) // Authentication check
+            { // Start check
+                return Unauthorized(); // Return 401
+            } // End check
 
-            var supplier = await _context.Suppliers.FirstOrDefaultAsync(s => s.UserId == userId);
-            if (supplier == null)
-            {
-                return NotFound();
-            }
-            products.SuppliersId = supplier.SuppliersId;
-            ModelState.Remove("SupplierId");
+            var supplier = await _context.Suppliers.FirstOrDefaultAsync(s => s.UserId == userId); // Get supplier profile
+            if (supplier == null) // Profile existence check
+            { // Start check
+                return NotFound(); // Return 404
+            } // End check
+            products.SuppliersId = supplier.SuppliersId; // Assign ownership to supplier
+            ModelState.Remove("SupplierId"); // Clear validation for manual input field
 
-            if (ModelState.IsValid)
-            {
-                _context.Add(products);
-                await _context.SaveChangesAsync();
-               
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId);
-            return View(products);
-        }
+            if (ModelState.IsValid) // Check data validity
+            { // Start validation
+                _context.Add(products); // Mark for insertion
+                await _context.SaveChangesAsync(); // Commit to database
+
+                return RedirectToAction(nameof(Index)); // Redirect to product list
+            } // End validation
+            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId); // Repopulate list on error
+            return View(products); // Return form with errors
+        } // End of Create POST
 
         // GET: Products/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        public async Task<IActionResult> Edit(int? id) // Show edit form
+        { // Start of Edit GET
+            if (id == null) // ID validation
+            { // Start check
+                return NotFound(); // Return 404
+            } // End check
 
-            var products = await _context.Products.FindAsync(id);
-            if (products == null)
-            {
-                return NotFound();
-            }
-            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId);
-            return View(products);
-        }
+            var products = await _context.Products.FindAsync(id); // Find existing record
+            if (products == null) // Check existence
+            { // Start check
+                return NotFound(); // Return 404
+            } // End check
+            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId); // Populate supplier dropdown
+            return View(products); // Return populated edit view
+        } // End of Edit GET
 
         // POST: Products/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [Authorize(Roles = "Supplier")]
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductsId,SuppliersId,ProductName,Stock,Price,ImagePath")] Products products)
-        {
-            if (id != products.ProductsId)
-            {
-                return NotFound();
-            }
+        [Authorize(Roles = "Supplier")] // Restrict to Supplier role
+        [HttpPost] // Restrict to POST
+        [ValidateAntiForgeryToken] // Security token validation
+        public async Task<IActionResult> Edit(int id, [Bind("ProductsId,SuppliersId,ProductName,Stock,Price,ImagePath")] Products products) // Update product
+        { // Start of Edit POST
+            if (id != products.ProductsId) // Verify ID consistency
+            { // Start check
+                return NotFound(); // Return 404
+            } // End check
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(products);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductsExists(products.ProductsId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId);
-            return View(products);
-        }
+            if (ModelState.IsValid) // Data validation
+            { // Start validation
+                try // Handle update exceptions
+                { // Start try
+                    _context.Update(products); // Mark modified
+                    await _context.SaveChangesAsync(); // Commit changes
+                } // End try
+                catch (DbUpdateConcurrencyException) // Catch concurrency errors
+                { // Start catch
+                    if (!ProductsExists(products.ProductsId)) // Check if deleted
+                    { // Start check
+                        return NotFound(); // Return 404
+                    } // End check
+                    else // If update failed for other reasons
+                    { // Start else
+                        throw; // Rethrow exception
+                    } // End else
+                } // End catch
+                return RedirectToAction(nameof(Index)); // Return to list
+            } // End validation
+            ViewData["SuppliersId"] = new SelectList(_context.Suppliers, "SuppliersId", "SuppliersId", products.SuppliersId); // Reset dropdown on error
+            return View(products); // Return form with errors
+        } // End of Edit POST
 
         // GET: Products/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        public async Task<IActionResult> Delete(int? id) // Show delete confirmation
+        { // Start of Delete GET
+            if (id == null) // ID check
+            { // Start check
+                return NotFound(); // Return 404
+            } // End check
 
-            var products = await _context.Products
-                .Include(p => p.Suppliers)
-                .FirstOrDefaultAsync(m => m.ProductsId == id);
-            if (products == null)
-            {
-                return NotFound();
-            }
+            var products = await _context.Products // Query products
+                .Include(p => p.Suppliers) // Include owner info
+                .FirstOrDefaultAsync(m => m.ProductsId == id); // Find specific product
+            if (products == null) // Existence check
+            { // Start check
+                return NotFound(); // Return 404
+            } // End check
 
-            return View(products);
-        }
+            return View(products); // Return confirmation view
+        } // End of Delete GET
 
         // POST: Products/Delete/5
-        [Authorize(Roles = "Supplier")]
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var products = await _context.Products.FindAsync(id);
-            if (products != null)
-            {
-                _context.Products.Remove(products);
-            }
+        [Authorize(Roles = "Supplier")] // Only suppliers can delete
+        [HttpPost, ActionName("Delete")] // Map to delete action
+        [ValidateAntiForgeryToken] // Security check
+        public async Task<IActionResult> DeleteConfirmed(int id) // Execute deletion
+        { // Start of Delete POST
+            var products = await _context.Products.FindAsync(id); // Locate product
+            if (products != null) // If found
+            { // Start check
+                _context.Products.Remove(products); // Mark for removal
+            } // End check
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+            await _context.SaveChangesAsync(); // Commit deletion
+            return RedirectToAction(nameof(Index)); // Redirect to list
+        } // End of Delete POST
 
-        private bool ProductsExists(int id)
-        {
-            return _context.Products.Any(e => e.ProductsId == id);
-        }
-    }
-}
+        private bool ProductsExists(int id) // Private helper
+        { // Start method
+            return _context.Products.Any(e => e.ProductsId == id); // Check if ID exists in database
+        } // End method
+    } // End of class
+} // End of namespace

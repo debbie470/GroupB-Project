@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|c:\\users\\digi-t-y2-2\\documents\\github\\groupb-project\\ecommerceplatform\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0F6A24E-04B5-40CC-90CE-AF2A34575B53}|ECommercePlatform.csproj|solutionrelative:data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Data\\SeedData.cs",
-              "RelativeDocumentMoniker": "Data\\SeedData.cs",
-              "ToolTip": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\Data\\SeedData.cs",
-              "RelativeToolTip": "Data\\SeedData.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwD4AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-21T12:14:25.405Z",
-              "EditorCaption": ""
             }
           ]
         }

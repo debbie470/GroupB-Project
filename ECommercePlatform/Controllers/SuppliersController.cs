@@ -1,160 +1,156 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using ECommercePlatform.Data;
-using ECommercePlatform.Models;
-using Microsoft.AspNetCore.Authorization;
+﻿using System; // Imports base system functionality
+using System.Collections.Generic; // Imports generic collection types
+using System.Linq; // Imports LINQ for data querying
+using System.Threading.Tasks; // Imports support for asynchronous tasks
+using Microsoft.AspNetCore.Mvc; // Imports core MVC framework functionality
+using Microsoft.AspNetCore.Mvc.Rendering; // Imports helpers for UI components
+using Microsoft.EntityFrameworkCore; // Imports Entity Framework Core for ORM operations
+using ECommercePlatform.Data; // Imports the application database context
+using ECommercePlatform.Models; // Imports the domain data models
+using Microsoft.AspNetCore.Authorization; // Imports security and authorization attributes
 
-namespace ECommercePlatform.Controllers
-{
-    public class SuppliersController : Controller
-    {
-        private readonly ApplicationDbContext _context;
+namespace ECommercePlatform.Controllers // Defines the namespace for the controller
+{ // Start of namespace
+    public class SuppliersController : Controller // Defines the controller for managing supplier profiles
+    { // Start of class
+        private readonly ApplicationDbContext _context; // Declares private field for database access
 
-        public SuppliersController(ApplicationDbContext context)
-        {
-            _context = context;
-        }
+        public SuppliersController(ApplicationDbContext context) // Constructor with dependency injection
+        { // Start of constructor
+            _context = context; // Assigns the injected context to the private field
+        } // End of constructor
 
         // GET: Suppliers
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Suppliers.ToListAsync());
-        }
+        public async Task<IActionResult> Index() // Action to list all registered suppliers
+        { // Start of Index method
+            return View(await _context.Suppliers.ToListAsync()); // Retrieves all suppliers and returns the list view
+        } // End of Index method
 
         // GET: Suppliers/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        public async Task<IActionResult> Details(int? id) // Action to view details of a specific supplier
+        { // Start of Details method
+            if (id == null) // Checks if the ID parameter is missing
+            { // Start of null check
+                return NotFound(); // Returns 404 if ID is null
+            } // End of null check
 
-            var suppliers = await _context.Suppliers
-                .FirstOrDefaultAsync(m => m.SuppliersId == id);
-            if (suppliers == null)
-            {
-                return NotFound();
-            }
+            var suppliers = await _context.Suppliers // Queries the database
+                .FirstOrDefaultAsync(m => m.SuppliersId == id); // Finds the specific supplier by ID
+            if (suppliers == null) // Checks if the record exists
+            { // Start existence check
+                return NotFound(); // Returns 404 if record is missing
+            } // End existence check
 
-            return View(suppliers);
-        }
+            return View(suppliers); // Returns the details view with the record
+        } // End of Details method
 
         // GET: Suppliers/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+        public IActionResult Create() // Action to display the new supplier form
+        { // Start of Create GET
+            return View(); // Returns the empty creation view
+        } // End of Create GET
 
         // POST: Suppliers/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("SuppliersId,SupplierName,SupplierEmail,SupplierInformation")] Suppliers suppliers)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(suppliers);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(suppliers);
-        }
+        [HttpPost] // Restricts method to POST requests
+        [ValidateAntiForgeryToken] // Security check for form submission
+        public async Task<IActionResult> Create([Bind("SuppliersId,SupplierName,SupplierEmail,SupplierInformation")] Suppliers suppliers) // Processes creation
+        { // Start of Create POST
+            if (ModelState.IsValid) // Checks if the submitted data passes validation
+            { // Start validation check
+                _context.Add(suppliers); // Marks the new entity for insertion
+                await _context.SaveChangesAsync(); // Commits the record to the database
+                return RedirectToAction(nameof(Index)); // Redirects to the index list
+            } // End validation check
+            return View(suppliers); // Returns form with errors if validation failed
+        } // End of Create POST
 
         // GET: Suppliers/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        public async Task<IActionResult> Edit(int? id) // Action to show the edit form
+        { // Start of Edit GET
+            if (id == null) // Validates ID input
+            { // Start check
+                return NotFound(); // Returns 404
+            } // End check
 
-            var suppliers = await _context.Suppliers.FindAsync(id);
-            if (suppliers == null)
-            {
-                return NotFound();
-            }
-            return View(suppliers);
-        }
+            var suppliers = await _context.Suppliers.FindAsync(id); // Locates the record by ID
+            if (suppliers == null) // Checks record existence
+            { // Start check
+                return NotFound(); // Returns 404
+            } // End check
+            return View(suppliers); // Returns the edit view populated with data
+        } // End of Edit GET
 
         // POST: Suppliers/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [Authorize(Roles = "Supplier")]
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("SuppliersId,SupplierName,SupplierEmail,SupplierInformation")] Suppliers suppliers)
-        {
-            if (id != suppliers.SuppliersId)
-            {
-                return NotFound();
-            }
+        [Authorize(Roles = "Supplier")] // Restricts updates to users in the Supplier role
+        [HttpPost] // Restricts to POST requests
+        [ValidateAntiForgeryToken] // Security token validation
+        public async Task<IActionResult> Edit(int id, [Bind("SuppliersId,SupplierName,SupplierEmail,SupplierInformation")] Suppliers suppliers) // Processes updates
+        { // Start of Edit POST
+            if (id != suppliers.SuppliersId) // Verifies ID consistency
+            { // Start mismatch check
+                return NotFound(); // Returns 404
+            } // End mismatch check
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(suppliers);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!SuppliersExists(suppliers.SuppliersId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(suppliers);
-        }
+            if (ModelState.IsValid) // Checks data integrity
+            { // Start validation
+                try // Handles database update exceptions
+                { // Start try
+                    _context.Update(suppliers); // Marks record as modified
+                    await _context.SaveChangesAsync(); // Commits changes to the database
+                } // End try
+                catch (DbUpdateConcurrencyException) // Catches conflicts if record was modified elsewhere
+                { // Start catch
+                    if (!SuppliersExists(suppliers.SuppliersId)) // Checks if record still exists
+                    { // Start check
+                        return NotFound(); // Returns 404
+                    } // End check
+                    else // If record exists but update failed
+                    { // Start else
+                        throw; // Rethrows the exception
+                    } // End else
+                } // End catch
+                return RedirectToAction(nameof(Index)); // Redirects to list on success
+            } // End validation
+            return View(suppliers); // Returns view with errors if invalid
+        } // End of Edit POST
 
         // GET: Suppliers/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
+        public async Task<IActionResult> Delete(int? id) // Action to show delete confirmation
+        { // Start of Delete GET
+            if (id == null) // Validates ID
+            { // Start check
+                return NotFound(); // Returns 404
+            } // End check
 
-            var suppliers = await _context.Suppliers
-                .FirstOrDefaultAsync(m => m.SuppliersId == id);
-            if (suppliers == null)
-            {
-                return NotFound();
-            }
+            var suppliers = await _context.Suppliers // Queries database
+                .FirstOrDefaultAsync(m => m.SuppliersId == id); // Finds specific supplier
+            if (suppliers == null) // Existence check
+            { // Start check
+                return NotFound(); // Returns 404
+            } // End check
 
-            return View(suppliers);
-        }
+            return View(suppliers); // Returns the delete confirmation view
+        } // End of Delete GET
 
         // POST: Suppliers/Delete/5
-        [Authorize(Roles = "Supplier")]
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var suppliers = await _context.Suppliers.FindAsync(id);
-            if (suppliers != null)
-            {
-                _context.Suppliers.Remove(suppliers);
-            }
+        [Authorize(Roles = "Supplier")] // Only Suppliers can delete records
+        [HttpPost, ActionName("Delete")] // Maps POST request to logical Delete action
+        [ValidateAntiForgeryToken] // Security token check
+        public async Task<IActionResult> DeleteConfirmed(int id) // Performs actual deletion
+        { // Start of Delete POST
+            var suppliers = await _context.Suppliers.FindAsync(id); // Locates the record
+            if (suppliers != null) // If found
+            { // Start check
+                _context.Suppliers.Remove(suppliers); // Marks for deletion
+            } // End check
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+            await _context.SaveChangesAsync(); // Commits deletion to the database
+            return RedirectToAction(nameof(Index)); // Returns to the list
+        } // End of Delete POST
 
-        private bool SuppliersExists(int id)
-        {
-            return _context.Suppliers.Any(e => e.SuppliersId == id);
-        }
-    }
-}
+        private bool SuppliersExists(int id) // Private helper for existence verification
+        { // Start method
+            return _context.Suppliers.Any(e => e.SuppliersId == id); // Returns true if ID exists in database
+        } // End method
+    } // End of class
+} // End of namespace

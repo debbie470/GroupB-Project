@@ -1,36 +1,52 @@
-﻿@model IEnumerable<ECommercePlatform.Models.BasketProducts>
-
+﻿@* Specifies that the model is a collection of products currently in the user's basket *@
+@model IEnumerable<ECommercePlatform.Models.BasketProducts>
+@* Server-side block for view logic and setting metadata*@
 @{
+    @* Sets the title of the browser tab for this page *@
     ViewData["Title"] = "Your Basket";
+    @* Safely retrives the BasketId from the first item in the list for the checkout reference*@
     var basketId = Model.FirstOrDefault()?.BasketId;
 }
-
+@*Page main heading*@
 <h1>Your Basket</h1>
-
+@* Conditional check: Displays a notification if the controller calculated a loyalty discount*@
 @if (ViewBag.Discount > 0)
 {
+    @* Wrapper for the discount alert message *@
     <div>
+        @* Informational text for the user *@
         <p>Your Loyalty discount has been applied.</p>
     </div>
 }
 
-
+@* Navigation link to return to the product lsiting page *@
 <a asp-controller="Products" asp-action="Index">
     Continue Shopping
 </a>
+@* Outer container for the basket items and order summary*@
 <div>
+    @* Container specifically for the list of products *@
     <div>
+        @* Loops through every product entry provided in the model *@
         @foreach (var item in Model)
         {
+            @* Container for an individual product card with border and spacing *@
             <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+                @* Section for product identification and unit price *@
                 <div>
+                    @* Displays the name of the product *@
                     <h4>@item.Products.ProductName</h4>
+                    @* Renders the unit price formatted to two decimal places*@
                     <p>Price: £@item.Products.Price.ToString("0.00")</p>
                 </div>
+                @* Section for displaying selected quantity *@
                 <div>
+                    @* Displays the number of units added to the basket *@
                     <p>Qty: @item.Quantity</p>
                 </div>
+                @* Section for item-specific total and management actions*@
                 <div>
+                    @* Calculates and displays the line item total (Price x Quantity) *@
                     <p>
                         Total: £@((item.Products.Price * item.Quantity).ToString("0.00"))
                     </p>
@@ -43,33 +59,40 @@
             </div>
         }
     </div>
-
+    @* Summary container for calculated order costs *@
     <div style="border:1px solid #000; padding:15px; margin-top:20px;">
+        @* Heading for the final checkout totals *@
         <h3>Order Summary</h3>
-
+        @* Subtotal row (cost before any discounts) *@
         <div>
+            @* Label for the subtotal*@
             <span>Subtotal:</span>
+            @* Dispalys subtotal value passed from the controller via ViewBag *@
             <span>£@(((decimal)ViewBag.Subtotal).ToString("0.00"))</span>
         </div>
-
+        @* Discount row (loyalty reduction) *@
         <div>
+            @* Label for the loyalty reduction*@
             <span>Loyalty Discount:</span>
+            @* Displays discount value passed from the controller via ViewBag *@
             <span>£@(((decimal)ViewBag.Discount).ToString("0.00"))</span>
         </div>
-
+        @* Visual separation for the final total *@
         <hr />
-
+        @* Grand total row (final amount to be paid) *@
         <div>
+            @* Bold label for the final total *@
             <strong>Total:</strong>
+            @* Dispalys final total value passed from the controller via ViewBag *@
             <strong>£@(((decimal)ViewBag.Total).ToString("0.00"))</strong>
         </div>
     </div>
-
+    @* Primary Call-to-Action: Redirects to the Order creation page *@
     <a asp-controller="Orders"
        asp-action="Create"
        asp-route-basketId="@basketId"
        class="btn btn-primary w-100 mb-2">
         Proceed to Checkout
     </a>
-
+    @* Closes the main content container *@
 </div>

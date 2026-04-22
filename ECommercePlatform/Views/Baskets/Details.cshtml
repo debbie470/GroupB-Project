@@ -1,36 +1,60 @@
-﻿@model ECommercePlatform.Models.Basket
+﻿@* Specifies the data model for displaying details of a specific shopping basket *@
+@model ECommercePlatform.Models.Basket
 
+@* Razor code block to set server-side metadata *@
 @{
+    @* Sets the browser tab title for the current view *@
     ViewData["Title"] = "Details";
 }
 
+@* Main heading for the details page *@
 <h1>Details</h1>
 
+@* Container for the basket information section *@
 <div>
+    @* Sub-heading identifying the entity type *@
     <h4>Basket</h4>
+    @* Visual separator *@
     <hr />
+    @* Grid-based description list to display property labels and values *@
     <dl class="row">
-        <dt class = "col-sm-2">
+        @* Column for the label of the Status property *@
+        <dt class="col-sm-2">
+            @* Displays the metadata name (display name) for the Status property *@
             @Html.DisplayNameFor(model => model.Status)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the current value of the Status property *@
+        <dd class="col-sm-10">
+            @* Renders the status value from the database model *@
             @Html.DisplayFor(model => model.Status)
         </dd>
-        <dt class = "col-sm-2">
+        @* Column for the label of the creation timestamp *@
+        <dt class="col-sm-2">
+            @* Displays the metadata name for the BasketCreatedAt property *@
             @Html.DisplayNameFor(model => model.BasketCreatedAt)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the actual timestamp value *@
+        <dd class="col-sm-10">
+            @* Renders the date and time the basket was created *@
             @Html.DisplayFor(model => model.BasketCreatedAt)
         </dd>
-        <dt class = "col-sm-2">
+        @* Column for the label of the User ID property *@
+        <dt class="col-sm-2">
+            @* Displays the metadata name for the UserId property *@
             @Html.DisplayNameFor(model => model.UserId)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the specific User ID value *@
+        <dd class="col-sm-10">
+            @* Renders the ID of the user associated with this basket *@
             @Html.DisplayFor(model => model.UserId)
         </dd>
     </dl>
 </div>
+
+@* Action link navigation container *@
 <div>
+    @* Navigation link to the Edit page, passing the current Basket's ID as a route parameter *@
     <a asp-action="Edit" asp-route-id="@Model?.BasketId">Edit</a> |
+    @* Navigation link back to the main list of baskets *@
     <a asp-action="Index">Back to List</a>
 </div>

@@ -1,135 +1,185 @@
-﻿@{
+﻿@* Starts a Razor code block for server-side logic *@
+@{
+    @* Sets the browser tab title to "Privacy Policy" using the layout template *@
     ViewData["Title"] = "Privacy Policy";
 }
+@* Ends the Razor code block *@
 
+@* Main Bootstrap container for page content with top margin spacing *@
 <div class="container mt-4">
 
+    @* Centered main heading styled with brand-success green color *@
     <h2 class="text-center text-success">Privacy Policy</h2>
 
+    @* Centered introductory paragraph with muted grey text styling *@
     <p class="text-center text-muted">Your privacy is important to us. This privacy policy explains how we collect, use, and protect your personal information on the Greenfield Local Hub platform.</p>
 
-    <!-- Section 1: Introduction -->
+    @* Section 1: Introduction - wrapped in a section tag for structural semantics *@
     <section class="mt-5">
+        @* Sub-heading for the introduction section *@
         <h3 class="text-success">Introduction</h3>
+        @* General text explaining the commitment to data protection *@
         <p>
             Welcome to Greenfield Local Hub. We value your trust and are committed to safeguarding your personal information. This Privacy Policy outlines how we collect, store, use, and disclose your data when using our platform.
         </p>
     </section>
 
-    <!-- Section 2: Information We Collect -->
+    @* Section 2: Data Collection - detailing what information is gathered *@
     <section class="mt-5">
+        @* Sub-heading for the collection section *@
         <h3 class="text-success">Information We Collect</h3>
+        @* Contextual text for the following list *@
         <p>
             We collect personal information when you use our platform, such as when you create an account, place an order, or contact customer support. The information we collect includes:
         </p>
+        @* Unordered list of specific data types collected *@
         <ul>
+            @* List item for identity and contact data *@
             <li>Personal details (name, email, address, etc.)</li>
+            @* List item for financial transaction data *@
             <li>Payment information (credit card, bank details, etc.)</li>
+            @* List item for logistics and history data *@
             <li>Order and delivery details</li>
+            @* List item for technical and tracking data *@
             <li>Browsing data (cookies, device info, etc.)</li>
         </ul>
     </section>
 
-    <!-- Section 3: How We Use Your Information -->
+    @* Section 3: Data Usage - explaining the purpose of data processing *@
     <section class="mt-5">
+        @* Sub-heading for the usage section *@
         <h3 class="text-success">How We Use Your Information</h3>
+        @* Contextual text explaining user benefits *@
         <p>
             Your information is used to provide you with a better user experience and ensure smooth operation of the platform. We use your information to:
         </p>
+        @* Unordered list of operational uses *@
         <ul>
+            @* Purpose: Logistics and fulfillment *@
             <li>Process orders and deliveries</li>
+            @* Purpose: Platform optimization *@
             <li>Improve platform functionality and user experience</li>
+            @* Purpose: Opt-in marketing *@
             <li>Send promotional emails (with your consent)</li>
+            @* Purpose: User assistance *@
             <li>Respond to customer service inquiries</li>
+            @* Purpose: Legal obligations *@
             <li>Ensure legal and regulatory compliance</li>
         </ul>
     </section>
 
-    <!-- Section 4: How We Protect Your Information -->
+    @* Section 4: Data Protection - describing security protocols *@
     <section class="mt-5">
+        @* Sub-heading for the security section *@
         <h3 class="text-success">How We Protect Your Information</h3>
+        @* Text describing encryption and security measures used *@
         <p>
             We take the security of your personal data seriously. We use modern security measures, such as encryption, to protect your information from unauthorized access, disclosure, alteration, or destruction.
         </p>
     </section>
 
-    <!-- Section 5: Transparency & Fair Pricing -->
+    @* Section 5: Business Ethics - emphasizing transparency *@
     <section class="mt-5">
+        @* Sub-heading for the transparency section *@
         <h3 class="text-success">Transparency & Fair Pricing</h3>
+        @* Text confirming clear communication regarding costs *@
         <p>
             We believe in transparent pricing and fair treatment of our users. We ensure that the prices for products and services are clearly presented and that you are always informed of any fees before making a purchase.
         </p>
     </section>
 
-    <!-- Section 6: Third-Party Disclosure -->
+    @* Section 6: Data Sharing - policy on third-party entities *@
     <section class="mt-5">
+        @* Sub-heading for the disclosure section *@
         <h3 class="text-success">Third-Party Disclosure</h3>
+        @* Text clarifying that data is only shared with essential partners like banks/couriers *@
         <p>
             We do not share, sell, or rent your personal information to third parties, except when required by law or to fulfill the services we provide, such as payment processors or delivery partners.
         </p>
     </section>
 
-    <!-- Section 7: Your Rights and Choices -->
+    @* Section 7: User Autonomy - listing legal rights regarding data *@
     <section class="mt-5">
+        @* Sub-heading for user rights *@
         <h3 class="text-success">Your Rights and Choices</h3>
+        @* Contextual text for the rights list *@
         <p>
             You have the right to:
         </p>
+        @* Unordered list of available data actions *@
         <ul>
+            @* Right to view data *@
             <li>Access your personal information</li>
+            @* Right to modify data *@
             <li>Update or correct any incorrect data</li>
+            @* Right to be forgotten *@
             <li>Request the deletion of your personal data (under certain conditions)</li>
+            @* Right to stop marketing *@
             <li>Opt-out of marketing communications</li>
         </ul>
     </section>
 
-    <!-- Section 8: Contact Us -->
+    @* Section 8: Communication - how users can reach the privacy team *@
     <section class="mt-5 mb-4">
+        @* Sub-heading for contact info *@
         <h3 class="text-success">Contact Us</h3>
+        @* Contextual text *@
         <p>
             If you have any questions about this Privacy Policy or how your data is handled, please feel free to contact us at:
         </p>
+        @* Unordered list of contact methods *@
         <ul>
+            @* Clickable email link *@
             <li>Email: <a href="mailto:support@greenfieldlocalhub.co.uk">support@greenfieldlocalhub.co.uk</a></li>
+            @* Phone number listing *@
             <li>Phone: +44 1234 567890</li>
+            @* Physical office location *@
             <li>Address: West Bromwich, UK</li>
         </ul>
     </section>
 
+    @* Closes main container *@
 </div>
 
-
-        </div>
-    </div>
-
-    <!-- Additional Sections... -->
-</div>
-
+@* Paragraph containing an interactive Bootstrap tooltip element *@
 <p>
     We collect <span data-bs-toggle="tooltip" data-bs-placement="top" title="This includes your name, contact details, and address.">personal details</span> when you use our platform.
 </p>
+
+@* Script block to initialize UI components *@
 <script>
-    // Initialize tooltips
+    @* Finds all elements with the 'tooltip' toggle and converts them to an array *@
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    @* Iterates through the list and initializes each one via the Bootstrap Tooltip class *@
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 </script>
+
+@* Script block for scroll-based animations *@
 <script>
-    // Intersection Observer API for fade-in effect
+    @* Ensures script runs after the browser finishes loading the HTML *@
     document.addEventListener("DOMContentLoaded", function () {
+    @* Selects all section elements to apply animations to *@
         const sections = document.querySelectorAll('section');
+    @* Configures a new Intersection Observer to watch for elements entering the viewport *@
         const observer = new IntersectionObserver((entries, observer) => {
+    @* Loops through every observed section *@
             entries.forEach(entry => {
+    @* Triggers if 50% or more of the section is visible *@
                 if (entry.isIntersecting) {
+    @* Adds CSS class to trigger the transition effect *@
                     entry.target.classList.add('fade-in');
+    @* Stops observing the element once the animation has triggered *@
                     observer.unobserve(entry.target);
                 }
             });
         }, {
+    @* Sets visibility threshold to 50% *@
             threshold: 0.5
         });
 
+    @* Attaches the observer to every section element found on the page *@
         sections.forEach(section => {
             observer.observe(section);
         });

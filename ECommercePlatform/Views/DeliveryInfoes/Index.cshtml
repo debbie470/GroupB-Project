@@ -1,74 +1,102 @@
-﻿@model IEnumerable<ECommercePlatform.Models.DeliveryInfo>
+﻿@* Specifies that the model is a collection of DeliveryInfo objects to be listed *@
+@model IEnumerable<ECommercePlatform.Models.DeliveryInfo>
 
+@* Sets server-side metadata for the layout *@
 @{
+    @* Sets the browser tab title for this page *@
     ViewData["Title"] = "Index";
 }
 
+@* Main heading for the index page *@
 <h1>Index</h1>
 
+@* Navigation link to the creation form *@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+@* Table displaying the list of delivery records *@
 <table class="delivery-table">
+    @* Header section of the table *@
     <thead>
         <tr>
+            @* Header label for the Delivery Type property *@
             <th>
                 @Html.DisplayNameFor(model => model.DeliveryType)
             </th>
+            @* Header label for the Scheduled Date and Time property *@
             <th>
                 @Html.DisplayNameFor(model => model.ScheduledDateTime)
             </th>
+            @* Header label for the current Delivery Status *@
             <th>
                 @Html.DisplayNameFor(model => model.Status)
             </th>
+            @* Header label for the associated Order information *@
             <th>
                 @Html.DisplayNameFor(model => model.Orders)
             </th>
+            @* Empty header for the action buttons column *@
             <th></th>
         </tr>
     </thead>
+    @* Body section containing the data rows *@
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DeliveryType)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ScheduledDateTime)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Orders.OrdersId)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.DeliveryInfoId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.DeliveryInfoId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.DeliveryInfoId">Delete</a>
-            </td>
-        </tr>
-}
+        @* Iterates through every delivery record provided in the Model *@
+        @foreach (var item in Model)
+        {
+            <tr>
+                @* Displays the specific delivery type for this row *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.DeliveryType)
+                </td>
+                @* Displays the scheduled date and time for this row *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.ScheduledDateTime)
+                </td>
+                @* Displays the current status (e.g., Pending, Delivered) for this row *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                @* Displays the linked Order ID for tracking purposes *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.Orders.OrdersId)
+                </td>
+                @* Action links for managing the specific delivery record *@
+                <td>
+                    @* Link to the edit form for this specific record *@
+                    <a asp-action="Edit" asp-route-id="@item.DeliveryInfoId">Edit</a> |
+                    @* Link to view full details for this specific record *@
+                    <a asp-action="Details" asp-route-id="@item.DeliveryInfoId">Details</a> |
+                    @* Link to the deletion confirmation page for this specific record *@
+                    <a asp-action="Delete" asp-route-id="@item.DeliveryInfoId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
 
-
-
+@* Visual dashboard section for delivery summaries *@
 <div class="delivery-header">
+    @* Dashboard title and description *@
     <h2>📦 Delivery Dashboard</h2>
     <p>Track your orders from dispatch to delivery</p>
 
+    @* Container for summary statistics *@
     <div class="delivery-stats">
+        @* Box displaying the total count of all delivery records *@
         <div class="stat-box">
             <h3>@Model.Count()</h3>
             <p>Total Deliveries</p>
         </div>
 
+        @* Box displaying the count of deliveries with 'Pending' status *@
         <div class="stat-box">
             <h3>@Model.Count(x => x.Status == "Pending")</h3>
             <p>Pending</p>
         </div>
 
+        @* Box displaying the count of deliveries with 'Delivered' status *@
         <div class="stat-box">
             <h3>@Model.Count(x => x.Status == "Delivered")</h3>
             <p>Delivered</p>

@@ -216,7 +216,7 @@ namespace ECommercePlatform.Data // Define the namespace for data seeding logic
                         Stock = 200, // Set quantity
                         Price = 0.50m, // Set price
                         SuppliersId = SandwellCollegeFarm.SuppliersId, // Link to supplier ID
-                        ImagePath = "/image/bean.jpg" // Set image URL
+                        ImagePath = "/image/beans.jpg" // Set image URL
                         }, // End object
                          new Products // Egg product
                          { // Start object
@@ -240,8 +240,24 @@ namespace ECommercePlatform.Data // Define the namespace for data seeding logic
                          Stock = 150, // Set quantity
                          Price = 1.20m, // Set price
                          SuppliersId = UkBigFarm.SuppliersId, // Link to supplier ID
-                         ImagePath = "/image/tomatoes.jpg" // Set image URL
+                         ImagePath = "/image/tomatoe.jpg" // Set image URL
                          }, // End object
+                          new Products // Meat product
+                     { // Start object
+                        ProductName = "Meat", // Set name
+                        Stock = 100, // Set quantity
+                        Price = 0.40m, // Set price
+                        SuppliersId = FreshFarm.SuppliersId, // Link to supplier ID
+                        ImagePath = "/image/meat.jpg" // Set image URL
+                     }, // End object
+                         new Products // Honey product
+                     { // Start object
+                        ProductName = "Honey", // Set name
+                        Stock = 100, // Set quantity
+                        Price = 0.40m, // Set price
+                        SuppliersId = FreshFarm.SuppliersId, // Link to supplier ID
+                        ImagePath = "/image/honey.jpg" // Set image URL
+                     }, // End object
                 }; // End list
                 await context.Products.AddRangeAsync(products); // Add all products to the context asynchronously
                 await context.SaveChangesAsync(); // Commit the products to the database

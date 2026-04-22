@@ -1,35 +1,45 @@
-﻿@model IEnumerable<ECommercePlatform.Models.BasketProducts>
+﻿@* Defines the data model as a collection of items currently in the user's shopping basket *@
+@model IEnumerable<ECommercePlatform.Models.BasketProducts>
 
+@* Main heading for the basket page styled with a section-specific CSS class *@
 <h1 class="section-title">Your Basket</h1>
 
+@* Wrapper for the grid or list layout of shopping basket items *@
 <div class="basket-container">
 
+    @* Iterates through every product entry found in the current user's basket *@
     @foreach (var item in Model)
     {
+        @* Card container for displaying individual product details and actions *@
         <div class="basket-card">
 
-            <!-- Product Info -->
+            @* Header section of the card specifically for product identification *@
             <div class="basket-header">
+                @* Renders the name of the product associated with this basket entry *@
                 <h4>@item.Products.ProductName</h4>
             </div>
 
-            <!-- Body -->
+            @* Main content area of the basket card *@
             <div class="basket-body">
+                @* Displays the unit price of the product formatted to two decimal places *@
                 <p><strong>Price:</strong> £@item.Products.Price.ToString("0.00")</p>
+
+                @* Displays the total number of units of this product added to the basket *@
                 <p><strong>Quantity:</strong> @item.Quantity</p>
+
+                @* Calculates and displays the subtotal for this item (Price * Quantity) *@
                 <p><strong>Total:</strong> £@((item.Products.Price * item.Quantity).ToString("0.00"))</p>
             </div>
 
-            <!-- Actions -->
+            @* Section containing interactive elements for managing the basket entry *@
             <div class="basket-actions">
+                @* Link to remove the product from the basket, targeting the Delete action with the record ID *@
                 <a asp-controller="BasketProducts"
                    asp-action="Delete"
                    asp-route-id="@item.BasketProductsId">
                     Remove
                 </a>
             </div>
-
         </div>
     }
-
 </div>

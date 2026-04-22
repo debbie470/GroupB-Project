@@ -1,44 +1,82 @@
-﻿@model ECommercePlatform.Models.BasketProducts
+﻿@* Defines the data model for the view to enable editing of basket-product records *@
+@model ECommercePlatform.Models.BasketProducts
 
+@* Block for server-side logic and setting page-specific metadata *@
 @{
+    @* Sets the title of the page to be used by the layout's head section *@
     ViewData["Title"] = "Edit";
 }
 
+@* Page main heading *@
 <h1>Edit</h1>
 
+@* Sub-heading identifying the entity being modified *@
 <h4>BasketProducts</h4>
+
+@* Visual separator *@
 <hr />
+
+@* Bootstrap grid row to structure the form layout *@
 <div class="row">
+    @* Column spanning 4 grid units for a narrow, centered form look *@
     <div class="col-md-4">
+        @* Form that posts data back to the 'Edit' action in the controller *@
         <form asp-action="Edit">
+            @* Displays a list of validation errors related to the model state *@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Hidden input to ensure the primary key is passed back during submission *@
             <input type="hidden" asp-for="BasketProductsId" />
+
+            @* Container for the Basket ID selection field *@
             <div class="form-group">
+                @* Label generated for the BasketId property *@
                 <label asp-for="BasketId" class="control-label"></label>
+                @* Dropdown list populated with Baskets stored in the ViewBag *@
                 <select asp-for="BasketId" class="form-control" asp-items="ViewBag.BasketId"></select>
+                @* Validation message placeholder for the BasketId field *@
                 <span asp-validation-for="BasketId" class="text-danger"></span>
             </div>
+
+            @* Container for the Product ID selection field *@
             <div class="form-group">
+                @* Label generated for the ProductsId property *@
                 <label asp-for="ProductsId" class="control-label"></label>
+                @* Dropdown list populated with Products stored in the ViewBag *@
                 <select asp-for="ProductsId" class="form-control" asp-items="ViewBag.ProductsId"></select>
+                @* Validation message placeholder for the ProductsId field *@
                 <span asp-validation-for="ProductsId" class="text-danger"></span>
             </div>
+
+            @* Container for the Quantity input field *@
             <div class="form-group">
+                @* Label generated for the Quantity property *@
                 <label asp-for="Quantity" class="control-label"></label>
+                @* Input field bound to the Quantity model property *@
                 <input asp-for="Quantity" class="form-control" />
+                @* Validation message placeholder for the Quantity field *@
                 <span asp-validation-for="Quantity" class="text-danger"></span>
             </div>
+
+            @* Container for the form action button *@
             <div class="form-group">
+                @* Button to submit the form and save changes *@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
+@* Footer link container *@
 <div>
+    @* Hyperlink to return to the index list view *@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@* Section for including client-side scripts *@
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @* Asynchronously renders the partial view that enables jQuery validation *@
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

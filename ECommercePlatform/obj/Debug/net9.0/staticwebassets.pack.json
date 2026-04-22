@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\images\\bean.jpg"
     },
     {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\beans.jpg",
+      "PackagePath": "staticwebassets\\images\\beans.jpg"
+    },
+    {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\blog1.jpg",
       "PackagePath": "staticwebassets\\images\\blog1.jpg"
     },
@@ -119,6 +123,10 @@
     {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\supplier.jpg",
       "PackagePath": "staticwebassets\\images\\supplier.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\tomatoe.jpg",
+      "PackagePath": "staticwebassets\\images\\tomatoe.jpg"
     },
     {
       "Id": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\tomatoes.jpg",

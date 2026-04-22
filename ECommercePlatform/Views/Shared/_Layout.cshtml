@@ -179,11 +179,7 @@
                             <!-- List item for Suppliers link -->
                             <a class="nav-link text-dark" asp-area="" asp-controller="Suppliers" asp-action="Index">Suppliers</a> <!-- Link to Suppliers list -->
                         </li> <!-- Closing nav-item -->
-                        <li class="nav-item">
-                            <!-- List item for Dashboard link -->
-                            <a class="nav-link text-dark" asp-area="" asp-controller="SupplierDashboard" asp-action="Index">SupplierDashboard</a> <!-- Link to the dashboard -->
-                        </li> <!-- Closing nav-item -->
-
+                       
                         @if (User.Identity.IsAuthenticated && User.IsInRole("Supplier")) // Server-side check if user is a logged-in Supplier
                         { // Start of protected navigation block
 
@@ -209,6 +205,13 @@
                                 <a class="nav-link" asp-controller="Orders" asp-action="Index">
                                     <!-- Link to view all orders -->
                                     Orders <!-- Label text -->
+                                </a> <!-- End link -->
+                            </li> <!-- End item -->
+                            <li class="nav-item">
+                                <!-- Protected list item -->
+                                <a class="nav-link" asp-controller="SupplierDashboard" asp-action="Index">
+                                    <!-- Link to view SupplierDashboard -->
+                                    SupplierDashboard <!-- Label text -->
                                 </a> <!-- End link -->
                             </li> <!-- End item -->
                         } 

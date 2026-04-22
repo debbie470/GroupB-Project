@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Mw2W5uWUVnCv+m/rdfkmo8jodiYb6gIQC3j1zjLx4Ao=",
+  "Hash": "G8RGEW7YqbQtNMYAc3zFKmDaguSJ1w6KxRSXfneKbW4=",
   "Source": "ECommercePlatform",
   "BasePath": "_content/ECommercePlatform",
   "Mode": "Default",
@@ -2285,12 +2285,12 @@
       "OriginalItemSpec": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-0hh42w6oje.gz",
+      "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-ivycj05s4x.gz",
       "SourceId": "ECommercePlatform",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ECommercePlatform",
-      "RelativePath": "js/site#[.{fingerprint=0hh42w6oje}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=ivycj05s4x}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -2299,8 +2299,8 @@
       "RelatedAsset": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jnfutmril7",
-      "Integrity": "vy8fooL0z95X6lrTKgWzYULZjjS14ATOgiGN+4LS71w=",
+      "Fingerprint": "7syfoyffsw",
+      "Integrity": "KRLglKKWJfa9CHrKm0Rftv1zBHmLyYepMcLbzttzQ6U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\js\\site.js"
@@ -4112,6 +4112,27 @@
       "OriginalItemSpec": "wwwroot\\images\\bean.jpg"
     },
     {
+      "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\beans.jpg",
+      "SourceId": "ECommercePlatform",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\",
+      "BasePath": "_content/ECommercePlatform",
+      "RelativePath": "images/beans#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xszy8c67x6",
+      "Integrity": "Pz6jgK7J0X+/QLabevhhDvdoWCWpINq8pjX8NxOL3as=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\beans.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\blog1.jpg",
       "SourceId": "ECommercePlatform",
       "SourceType": "Discovered",
@@ -4637,6 +4658,27 @@
       "OriginalItemSpec": "wwwroot\\images\\supplier.jpg"
     },
     {
+      "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\tomatoe.jpg",
+      "SourceId": "ECommercePlatform",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\",
+      "BasePath": "_content/ECommercePlatform",
+      "RelativePath": "images/tomatoe#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pkbfyv2l1w",
+      "Integrity": "p3n5DqUMHEXAiDMoJI2vwyZwpAHpmYvhjv9zQwRaIwc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\tomatoe.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\tomatoes.jpg",
       "SourceId": "ECommercePlatform",
       "SourceType": "Discovered",
@@ -4714,8 +4756,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0hh42w6oje",
-      "Integrity": "dFO2SotL3lJiEtA0m+we/0OSa/0xlI9+ovIMiSelgjE=",
+      "Fingerprint": "ivycj05s4x",
+      "Integrity": "jn5ihqM0Azw+gjXix72BpXCex8K4qGm9o/ZYT7zOydg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -15870,6 +15912,88 @@
       ]
     },
     {
+      "Route": "images/beans.jpg",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\beans.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pz6jgK7J0X+/QLabevhhDvdoWCWpINq8pjX8NxOL3as=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Apr 2026 15:20:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pz6jgK7J0X+/QLabevhhDvdoWCWpINq8pjX8NxOL3as="
+        }
+      ]
+    },
+    {
+      "Route": "images/beans.xszy8c67x6.jpg",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\beans.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19523"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pz6jgK7J0X+/QLabevhhDvdoWCWpINq8pjX8NxOL3as=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Apr 2026 15:20:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xszy8c67x6"
+        },
+        {
+          "Name": "label",
+          "Value": "images/beans.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pz6jgK7J0X+/QLabevhhDvdoWCWpINq8pjX8NxOL3as="
+        }
+      ]
+    },
+    {
       "Route": "images/blog1.jpg",
       "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\blog1.jpg",
       "Selectors": [],
@@ -17920,6 +18044,88 @@
       ]
     },
     {
+      "Route": "images/tomatoe.jpg",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\tomatoe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3n5DqUMHEXAiDMoJI2vwyZwpAHpmYvhjv9zQwRaIwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Apr 2026 15:18:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3n5DqUMHEXAiDMoJI2vwyZwpAHpmYvhjv9zQwRaIwc="
+        }
+      ]
+    },
+    {
+      "Route": "images/tomatoe.pkbfyv2l1w.jpg",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\tomatoe.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15313"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p3n5DqUMHEXAiDMoJI2vwyZwpAHpmYvhjv9zQwRaIwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Apr 2026 15:18:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pkbfyv2l1w"
+        },
+        {
+          "Name": "label",
+          "Value": "images/tomatoe.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p3n5DqUMHEXAiDMoJI2vwyZwpAHpmYvhjv9zQwRaIwc="
+        }
+      ]
+    },
+    {
       "Route": "images/tomatoes.jpg",
       "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\images\\tomatoes.jpg",
       "Selectors": [],
@@ -18166,13 +18372,13 @@
       ]
     },
     {
-      "Route": "js/site.0hh42w6oje.js",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-0hh42w6oje.gz",
+      "Route": "js/site.ivycj05s4x.js",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-ivycj05s4x.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003787878788"
+          "Quality": "0.002183406114"
         }
       ],
       "ResponseHeaders": [
@@ -18182,15 +18388,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "263"
+          "Value": "457"
         },
         {
           "Name": "ETag",
-          "Value": "\"vy8fooL0z95X6lrTKgWzYULZjjS14ATOgiGN+4LS71w=\""
+          "Value": "\"KRLglKKWJfa9CHrKm0Rftv1zBHmLyYepMcLbzttzQ6U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Apr 2026 08:02:28 GMT"
+          "Value": "Wed, 22 Apr 2026 13:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18210,13 +18416,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"dFO2SotL3lJiEtA0m+we/0OSa/0xlI9+ovIMiSelgjE=\""
+          "Value": "W/\"jn5ihqM0Azw+gjXix72BpXCex8K4qGm9o/ZYT7zOydg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0hh42w6oje"
+          "Value": "ivycj05s4x"
         },
         {
           "Name": "label",
@@ -18224,12 +18430,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dFO2SotL3lJiEtA0m+we/0OSa/0xlI9+ovIMiSelgjE="
+          "Value": "sha256-jn5ihqM0Azw+gjXix72BpXCex8K4qGm9o/ZYT7zOydg="
         }
       ]
     },
     {
-      "Route": "js/site.0hh42w6oje.js",
+      "Route": "js/site.ivycj05s4x.js",
       "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -18239,7 +18445,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "991"
         },
         {
           "Name": "Content-Type",
@@ -18247,11 +18453,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dFO2SotL3lJiEtA0m+we/0OSa/0xlI9+ovIMiSelgjE=\""
+          "Value": "\"jn5ihqM0Azw+gjXix72BpXCex8K4qGm9o/ZYT7zOydg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Apr 2026 08:02:28 GMT"
+          "Value": "Wed, 22 Apr 2026 13:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18261,7 +18467,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0hh42w6oje"
+          "Value": "ivycj05s4x"
         },
         {
           "Name": "label",
@@ -18269,13 +18475,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dFO2SotL3lJiEtA0m+we/0OSa/0xlI9+ovIMiSelgjE="
+          "Value": "sha256-jn5ihqM0Azw+gjXix72BpXCex8K4qGm9o/ZYT7zOydg="
         }
       ]
     },
     {
-      "Route": "js/site.0hh42w6oje.js.gz",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-0hh42w6oje.gz",
+      "Route": "js/site.ivycj05s4x.js.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-ivycj05s4x.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -18284,7 +18490,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "263"
+          "Value": "457"
         },
         {
           "Name": "Content-Type",
@@ -18292,11 +18498,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vy8fooL0z95X6lrTKgWzYULZjjS14ATOgiGN+4LS71w=\""
+          "Value": "\"KRLglKKWJfa9CHrKm0Rftv1zBHmLyYepMcLbzttzQ6U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Apr 2026 08:02:28 GMT"
+          "Value": "Wed, 22 Apr 2026 13:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18314,7 +18520,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0hh42w6oje"
+          "Value": "ivycj05s4x"
         },
         {
           "Name": "label",
@@ -18322,18 +18528,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vy8fooL0z95X6lrTKgWzYULZjjS14ATOgiGN+4LS71w="
+          "Value": "sha256-KRLglKKWJfa9CHrKm0Rftv1zBHmLyYepMcLbzttzQ6U="
         }
       ]
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-0hh42w6oje.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-ivycj05s4x.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003787878788"
+          "Quality": "0.002183406114"
         }
       ],
       "ResponseHeaders": [
@@ -18343,15 +18549,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "263"
+          "Value": "457"
         },
         {
           "Name": "ETag",
-          "Value": "\"vy8fooL0z95X6lrTKgWzYULZjjS14ATOgiGN+4LS71w=\""
+          "Value": "\"KRLglKKWJfa9CHrKm0Rftv1zBHmLyYepMcLbzttzQ6U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Apr 2026 08:02:28 GMT"
+          "Value": "Wed, 22 Apr 2026 13:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18371,13 +18577,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"dFO2SotL3lJiEtA0m+we/0OSa/0xlI9+ovIMiSelgjE=\""
+          "Value": "W/\"jn5ihqM0Azw+gjXix72BpXCex8K4qGm9o/ZYT7zOydg=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dFO2SotL3lJiEtA0m+we/0OSa/0xlI9+ovIMiSelgjE="
+          "Value": "sha256-jn5ihqM0Azw+gjXix72BpXCex8K4qGm9o/ZYT7zOydg="
         }
       ]
     },
@@ -18392,7 +18598,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "541"
+          "Value": "991"
         },
         {
           "Name": "Content-Type",
@@ -18400,11 +18606,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dFO2SotL3lJiEtA0m+we/0OSa/0xlI9+ovIMiSelgjE=\""
+          "Value": "\"jn5ihqM0Azw+gjXix72BpXCex8K4qGm9o/ZYT7zOydg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Apr 2026 08:02:28 GMT"
+          "Value": "Wed, 22 Apr 2026 13:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18414,13 +18620,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dFO2SotL3lJiEtA0m+we/0OSa/0xlI9+ovIMiSelgjE="
+          "Value": "sha256-jn5ihqM0Azw+gjXix72BpXCex8K4qGm9o/ZYT7zOydg="
         }
       ]
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-0hh42w6oje.gz",
+      "AssetFile": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\Debug\\net9.0\\compressed\\g6ngiumc0c-ivycj05s4x.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -18429,7 +18635,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "263"
+          "Value": "457"
         },
         {
           "Name": "Content-Type",
@@ -18437,11 +18643,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vy8fooL0z95X6lrTKgWzYULZjjS14ATOgiGN+4LS71w=\""
+          "Value": "\"KRLglKKWJfa9CHrKm0Rftv1zBHmLyYepMcLbzttzQ6U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Apr 2026 08:02:28 GMT"
+          "Value": "Wed, 22 Apr 2026 13:21:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -18459,7 +18665,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vy8fooL0z95X6lrTKgWzYULZjjS14ATOgiGN+4LS71w="
+          "Value": "sha256-KRLglKKWJfa9CHrKm0Rftv1zBHmLyYepMcLbzttzQ6U="
         }
       ]
     },

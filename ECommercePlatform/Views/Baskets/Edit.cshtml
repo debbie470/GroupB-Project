@@ -1,44 +1,81 @@
-﻿@model ECommercePlatform.Models.Basket
+﻿@* Specifies that this view uses the Basket model for data binding *@
+@model ECommercePlatform.Models.Basket
 
+@* Server-side block for configuring page-specific metadata *@
 @{
+    @* Sets the browser tab title to "Edit" *@
     ViewData["Title"] = "Edit";
 }
 
+@* Main heading for the edit page *@
 <h1>Edit</h1>
 
+@* Sub-heading identifying the entity being modified *@
 <h4>Basket</h4>
+
+@* Horizontal rule for visual separation of header and form *@
 <hr />
+
+@* Grid row container for form layout *@
 <div class="row">
+    @* Defines a column that takes up 4 units of the grid on medium devices *@
     <div class="col-md-4">
+        @* Form that submits updated data to the Edit action of the controller *@
         <form asp-action="Edit">
+            @* Displays a summary of validation errors occurring at the model level *@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Hidden field to store and pass the Basket primary key back to the server *@
             <input type="hidden" asp-for="BasketId" />
+
+            @* Container for the Status checkbox field *@
             <div class="form-group form-check">
+                @* Label wrapper for the checkbox input *@
                 <label class="form-check-label">
+                    @* Checkbox input bound to the Status property (Active/Inactive) *@
                     <input class="form-check-input" asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
                 </label>
             </div>
+
+            @* Container for the Basket creation timestamp field *@
             <div class="form-group">
+                @* Label for the creation date field *@
                 <label asp-for="BasketCreatedAt" class="control-label"></label>
+                @* Input field allowing modification of the creation date *@
                 <input asp-for="BasketCreatedAt" class="form-control" />
+                @* Span to display validation errors specific to the creation date *@
                 <span asp-validation-for="BasketCreatedAt" class="text-danger"></span>
             </div>
+
+            @* Container for the User ID property *@
             <div class="form-group">
+                @* Label for the User ID association *@
                 <label asp-for="UserId" class="control-label"></label>
+                @* Input field for the User ID linked to this basket *@
                 <input asp-for="UserId" class="form-control" />
+                @* Span to display validation errors specific to the User ID *@
                 <span asp-validation-for="UserId" class="text-danger"></span>
             </div>
+
+            @* Container for the form submission button *@
             <div class="form-group">
+                @* Button to trigger the form submission and save changes *@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
+@* Link container for back navigation *@
 <div>
+    @* Navigation link to return to the Index (list) view of Baskets *@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@* Scripts section to include necessary client-side libraries *@
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @* Renders the partial view containing jQuery validation logic *@
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

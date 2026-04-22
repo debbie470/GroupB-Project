@@ -64,6 +64,7 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\Apple.jpg
 wwwroot\images\bean.jpg
+wwwroot\images\beans.jpg
 wwwroot\images\blog1.jpg
 wwwroot\images\blog2.jpg
 wwwroot\images\blog3.jpg
@@ -89,6 +90,7 @@ wwwroot\images\rice.jpg
 wwwroot\images\rspca.png
 wwwroot\images\strawberry.jpg
 wwwroot\images\supplier.jpg
+wwwroot\images\tomatoe.jpg
 wwwroot\images\tomatoes.jpg
 wwwroot\images\vegetables.jpg
 wwwroot\images\vine.jpg

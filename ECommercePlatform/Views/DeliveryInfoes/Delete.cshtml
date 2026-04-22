@@ -1,45 +1,82 @@
-﻿@model ECommercePlatform.Models.DeliveryInfo
+﻿@* Specifies the data model used for identifying the delivery record being deleted *@
+@model ECommercePlatform.Models.DeliveryInfo
 
+@* Block for server-side code to set page-specific metadata *@
 @{
+    @* Sets the browser tab title for this deletion confirmation view *@
     ViewData["Title"] = "Delete";
 }
 
+@* Page main heading *@
 <h1>Delete</h1>
 
+@* Confirmation prompt to verify the user's intent before deletion *@
 <h3>Are you sure you want to delete this?</h3>
+
+@* Container for the detailed information of the targeted record *@
 <div>
+    @* Entity identifier heading *@
     <h4>DeliveryInfo</h4>
+
+    @* Horizontal separator *@
     <hr />
+
+    @* Description list using Bootstrap grid columns for property mapping *@
     <dl class="row">
-        <dt class = "col-sm-2">
+        @* Label column for the delivery method type *@
+        <dt class="col-sm-2">
+            @* Renders the display name for the DeliveryType property *@
             @Html.DisplayNameFor(model => model.DeliveryType)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value column for the delivery method type *@
+        <dd class="col-sm-10">
+            @* Displays the actual delivery type value (e.g., Express, Collection) *@
             @Html.DisplayFor(model => model.DeliveryType)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Label column for the scheduled time *@
+        <dt class="col-sm-2">
+            @* Renders the display name for the ScheduledDateTime property *@
             @Html.DisplayNameFor(model => model.ScheduledDateTime)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value column for the scheduled time *@
+        <dd class="col-sm-10">
+            @* Displays the recorded date and time for the delivery *@
             @Html.DisplayFor(model => model.ScheduledDateTime)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Label column for the current delivery status *@
+        <dt class="col-sm-2">
+            @* Renders the display name for the Status property *@
             @Html.DisplayNameFor(model => model.Status)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value column for the current delivery status *@
+        <dd class="col-sm-10">
+            @* Displays the current state (e.g., Pending, Delivered) *@
             @Html.DisplayFor(model => model.Status)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Label column for the associated parent order *@
+        <dt class="col-sm-2">
+            @* Renders the display name for the Orders navigation property *@
             @Html.DisplayNameFor(model => model.Orders)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value column for the associated parent order *@
+        <dd class="col-sm-10">
+            @* Displays the specific ID of the linked order *@
             @Html.DisplayFor(model => model.Orders.OrdersId)
         </dd>
     </dl>
-    
+
+    @* Form that submits the deletion request to the controller *@
     <form asp-action="Delete">
+        @* Hidden input field to pass the primary key ID to the controller action *@
         <input type="hidden" asp-for="DeliveryInfoId" />
+
+        @* Red button to trigger the final deletion POST request *@
         <input type="submit" value="Delete" class="btn btn-danger" /> |
+
+        @* Navigation link to return to the list view without deleting *@
         <a asp-action="Index">Back to List</a>
     </form>
 </div>
