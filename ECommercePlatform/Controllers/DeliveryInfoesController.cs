@@ -25,7 +25,8 @@ namespace ECommercePlatform.Controllers
         }
 
         // GET: DeliveryInfoes
-        // Displays a list of all delivery records including associated order details   
+        // Displays a list of all delivery records including associated order details
+        [Authorize]// you have to be a logged in user to view this page 
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.DeliveryInfo.Include(d => d.Orders);

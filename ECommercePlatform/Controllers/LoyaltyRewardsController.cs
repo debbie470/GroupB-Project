@@ -19,7 +19,7 @@ namespace ECommercePlatform.Controllers // Define the namespace for organization
         { // Start of constructor block
             _context = context; // Assign injected context to private field
         } // End of constructor block
-
+        [Authorize]// you have to be a logged in user to view this page 
         public async Task<IActionResult> Index() // Method to handle the main rewards page
         { // Start of Index block
             return View(await _context.LoyaltyRewards.ToListAsync()); // Retrieve all rewards and return view
