@@ -1,48 +1,91 @@
-﻿@model ECommercePlatform.Models.ProductTraceability
+﻿@model ECommercePlatform.Models.ProductTraceability // Specifies that the view expects a single ProductTraceability model object to display its details
 
 @{
-    ViewData["Title"] = "Details";
-}
+    // Starts a Razor code block for setting view-specific metadata
+    ViewData["Title"] = "Details"; // Sets the browser tab and page title to "Details" via the ViewData dictionary
+} 
 
-<h1>Details</h1>
+<h1>Details</h1> <!-- Main level 1 heading for the details page -->
 
 <div>
-    <h4>ProductTraceability</h4>
-    <hr />
+    <!-- Container for the structured details of the traceability record -->
+
+    <h4>ProductTraceability</h4> <!-- Level 4 heading indicating the entity type being viewed -->
+
+    <hr /> <!-- Renders a horizontal line as a visual separator -->
+
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Origin)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Origin)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.BatchNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.BatchNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.HarvestDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.HarvestDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Certifications)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Certifications)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Products)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Products.ProductsId)
-        </dd>
-    </dl>
-</div>
+        <!-- Starts a description list with Bootstrap grid styling for label-value pairs -->
+
+        <dt class="col-sm-2">
+            <!-- Defines the term cell for the Origin property (2 columns wide on small screens) -->
+            @Html.DisplayNameFor(model => model.Origin) <!-- Displays the readable name/label for the 'Origin' property -->
+
+        </dt> <!-- Ends the Origin term cell -->
+
+        <dd class="col-sm-10">
+            <!-- Defines the description cell for the Origin value (10 columns wide) -->
+            @Html.DisplayFor(model => model.Origin) <!-- Renders the actual value of the 'Origin' property for the current record -->
+
+        </dd> <!-- Ends the Origin description cell -->
+
+        <dt class="col-sm-2">
+            <!-- Defines the term cell for the Batch Number property -->
+            @Html.DisplayNameFor(model => model.BatchNumber) <!-- Displays the readable name/label for the 'BatchNumber' property -->
+
+        </dt> <!-- Ends the Batch Number term cell -->
+
+        <dd class="col-sm-10">
+            <!-- Defines the description cell for the Batch Number value -->
+            @Html.DisplayFor(model => model.BatchNumber) <!-- Renders the actual value of the 'BatchNumber' property -->
+
+        </dd> <!-- Ends the Batch Number description cell -->
+
+        <dt class="col-sm-2">
+            <!-- Defines the term cell for the Harvest Date property -->
+            @Html.DisplayNameFor(model => model.HarvestDate) <!-- Displays the readable name/label for the 'HarvestDate' property -->
+
+        </dt> <!-- Ends the Harvest Date term cell -->
+
+        <dd class="col-sm-10">
+            <!-- Defines the description cell for the Harvest Date value -->
+            @Html.DisplayFor(model => model.HarvestDate) <!-- Renders the actual value of the 'HarvestDate' property -->
+
+        </dd> <!-- Ends the Harvest Date description cell -->
+
+        <dt class="col-sm-2">
+            <!-- Defines the term cell for the Certifications property -->
+            @Html.DisplayNameFor(model => model.Certifications) <!-- Displays the readable name/label for the 'Certifications' property -->
+
+        </dt> <!-- Ends the Certifications term cell -->
+
+        <dd class="col-sm-10">
+            <!-- Defines the description cell for the Certifications value -->
+            @Html.DisplayFor(model => model.Certifications) <!-- Renders the actual value of the 'Certifications' property -->
+
+        </dd> <!-- Ends the Certifications description cell -->
+
+        <dt class="col-sm-2">
+            <!-- Defines the term cell for the associated Product property -->
+            @Html.DisplayNameFor(model => model.Products) <!-- Displays the readable name/label for the 'Products' navigation property -->
+
+        </dt> <!-- Ends the Product term cell -->
+
+        <dd class="col-sm-10">
+            <!-- Defines the description cell for the associated Product ID -->
+            @Html.DisplayFor(model => model.Products.ProductsId) <!-- Renders the ID of the linked product record -->
+
+        </dd> <!-- Ends the Product ID description cell -->
+
+    </dl> <!-- Ends the description list -->
+
+</div> <!-- Ends the detail container div -->
+
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ProductTraceabilityId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <!-- Container for action links -->
+
+    <a asp-action="Edit" asp-route-id="@Model?.ProductTraceabilityId">Edit</a> | <!-- Link to the Edit page for this specific record, using its ID as a route parameter -->
+
+    <a asp-action="Index">Back to List</a> <!-- Hyperlink that redirects the user back to the main traceability list view -->
+
+</div> <!-- Ends the action links div -->

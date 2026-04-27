@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj": {}
+    "H:\\ECommercePlatform\\ECommercePlatform.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj": {
+    "H:\\ECommercePlatform\\ECommercePlatform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj",
+        "projectUniqueName": "H:\\ECommercePlatform\\ECommercePlatform.csproj",
         "projectName": "ECommercePlatform",
-        "projectPath": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj",
+        "projectPath": "H:\\ECommercePlatform\\ECommercePlatform.csproj",
         "packagesPath": "C:\\Users\\Digi-T-Y2-2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\obj\\",
+        "outputPath": "H:\\ECommercePlatform\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

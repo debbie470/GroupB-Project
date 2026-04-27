@@ -1,47 +1,87 @@
-﻿@model ECommercePlatform.Models.LoyaltyRewards
+﻿@* Specifies that this view is bound to the LoyaltyRewards model *@
+@model ECommercePlatform.Models.LoyaltyRewards
 
+@* Server-side block to define page-specific metadata *@
 @{
+    @* Sets the browser tab title to "Edit" *@
     ViewData["Title"] = "Edit";
 }
 
+@* Main page heading *@
 <h1>Edit</h1>
 
+@* Sub-heading indicating the entity being modified *@
 <h4>LoyaltyRewards</h4>
+
+@* Visual separator *@
 <hr />
+
+@* Bootstrap grid container for form layout *@
 <div class="row">
+    @* Column restricted to 4 units on medium screens for a narrow form *@
     <div class="col-md-4">
+        @* Form that posts updated loyalty data to the Edit action *@
         <form asp-action="Edit">
+            @* Container to display general model-level validation errors *@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Hidden field to store the primary key ID for record identification on postback *@
             <input type="hidden" asp-for="LoyaltyRewardsId" />
+
+            @* Hidden field for UserId to maintain the relationship without allowing user editing *@
             <div class="form-group">
-                @Html.HiddenFor(model => model.UserId) <!-- Hides UserId input -->
+                @Html.HiddenFor(model => model.UserId)
             </div>
+
+            @* Input group for the user's current points balance *@
             <div class="form-group">
+                @* Label for the PointsBalance property *@
                 <label asp-for="PointsBalance" class="control-label"></label>
+                @* Input for numeric points value *@
                 <input asp-for="PointsBalance" class="form-control" />
+                @* Validation message placeholder for points input *@
                 <span asp-validation-for="PointsBalance" class="text-danger"></span>
             </div>
+
+            @* Input group for the user's loyalty tier *@
             <div class="form-group">
+                @* Label for the TierLevel property (e.g., Gold, Silver) *@
                 <label asp-for="TierLevel" class="control-label"></label>
+                @* Text input for the tier name *@
                 <input asp-for="TierLevel" class="form-control" />
+                @* Validation message placeholder for tier input *@
                 <span asp-validation-for="TierLevel" class="text-danger"></span>
             </div>
+
+            @* Input group for the rewards history or logs *@
             <div class="form-group">
+                @* Label for the History property *@
                 <label asp-for="History" class="control-label"></label>
+                @* Input field for historical data *@
                 <input asp-for="History" class="form-control" />
+                @* Validation message placeholder for history input *@
                 <span asp-validation-for="History" class="text-danger"></span>
             </div>
+
+            @* Form submission container *@
             <div class="form-group">
+                @* Primary button to save the modified loyalty data *@
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
+@* Navigation section *@
 <div>
+    @* Link to return to the list of loyalty rewards *@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@* Scripts section for client-side validation *@
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @* Loads the necessary jQuery validation partial view *@
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

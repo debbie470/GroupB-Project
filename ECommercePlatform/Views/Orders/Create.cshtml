@@ -1,116 +1,122 @@
-﻿@model ECommercePlatform.Models.Orders
-
-
+﻿@model ECommercePlatform.Models.Orders // Specifies the Orders model for the Checkout view
 
 @{
-    ViewData["Title"] = "Checkout";
+    // Starts a Razor code block for server-side initialization
+    ViewData["Title"] = "Checkout"; // Sets the browser page title to "Checkout"
 }
 
-<h1>Checkout</h1>
+<h1>Checkout</h1> <!-- Primary page heading -->
 
-<p>Choose how you would like to recive your order.</p>
-
+<p>Choose how you would like to receive your order.</p> <!-- Instructional text for the user -->
 
 <form asp-action="Create" method="post">
+    <!-- Form that submits the order data to the 'Create' action using POST -->
 
-    <div asp-validation-summary="ModelOnly" style="color: red;"></div> 
+    <div asp-validation-summary="ModelOnly" style="color: red;"></div> <!-- Displays model-level validation errors in red -->
 
-    <input type="hidden" name="basketId" value="@ViewBag.BasketId" /> 
-
-    <!-- Order Method -->
+    <input type="hidden" name="basketId" value="@ViewBag.BasketId" /> <!-- Hidden field to pass the current Basket ID to the controller -->
+    <!-- ORDER METHOD SECTION -->
     <div style="margin-bottom: 20px;">
-        <label style="font-weight:bold; display:block; margin-bottom: 10px;">Order Method</label>
+        <label style="font-weight:bold; display:block; margin-bottom: 10px;">Order Method</label> <!-- Bold label for the selection group -->
 
         <div>
-            <input asp-for="Delivery" id="deliveryCheck" />
+            <!-- Option for Home Delivery -->
+            <input asp-for="Delivery" id="deliveryCheck" /> @* Checkbox/Radio for Delivery *@
             <label asp-for="Delivery">Delivery</label>
         </div>
 
         <div>
-            <input asp-for="Collection" id="collectionCheck" />
+            <!-- Option for In-Store Collection -->
+            <input asp-for="Collection" id="collectionCheck" /> @* Checkbox/Radio for Collection *@
             <label asp-for="Collection">Collection</label>
         </div>
     </div>
 
-    <!-- Delivery Type -->
+    <!-- DELIVERY DETAILS (Initially hidden) -->
     <div id="deliveryTypeGroup" style="display:none; margin-bottom:15px;">
-        <label asp-for="DeliveryType"></label>
+        <label asp-for="DeliveryType"></label> <!-- Label for delivery speed selection -->
         <select asp-for="DeliveryType">
+            <!-- Dropdown for specific delivery methods -->
             <option value="">Select Delivery Type</option>
             <option value="Next Day">Next Day</option>
             <option value="First Class">First Class</option>
             <option value="Standard">Standard</option>
         </select>
         <br />
-        <span asp-validation-for="DeliveryType" style="color: red;"></span>
+        <span asp-validation-for="DeliveryType" style="color: red;"></span> <!-- Error message for delivery type in red -->
     </div>
 
-    <!-- Collection Date -->
+    <!-- COLLECTION DETAILS (Initially hidden) -->
     <div id="collectionDateGroup" style="display:none; margin-bottom:20px;">
-        <label asp-for="CollectionDate"></label>
-        <input asp-for="CollectionDate" type="date" id="CollectionDate" />
-        <div>Earliest collection date is 2 days from today.</div>
-        <span asp-validation-for="CollectionDate" style="color:red;"></span>
+        <label asp-for="CollectionDate"></label> <!-- Label for picking a collection date -->
+        <input asp-for="CollectionDate" type="date" id="CollectionDate" /> <!-- Date input for collection -->
+        <div>Earliest collection date is 2 days from today.</div> <!-- Helper text for the user -->
+        <span asp-validation-for="CollectionDate" style="color:red;"></span> <!-- Error message for collection date in red -->
     </div>
 
-    <!-- Submit -->
-    <button type="submit">Place Order</button>
+    <!-- ACTIONS -->
+    <button type="submit">Place Order</button> <!-- Button to submit and finalize the checkout -->
 
-    <!-- Back link -->
     <div style="margin-top:10px;">
+        <!-- Navigation link back to the basket -->
         <a asp-controller="Baskets" asp-action="Index">
             Back to Basket
         </a>
     </div>
 
-</form>
+</form> <!-- Ends the checkout form -->
 
 <script>
+    // Logic to handle dynamic form behavior and date restrictions
     const collectionDateInput = document.getElementById("CollectionDate");
 
+    // Calculate minimum collection date (today + 2 days)
     const today = new Date();
     today.setDate(today.getDate() + 2);
-    const minDate = today.toISOString().split("T")[0];
+    const minDate = today.toISOString().split("T")[0]; // Format to YYYY-MM-DD
 
     if (collectionDateInput) {
-    collectionDateInput.min = minDate;
+        collectionDateInput.min = minDate; // Set the minimum attribute on the date picker
     }
 
+    // Element references for visibility toggling
     const deliveryCheck = document.getElementById("deliveryCheck");
     const collectionCheck = document.getElementById("collectionCheck");
-
     const deliveryTypeGroup = document.getElementById("deliveryTypeGroup");
     const collectionDateGroup = document.getElementById("collectionDateGroup");
 
+    // Function to update form visibility based on selected method
     function updateForm() {
+        // Reset visibility
+        deliveryTypeGroup.style.display = "none";
+        collectionDateGroup.style.display = "none";
 
-    deliveryTypeGroup.style.display = "none";
-    collectionDateGroup.style.display = "none";
+        // Reset disabled states
+        deliveryCheck.disabled = false;
+        collectionCheck.disabled = false;
 
-    deliveryCheck.disabled = false;
-    collectionCheck.disabled = false;
-
-    if (deliveryCheck.checked) {
-
-    deliveryTypeGroup.style.display = "block";
-    collectionCheck.disabled = true;
-
-    } else if (collectionCheck.checked) {
-
-    collectionDateGroup.style.display = "block";
-    deliveryCheck.disabled = true;
-
+        if (deliveryCheck.checked) {
+            // Show delivery options and lock the collection checkbox
+            deliveryTypeGroup.style.display = "block";
+            collectionCheck.disabled = true;
+        } else if (collectionCheck.checked) {
+            // Show collection options and lock the delivery checkbox
+            collectionDateGroup.style.display = "block";
+            deliveryCheck.disabled = true;
+        }
     }
-    }
 
+    // Event listeners to trigger UI updates when user makes a selection
     deliveryCheck.addEventListener("change", updateForm);
     collectionCheck.addEventListener("change", updateForm);
 
+    // Run on initial load to ensure correct state if page is refreshed
     updateForm();
 </script>
 
 @section Scripts {
+     // Section for adding scripts to the layout
     @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        await Html.RenderPartialAsync("_ValidationScriptsPartial"); // Injects client-side validation logic
     }
-}
+} // Ends the scripts section

@@ -1,52 +1,65 @@
-﻿@model ECommercePlatform.Models.Products
+﻿@model ECommercePlatform.Models.Products // Specifies the Products model for the Create view
 
 @{
-    ViewData["Title"] = "Create";
+    // Starts a Razor code block for server-side initialization
+    ViewData["Title"] = "Create"; // Sets the browser page title to "Create"
 }
 
-<h1>Create</h1>
+<h1>Create</h1> <!-- Primary page heading -->
 
-<h4>Products</h4>
-<hr />
+<h4>Products</h4> <!-- Sub-heading for the product entity -->
+<hr /> <!-- Horizontal line separator -->
 <div class="row">
+    <!-- Bootstrap row for form layout -->
     <div class="col-md-4">
+        <!-- Grid column spanning 4 units for the form container -->
         <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!-- Form that submits data to the 'Create' action of the controller -->
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div> <!-- Displays model-level validation errors -->
             <div class="form-group">
-                <label asp-for="SuppliersId" class="control-label"></label>
-                <select asp-for="SuppliersId" class ="form-control" asp-items="ViewBag.SuppliersId"></select>
-            </div>
+                <!-- Grouping for the Supplier selection field -->
+                <label asp-for="SuppliersId" class="control-label"></label> <!-- Renders the label for selecting a supplier -->
+                <select asp-for="SuppliersId" class="form-control" asp-items="ViewBag.SuppliersId"></select> <!-- Dropdown list populated with suppliers from ViewBag -->
+            </div> <!-- Ends Supplier group -->
             <div class="form-group">
-                <label asp-for="ProductName" class="control-label"></label>
-                <input asp-for="ProductName" class="form-control" />
-                <span asp-validation-for="ProductName" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Product Name field -->
+                <label asp-for="ProductName" class="control-label"></label> <!-- Renders the label for the product name -->
+                <input asp-for="ProductName" class="form-control" /> <!-- Input field for entering the product name -->
+                <span asp-validation-for="ProductName" class="text-danger"></span> <!-- Placeholder for name validation messages -->
+            </div> <!-- Ends Product Name group -->
             <div class="form-group">
-                <label asp-for="Stock" class="control-label"></label>
-                <input asp-for="Stock" class="form-control" />
-                <span asp-validation-for="Stock" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Stock field -->
+                <label asp-for="Stock" class="control-label"></label> <!-- Renders the label for stock quantity -->
+                <input asp-for="Stock" class="form-control" /> <!-- Input field for entering stock levels -->
+                <span asp-validation-for="Stock" class="text-danger"></span> <!-- Placeholder for stock validation messages -->
+            </div> <!-- Ends Stock group -->
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Price field -->
+                <label asp-for="Price" class="control-label"></label> <!-- Renders the label for product price -->
+                <input asp-for="Price" class="form-control" /> <!-- Input field for entering the price -->
+                <span asp-validation-for="Price" class="text-danger"></span> <!-- Placeholder for price validation messages -->
+            </div> <!-- Ends Price group -->
             <div class="form-group">
-                <label asp-for="ImagePath" class="control-label"></label>
-                <input asp-for="ImagePath" class="form-control" />
-                <span asp-validation-for="ImagePath" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Image Path field -->
+                <label asp-for="ImagePath" class="control-label"></label> <!-- Renders the label for the image file path -->
+                <input asp-for="ImagePath" class="form-control" /> <!-- Input field for entering the image path -->
+                <span asp-validation-for="ImagePath" class="text-danger"></span> <!-- Placeholder for image path validation messages -->
+            </div> <!-- Ends Image Path group -->
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+                <!-- Container for the form submission -->
+                <input type="submit" value="Create" class="btn btn-primary" /> <!-- Submit button to create the new product -->
+            </div> <!-- Ends submit button group -->
+        </form> <!-- Ends the product creation form -->
+    </div> <!-- Ends the column div -->
+</div> <!-- Ends the row div -->
 
 <div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+    <!-- Navigation container -->
+    <a asp-action="Index">Back to List</a> <!-- Link to return the user to the product list -->
+</div> <!-- Ends navigation div -->
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+     // Section for adding scripts to the layout
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    } 
+} 

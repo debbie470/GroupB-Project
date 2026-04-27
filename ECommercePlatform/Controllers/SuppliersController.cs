@@ -21,11 +21,23 @@ namespace ECommercePlatform.Controllers // Defines the namespace for the control
         } // End of constructor
 
         // GET: Suppliers
-        public async Task<IActionResult> Index() // Action to list all registered suppliers
-        { // Start of Index method
-            return View(await _context.Suppliers.ToListAsync()); // Retrieves all suppliers and returns the list view
-        } // End of Index method
+        // Action method to display a list of suppliers with an optional search filter
+        public async Task<IActionResult> Index(string searchString)
+        {
+            // Initializes the query against the Suppliers table as IQueryable for deferred execution
+            var suppliers = _context.Suppliers.AsQueryable();
 
+            // Checks if a valid search string has been provided by the user
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                // Filters the supplier list to only include names containing the search term
+                suppliers = suppliers.Where(s =>
+                    s.SupplierName.Contains(searchString));
+            }
+
+            // Asynchronously executes the query, converts the results to a list, and returns the view
+            return View(await suppliers.ToListAsync());
+        }
         // GET: Suppliers/Details/5
         public async Task<IActionResult> Details(int? id) // Action to view details of a specific supplier
         { // Start of Details method

@@ -1,46 +1,69 @@
-﻿@model ECommercePlatform.Models.Orders
+﻿@model ECommercePlatform.Models.Orders // Specifies the Orders model for the Edit view
 
 @{
-    ViewData["Title"] = "Edit";
+    // Starts a Razor code block for server-side initialization
+    ViewData["Title"] = "Edit"; // Sets the browser page title to "Edit"
 }
 
-<h1>Edit</h1>
+<h1>Edit</h1> <!-- Primary page heading -->
 
-<h4>Orders</h4>
-<hr />
+<h4>Orders</h4> <!-- Sub-heading for the order entity -->
+<hr /> <!-- Horizontal line separator -->
+
 <div class="row">
+    <!-- Bootstrap row for form layout -->
     <div class="col-md-4">
+        <!-- Grid column spanning 4 units for the form container -->
+
         <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="OrdersId" />
+            <!-- Form that submits data to the 'Edit' action of the controller -->
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div> <!-- Displays model-level validation errors -->
+
+            <input type="hidden" asp-for="OrdersId" /> <!-- Hidden field to store the Order ID during the POST -->
+
             <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
-                <input asp-for="UserId" class="form-control" />
-                <span asp-validation-for="UserId" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the User ID field -->
+                <label asp-for="UserId" class="control-label"></label> <!-- Renders the label for the associated User ID -->
+                <input asp-for="UserId" class="form-control" /> <!-- Input field for editing the User ID -->
+                <span asp-validation-for="UserId" class="text-danger"></span> <!-- Placeholder for user validation messages -->
+            </div> <!-- Ends User ID group -->
+
             <div class="form-group">
-                <label asp-for="Subtotal" class="control-label"></label>
-                <input asp-for="Subtotal" class="form-control" />
-                <span asp-validation-for="Subtotal" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Subtotal field -->
+                <label asp-for="Subtotal" class="control-label"></label> <!-- Renders the label for the order subtotal -->
+                <input asp-for="Subtotal" class="form-control" /> <!-- Input field for editing the subtotal amount -->
+                <span asp-validation-for="Subtotal" class="text-danger"></span> <!-- Placeholder for subtotal validation messages -->
+            </div> <!-- Ends Subtotal group -->
+
             <div class="form-group form-check">
+                <!-- Checkbox container for Delivery status -->
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Delivery" /> @Html.DisplayNameFor(model => model.Delivery)
+                    <input class="form-check-input" asp-for="Delivery" /> <!-- Checkbox input for the delivery flag -->
+                    @Html.DisplayNameFor(model => model.Delivery) @* Renders the display name for the Delivery property *@
                 </label>
-            </div>
+            </div> <!-- Ends Delivery checkbox group -->
+
             <div class="form-group form-check">
+                <!-- Checkbox container for Collection status -->
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Collection" /> @Html.DisplayNameFor(model => model.Collection)
+                    <input class="form-check-input" asp-for="Collection" /> <!-- Checkbox input for the collection flag -->
+                    @Html.DisplayNameFor(model => model.Collection) @* Renders the display name for the Collection property *@
                 </label>
-            </div>
+            </div> <!-- Ends Collection checkbox group -->
+
             <div class="form-group">
-                <label asp-for="DeliveryType" class="control-label"></label>
-                <input asp-for="DeliveryType" class="form-control" />
-                <span asp-validation-for="DeliveryType" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Delivery Type field -->
+                <label asp-for="DeliveryType" class="control-label"></label> <!-- Renders the label for delivery type -->
+                <input asp-for="DeliveryType" class="form-control" /> <!-- Input field for editing the delivery method -->
+                <span asp-validation-for="DeliveryType" class="text-danger"></span> <!-- Placeholder for delivery type validation messages -->
+            </div> <!-- Ends Delivery Type group -->
+
             <div class="form-group">
-                <label asp-for="OrderTrackingStatus" class="control-label"></label>
+                <!-- Grouping for the Order Tracking Status field -->
+                <label asp-for="OrderTrackingStatus" class="control-label"></label> <!-- Renders the label for order status -->
                 <select asp-for="OrderTrackingStatus" class="from-control">
+                    <!-- Dropdown for selecting current order status -->
                     <option value="">-- Select Status --</option>
                     <option value="Pending">Pending</option>
                     <option value="Processing">Processing</option>
@@ -48,29 +71,39 @@
                     <option value="Delivered">Delivered</option>
                     <option value="Canceled">Canceled</option>
                 </select>
-                <span asp-validation-for="OrderTrackingStatus" class="text-danger"></span>
-            </div>
+                <span asp-validation-for="OrderTrackingStatus" class="text-danger"></span> <!-- Placeholder for status validation messages -->
+            </div> <!-- Ends Tracking Status group -->
+
             <div class="form-group">
-                <label asp-for="CollectionDate" class="control-label"></label>
-                <input asp-for="CollectionDate" class="form-control" />
-                <span asp-validation-for="CollectionDate" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Collection Date field -->
+                <label asp-for="CollectionDate" class="control-label"></label> <!-- Renders the label for collection date -->
+                <input asp-for="CollectionDate" class="form-control" /> <!-- Input field for editing the collection date -->
+                <span asp-validation-for="CollectionDate" class="text-danger"></span> <!-- Placeholder for collection date validation messages -->
+            </div> <!-- Ends Collection Date group -->
+
             <div class="form-group">
-                <label asp-for="OrderDate" class="control-label"></label>
-                <input asp-for="OrderDate" class="form-control" />
-                <span asp-validation-for="OrderDate" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Order Date field -->
+                <label asp-for="OrderDate" class="control-label"></label> <!-- Renders the label for the original order date -->
+                <input asp-for="OrderDate" class="form-control" /> <!-- Input field for editing the order date -->
+                <span asp-validation-for="OrderDate" class="text-danger"></span> <!-- Placeholder for order date validation messages -->
+            </div> <!-- Ends Order Date group -->
+
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+                <!-- Container for the form submission -->
+                <input type="submit" value="Save" class="btn btn-primary" /> <!-- Submit button to save the updated order details -->
+            </div> <!-- Ends submit button group -->
+
+        </form> <!-- Ends the order edit form -->
+    </div> <!-- Ends the column div -->
+</div> <!-- Ends the row div -->
 
 <div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+    <!-- Navigation container -->
+    <a asp-action="Index">Back to List</a> <!-- Link to return the user to the order index list -->
+</div> <!-- Ends navigation div -->
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+     
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    } 
+} 

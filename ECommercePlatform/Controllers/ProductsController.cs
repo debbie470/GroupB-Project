@@ -22,31 +22,72 @@ namespace ECommercePlatform.Controllers // Controller organization namespace
         } // End of constructor
 
         // GET: Products
-        public async Task<IActionResult> Index() // List products based on role
-        { // Start of Index method
-            if (User.IsInRole("Supplier")) // Check if user is a Supplier
-            { // Start of Supplier logic
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get current User ID
-                if (userId == null) // Check for authentication
-                { // Start check
-                    return Unauthorized(); // Return 401 if not logged in
-                } // End check
-                var supplier = await _context.Suppliers.FirstOrDefaultAsync(s => s.UserId == userId); // Locate supplier record
-                if (supplier == null) // Check for supplier profile
-                { // Start check
-                    return NotFound(); // Return 404 if profile missing
-                } // End check
-                var SuplierProducts = await _context.Products.Where(p => p.SuppliersId == supplier.SuppliersId).Include(p => p.Suppliers).ToListAsync(); // Get supplier's products
-                return View(SuplierProducts); // Return filtered product list
-            } // End of Supplier logic
-            else // Default for other roles (e.g., Customers/Admin)
-            { // Start of default logic
-                var allProducts = await _context.Products.Include(p => p.Suppliers).ToListAsync(); // Get all products
-                return View(allProducts); // Return full product list
-            } // End of default logic
+        // Action method to list products with optional keyword searching
+        public async Task<IActionResult> Index(string searchString)
+        {
+            // Check if the current user is logged in as a Supplier
+            if (User.IsInRole("Supplier"))
+            {
+                // Retrieve the unique ID of the authenticated user
+                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-        } // End of Index method
+                // Return 401 if the user identity cannot be determined
+                if (userId == null)
+                {
+                    return Unauthorized();
+                }
 
+                // Fetch the supplier profile associated with the current user
+                var supplier = await _context.Suppliers
+                    .FirstOrDefaultAsync(s => s.UserId == userId);
+
+                // Return 404 if the user is a Supplier but has no profile record
+                if (supplier == null)
+                {
+                    return NotFound();
+                }
+
+                // Initialize a query filtered to only show this supplier's products
+                var supplierProducts = _context.Products
+                    .Where(p => p.SuppliersId == supplier.SuppliersId);
+
+                // Apply a name-based filter if a search keyword was provided
+                if (!string.IsNullOrEmpty(searchString))
+                {
+                    supplierProducts = supplierProducts
+                        .Where(p => p.ProductName.Contains(searchString));
+                }
+
+                // Execute the query, including supplier details, and convert to a list
+                var result = await supplierProducts
+                    .Include(p => p.Suppliers)
+                    .ToListAsync();
+
+                // Return the filtered list to the view
+                return View(result);
+            }
+            // Logic for non-supplier users (Admins or Customers)
+            else
+            {
+                // Initialize a query for all products in the system
+                var products = _context.Products.AsQueryable();
+
+                // Apply a name-based filter if a search keyword was provided
+                if (!string.IsNullOrEmpty(searchString))
+                {
+                    products = products
+                        .Where(p => p.ProductName.Contains(searchString));
+                }
+
+                // Execute the query, including supplier details, and convert to a list
+                var result = await products
+                    .Include(p => p.Suppliers)
+                    .ToListAsync();
+
+                // Return the full or searched list to the view
+                return View(result);
+            }
+        }
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id) // Show specific product info
         { // Start of Details method

@@ -1,54 +1,71 @@
-﻿@model IEnumerable<ECommercePlatform.Models.Products>
+﻿@model IEnumerable<ECommercePlatform.Models.Products> // Specifies that the view expects a list of Products objects as its model
 
 @{
-    ViewData["Title"] = "Index";
-}
+    // Starts a Razor code block for setting view-specific metadata
+    ViewData["Title"] = "Index"; // Sets the browser tab and page title to "Index"
+} 
 
-<h1>Index</h1>
+<h1>Index</h1> <!-- Main heading for the product catalog page -->
 
 <p>
-    <a asp-action="Create">Create New</a>
-</p>
+    <!-- Paragraph wrapper for the create action link -->
+    <a asp-action="Create">Create New</a> <!-- Link to the 'Create' view for adding a new product to the catalog -->
+</p> <!-- Ends the paragraph wrapper -->
+<!-- Form that appends search parameters to the URL via the GET method -->
+<form method="get">
+    <!-- Text input for keywords; 'value' attribute persists the current search term from the URL -->
+    <input type="text" name="searchString" placeholder="Search products..." value="@Context.Request.Query["searchString"]" />
+
+    <!-- Button that triggers the form submission and applies the search filter -->
+    <button type="submit">Search</button>
+
+    <!-- Navigation link to the base Index page to clear all search parameters -->
+    <a href="/Products/Index">Reset</a>
+</form>
 <div class="product-container">
-
-    @foreach (var item in Model)
-    {
+    <!-- Main container div for the grid layout of products -->
+    @foreach (var item in Model) // Iterates through each product in the collection provided by the controller
+    { // Opening brace for the product loop
         <div class="product-card">
+            <!-- Individual card container for a single product's information -->
 
-            <img src="~/images/@(item.ProductName).jpg" class="product-image" />
+            <img src="~/images/@(item.ProductName).jpg" class="product-image" /> <!-- Dynamically loads a product image from the local images folder using the product's name -->
 
-            <h5>@item.ProductName</h5>
+            <h5>@item.ProductName</h5> <!-- Displays the name of the product in a heading -->
 
-            <p>Stock: @item.Stock</p>
+            <p>Stock: @item.Stock</p> <!-- Shows the current inventory count for the product -->
 
-            <p><strong>$@item.Price</strong></p>
+            <p><strong>$@item.Price</strong></p> <!-- Displays the product price in bold with a currency symbol -->
 
-            <p>Supplier: @item.Suppliers?.SuppliersId</p>
+            <p>Supplier: @item.Suppliers?.SuppliersId</p> <!-- Shows the ID of the linked supplier, using null-conditional access to avoid errors if no supplier exists -->
 
             <div>
-                <a asp-action="Edit" asp-route-id="@item.ProductsId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProductsId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProductsId">Delete</a>
-            </div>
+                <!-- Container for administrative action links -->
+                <a asp-action="Edit" asp-route-id="@item.ProductsId">Edit</a> | <!-- Link to modify this product's details using its ID -->
+                <a asp-action="Details" asp-route-id="@item.ProductsId">Details</a> | <!-- Link to view full specifications of this product -->
+                <a asp-action="Delete" asp-route-id="@item.ProductsId">Delete</a> <!-- Link to the deletion confirmation page for this product -->
+            </div> <!-- Ends the action links div -->
 
             <form asp-controller="BasketProducts" asp-action="Create" method="post">
-                <input type="hidden" name="ProductsId" value="@item.ProductsId" />
-
-                @if (item.Stock > 0)
-                {
+                <!-- Form to handle adding the product to the shopping basket via a POST request -->
+                <input type="hidden" name="ProductsId" value="@item.ProductsId" /> <!-- Hidden input to send the specific Product ID to the basket controller -->
+                @if (item.Stock > 0) // Logic check to see if the product is currently in stock
+                { // If stock is greater than 0
                     <button type="submit" class="btn btn-primary w-100">
+                        <!-- Enabled button to add the item to the basket -->
                         Add to Basket
                     </button>
-                }
-                else
-                {
+                } // End of in-stock logic
+                else // Logic to handle items with 0 or less stock
+                { // If stock is 0 or less
                     <button type="button" class="btn btn-secondary w-100" disabled>
+                        <!-- Grayed-out button indicating the item cannot be purchased -->
                         Out of Stock
                     </button>
-                }
-            </form>
+                } 
+            </form> <!-- Ends the basket submission form -->
 
-        </div>
-    }
+        </div> <!-- Ends the individual product card -->
+    } 
 
-</div>
+</div> <!-- Ends the product container div -->

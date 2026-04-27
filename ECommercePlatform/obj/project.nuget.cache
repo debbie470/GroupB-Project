@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yoenZ8hIWlE=",
+  "dgSpecHash": "PIeKI6gdBIY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Digi-T-Y2-2\\Documents\\GitHub\\GroupB-Project\\ECommercePlatform\\ECommercePlatform.csproj",
+  "projectFilePath": "H:\\ECommercePlatform\\ECommercePlatform.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Digi-T-Y2-2\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Digi-T-Y2-2\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

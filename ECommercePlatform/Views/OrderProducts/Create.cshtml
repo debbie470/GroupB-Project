@@ -1,41 +1,75 @@
-﻿@model ECommercePlatform.Models.OrderProducts
+﻿@* Specifies the data model for the view to create a new order-product relationship *@
+@model ECommercePlatform.Models.OrderProducts
 
+@* Block for setting server-side page metadata *@
 @{
+    @* Sets the browser tab title for this creation view *@
     ViewData["Title"] = "Create";
 }
 
+@* Main heading for the creation page *@
 <h1>Create</h1>
 
+@* Sub-heading identifying the entity type being added *@
 <h4>OrderProducts</h4>
+
+@* Horizontal separator *@
 <hr />
+
+@* Bootstrap grid container *@
 <div class="row">
+    @* Column spanning 4 grid units for the form layout *@
     <div class="col-md-4">
+        @* Form that posts new record data to the 'Create' action in the controller *@
         <form asp-action="Create">
+            @* Displays a summary of validation errors at the model level *@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @* Input group for selecting a Product *@
             <div class="form-group">
+                @* Label associated with the ProductsId property *@
                 <label asp-for="ProductsId" class="control-label"></label>
-                <select asp-for="ProductsId" class ="form-control" asp-items="ViewBag.ProductsId"></select>
+                @* Dropdown list populated with products from the ViewBag *@
+                <select asp-for="ProductsId" class="form-control" asp-items="ViewBag.ProductsId"></select>
             </div>
+
+            @* Input group for selecting an Order *@
             <div class="form-group">
+                @* Label associated with the OrdersId property *@
                 <label asp-for="OrdersId" class="control-label"></label>
-                <select asp-for="OrdersId" class ="form-control" asp-items="ViewBag.OrdersId"></select>
+                @* Dropdown list populated with orders from the ViewBag *@
+                <select asp-for="OrdersId" class="form-control" asp-items="ViewBag.OrdersId"></select>
             </div>
+
+            @* Input group for the product quantity *@
             <div class="form-group">
+                @* Label associated with the Quantity property *@
                 <label asp-for="Quantity" class="control-label"></label>
+                @* Numeric input bound to the Quantity property *@
                 <input asp-for="Quantity" class="form-control" />
+                @* Validation message placeholder for the quantity field *@
                 <span asp-validation-for="Quantity" class="text-danger"></span>
             </div>
+
+            @* Container for the submission action *@
             <div class="form-group">
+                @* Submit button to trigger the form POST request and create the record *@
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
+@* Navigation section *@
 <div>
+    @* Link to return to the main list of order-product mappings *@
     <a asp-action="Index">Back to List</a>
 </div>
 
+@* Section for including client-side logic scripts *@
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @* Asynchronously renders the partial view containing jQuery validation logic *@
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

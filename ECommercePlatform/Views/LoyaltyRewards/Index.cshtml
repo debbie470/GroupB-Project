@@ -1,80 +1,89 @@
-﻿@model IEnumerable<ECommercePlatform.Models.LoyaltyRewards>
+﻿@model IEnumerable<ECommercePlatform.Models.LoyaltyRewards> // Specifies a collection of LoyaltyRewards for the Index view
 
 @{
-    ViewData["Title"] = "Index";
+    // Starts a Razor code block for server-side initialization
+    ViewData["Title"] = "Index"; // Sets the browser page title to "Index"
 }
 
-<h1>Index</h1>
+<h1>Index</h1> <!-- Primary page heading -->
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <!-- Container for the creation link -->
+    <a asp-action="Create">Create New</a> <!-- Link to navigate to the loyalty record creation view -->
 </p>
+
 <table class="table">
+    <!-- Standard Bootstrap table for displaying loyalty data -->
     <thead>
+        <!-- Header row defining the columns -->
         <tr>
-           
             <th>
-                @Html.DisplayNameFor(model => model.PointsBalance)
+                @Html.DisplayNameFor(model => model.PointsBalance) @* Label for the points balance column *@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TierLevel)
+                @Html.DisplayNameFor(model => model.TierLevel) @* Label for the user's tier level column *@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.History)
+                @Html.DisplayNameFor(model => model.History) @* Label for the rewards history column *@
             </th>
-            <th></th>
+            <th></th> <!-- Empty header for the action buttons column -->
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            
-            <td>
-                @Html.DisplayFor(modelItem => item.PointsBalance)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TierLevel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.History)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.LoyaltyRewardsId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.LoyaltyRewardsId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.LoyaltyRewardsId">Delete</a>
-            </td>
-        </tr>
-}
+        <!-- Data rows populated from the model collection -->
+        @foreach (var item in Model)
+        {
+            // Iterates through every loyalty record in the list
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PointsBalance) @* Displays the numerical points balance *@
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TierLevel) @* Displays the name of the tier (e.g., Bronze, Gold) *@
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.History) @* Displays a summary of the reward history *@
+                </td>
+                <td>
+                    <!-- Management links for each specific loyalty record -->
+                    <a asp-action="Edit" asp-route-id="@item.LoyaltyRewardsId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.LoyaltyRewardsId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.LoyaltyRewardsId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
 
+<!-- LOYALTY REWARDS SUMMARY SECTION -->
 <div class="loyalty-header text-center">
-
-    <h2 class="title">🏆 Loyalty Rewards</h2>
+    <!-- Centered container for the rewards dashboard -->
+    <h2 class="title">🏆 Loyalty Rewards</h2> <!-- Themed section heading -->
 
     <p class="subtitle">
         Earn points, climb tiers, and unlock exclusive discounts
-    </p>
-
+    </p> <!-- Marketing text to encourage user engagement -->
     @{
-        var nextTier = "Silver";
-        var pointsNeeded = 100;
+        // Logic to calculate progress and display upcoming goals
+        var nextTier = "Silver"; // Placeholder for the next achievable tier
+        var pointsNeeded = 100; // Placeholder for points required for the next level
 
-        var totalPoints = Model.Sum(x => x.PointsBalance);
+        var totalPoints = Model.Sum(x => x.PointsBalance); // Aggregates the total points from all records
     }
 
     <div class="progress-wrapper">
-
+        <!-- Container for the visual progress tracker -->
         <p class="progress-text">
-            You have <strong>@totalPoints</strong> points.
-            Only <strong>@pointsNeeded</strong> more to reach <strong>@nextTier</strong> 🎯
+            You have <strong>@totalPoints</strong> points. <!-- Displays the user's current total -->
+            Only <strong>@pointsNeeded</strong> more to reach <strong>@nextTier</strong> 🎯 <!-- Motivational goal text -->
         </p>
 
         <div class="progress-bar-container">
+            <!-- Background of the progress bar -->
             <div class="progress-bar-fill" style="width:@(totalPoints % 100)%"></div>
+            @* Dynamic width calculated by modulo to simulate progress towards the next 100-point milestone *@
         </div>
 
     </div>
 
 </div>
-

@@ -1,62 +1,70 @@
-﻿@model IEnumerable<ECommercePlatform.Models.OrderProducts>
+﻿@model IEnumerable<ECommercePlatform.Models.OrderProducts> // Specifies a collection of OrderProducts for the Order Details view
 
 @{
-    ViewData["Title"] = "Order Details";
-    var firstItem = Model.FirstOrDefault();
+    // Starts a Razor code block for server-side initialization
+    ViewData["Title"] = "Order Details"; // Sets the browser page title to "Order Details"
+    var firstItem = Model.FirstOrDefault(); // Retrieves the first item to access shared order-level data
 }
 
-<h1>Order Details</h1>
-
+<h1>Order Details</h1> <!-- Primary page heading -->
 @if (firstItem != null)
 {
+    // Check if the order contains any products before rendering the header
     <div>
-        <p><strong>Order ID:</strong> @firstItem.Orders.OrdersId</p>
-        <p><strong>Order Date:</strong> @firstItem.Orders.OrderDate</p>
-        <p><strong>Status:</strong> @firstItem.Orders.OrderTrackingStatus</p>
-        <p><strong>Subtotal:</strong> @firstItem.Orders.Subtotal.ToString("0.00")</p>
-
+        <!-- Container for general order summary information -->
+        <p><strong>Order ID:</strong> @firstItem.Orders.OrdersId</p> <!-- Displays the unique ID of the order -->
+        <p><strong>Order Date:</strong> @firstItem.Orders.OrderDate</p> <!-- Displays when the order was placed -->
+        <p><strong>Status:</strong> @firstItem.Orders.OrderTrackingStatus</p> <!-- Displays the current status of the order -->
+        <p><strong>Subtotal:</strong> @firstItem.Orders.Subtotal.ToString("0.00")</p> <!-- Displays the formatted subtotal amount -->
         @if (firstItem.Orders.Delivery)
         {
-            <p><strong>Order Method:</strong> Delivery</p>
-            <p><strong>Delivery Type:</strong> @firstItem.Orders.DeliveryType</p>
+            // Conditional block for orders marked for delivery
+            <p><strong>Order Method:</strong> Delivery</p> <!-- Indicates delivery was chosen -->
+            <p><strong>Delivery Type:</strong> @firstItem.Orders.DeliveryType</p> <!-- Displays the specific delivery method -->
         }
 
         @if (firstItem.Orders.Collection)
         {
-            <p><strong>Order Method:</strong> Collection</p>
-            <p><strong>Collection Date:</strong> @firstItem.Orders.CollectionDate</p>
+        // Conditional block for orders marked for collection
+            <p><strong>Order Method:</strong> Collection</p> <!-- Indicates collection was chosen -->
+            <p><strong>Collection Date:</strong> @firstItem.Orders.CollectionDate</p> <!-- Displays the scheduled collection date -->
         }
-    </div>
+    </div> <!-- Ends order summary container -->
 
-    <hr />
+    <hr /> <!-- Horizontal line separator -->
 }
 
-<h2>Products Ordered</h2>
+<h2>Products Ordered</h2> <!-- Sub-heading for the items list -->
 
 <table>
+    <!-- Table to display the list of products in the order -->
     <thead>
+        <!-- Header row for product attributes -->
         <tr>
-            <th style="text-align:left; padding-right:20px;">Product</th>
-            <th style="text-align:left; padding-right:20px;">Price</th>
-            <th style="text-align:left; padding-right:20px;">Quantity</th>
-            <th style="text-align:left; padding-right:20px;">Line Total</th>
+            <th style="text-align:left; padding-right:20px;">Product</th> <!-- Column for product name -->
+            <th style="text-align:left; padding-right:20px;">Price</th> <!-- Column for unit price -->
+            <th style="text-align:left; padding-right:20px;">Quantity</th> <!-- Column for quantity ordered -->
+            <th style="text-align:left; padding-right:20px;">Line Total</th> <!-- Column for calculated line total -->
         </tr>
     </thead>
     <tbody>
+        <!-- Data rows for each product item -->
         @foreach (var item in Model)
         {
+            // Iterates through every product linked to this order
             <tr>
-                <td style="padding-right:20px;">@item.Products.ProductName</td>
-                <td style="padding-right:20px;">@item.Products.Price.ToString("0.00")</td>
-                <td style="padding-right:20px;">@item.Quantity</td>
+                <td style="padding-right:20px;">@item.Products.ProductName</td> <!-- Displays the name of the product -->
+                <td style="padding-right:20px;">@item.Products.Price.ToString("0.00")</td> <!-- Displays the unit price formatted to 2 decimals -->
+                <td style="padding-right:20px;">@item.Quantity</td> <!-- Displays the amount of units purchased -->
                 <td style="padding-right:20px;">
-                    @(item.Products.Price* item.Quantity).ToString("0.00")
+                    @((item.Products.Price * item.Quantity).ToString("0.00")) @* Calculates and formats the total for this line item *@
                 </td>
             </tr>
         }
     </tbody>
-</table>
+</table> <!-- Ends products table -->
 
 <div style="margin-top:20px;">
-    <a asp-action="Index">Back to List</a>
-</div>
+    <!-- Navigation container -->
+    <a asp-action="Index">Back to List</a> <!-- Link to return the user to the orders index -->
+</div> <!-- Ends navigation container -->

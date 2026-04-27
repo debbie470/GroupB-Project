@@ -1,48 +1,78 @@
-﻿@model ECommercePlatform.Models.Products
+﻿@model ECommercePlatform.Models.Products // Specifies the Products model for the Details view
 
 @{
-    ViewData["Title"] = "Details";
+    // Starts a Razor code block for server-side initialization
+    ViewData["Title"] = "Details"; // Sets the browser page title to "Details"
 }
 
-<h1>Details</h1>
+<h1>Details</h1> <!-- Primary page heading -->
 
 <div>
-    <h4>Products</h4>
-    <hr />
+    <!-- Container for product information -->
+    <h4>Products</h4> <!-- Sub-heading for the product entity -->
+
+    <hr /> <!-- Horizontal line separator -->
+
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ProductName)
+        <!-- Description list for product properties using Bootstrap grid -->
+        <dt class="col-sm-2">
+            <!-- Label column for the Product Name -->
+            @Html.DisplayNameFor(model => model.ProductName) @* Displays the property name for ProductName *@
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ProductName)
+
+        <dd class="col-sm-10">
+            <!-- Data column for the Product Name -->
+            @Html.DisplayFor(model => model.ProductName) @* Displays the actual value of ProductName *@
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Stock)
+
+        <dt class="col-sm-2">
+            <!-- Label column for the Stock quantity -->
+            @Html.DisplayNameFor(model => model.Stock) @* Displays the property name for Stock *@
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Stock)
+
+        <dd class="col-sm-10">
+            <!-- Data column for the Stock quantity -->
+            @Html.DisplayFor(model => model.Stock) @* Displays the actual value of Stock *@
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
+
+        <dt class="col-sm-2">
+            <!-- Label column for the Price -->
+            @Html.DisplayNameFor(model => model.Price) @* Displays the property name for Price *@
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
+
+        <dd class="col-sm-10">
+            <!-- Data column for the Price -->
+            @Html.DisplayFor(model => model.Price) @* Displays the actual value of Price *@
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImagePath)
+
+        <dt class="col-sm-2">
+            <!-- Label column for the Image Path -->
+            @Html.DisplayNameFor(model => model.ImagePath) @* Displays the property name for ImagePath *@
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImagePath)
+
+        <dd class="col-sm-10">
+            <!-- Data column for the Image Path -->
+            @Html.DisplayFor(model => model.ImagePath) @* Displays the actual value of ImagePath *@
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Suppliers)
+
+        <dt class="col-sm-2">
+            <!-- Label column for the Supplier -->
+            @Html.DisplayNameFor(model => model.Suppliers) @* Displays the property name for Suppliers *@
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Suppliers.SuppliersId)
+
+        <dd class="col-sm-10">
+            <!-- Data column for the Supplier ID -->
+            @Html.DisplayFor(model => model.Suppliers.SuppliersId) @* Displays the associated Supplier's ID *@
         </dd>
-    </dl>
-</div>
+
+    </dl> <!-- Ends the description list -->
+
+</div> <!-- Ends the information container -->
+
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ProductsId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+    <!-- Navigation container -->
+    <a asp-action="Edit" asp-route-id="@Model?.ProductsId">Edit</a> | <!-- Link to navigate to the Edit view for this product -->
+
+    <a asp-action="Index">Back to List</a> <!-- Link to return the user to the product list -->
+
+</div> <!-- Ends the navigation container -->

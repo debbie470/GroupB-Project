@@ -1,69 +1,80 @@
-﻿@model IEnumerable<ECommercePlatform.Models.Orders>
+﻿@model IEnumerable<ECommercePlatform.Models.Orders> // Specifies a collection of Orders for the Index view
 
 @{
-    ViewData["Title"] = "Index";
+    // Starts a Razor code block for server-side initialization
+    ViewData["Title"] = "Index"; // Sets the browser page title to "Index"
 }
 
-<h1>Index</h1>
+<h1>Index</h1> <!-- Primary page heading -->
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <!-- Container for the creation link -->
+    <a asp-action="Create">Create New</a> <!-- Link to navigate to the order creation view -->
 </p>
-<div class="orders-container">
 
+<div class="orders-container">
+    <!-- Main container for the list of order cards -->
     @foreach (var item in Model)
     {
+        // Iterates through each order in the model collection
         <div class="order-card">
-
+            <!-- Individual card representing a single order -->
             <!-- TOP SECTION -->
             <div class="order-header">
-                <h4>Order #@item.OrdersId</h4>
-                <span class="status">@item.OrderTrackingStatus</span>
-            </div>
-
+                <!-- Header section of the order card -->
+                <h4>Order #@item.OrdersId</h4> <!-- Displays the unique ID of the order -->
+                <span class="status">@item.OrderTrackingStatus</span> <!-- Displays the current tracking status -->
+            </div> <!-- Ends order header -->
             <!-- BODY -->
             <div class="order-body">
+                <!-- Main content area for order details -->
 
                 <div class="order-row">
-                    <span>Subtotal</span>
-                    <span>£@item.Subtotal</span>
+                    <!-- Row displaying the subtotal -->
+                    <span>Subtotal</span> <!-- Label for the subtotal -->
+                    <span>£@item.Subtotal</span> <!-- Displays the subtotal value -->
                 </div>
 
                 <div class="order-row">
-                    <span>Delivery</span>
-                    <span>£@item.Delivery</span>
+                    <!-- Row displaying delivery costs -->
+                    <span>Delivery</span> <!-- Label for delivery -->
+                    <span>£@item.Delivery</span> <!-- Displays the delivery cost -->
                 </div>
 
                 <div class="order-row">
-                    <span>Collection</span>
-                    <span>@item.Collection</span>
+                    <!-- Row displaying collection information -->
+                    <span>Collection</span> <!-- Label for collection -->
+                    <span>@item.Collection</span> <!-- Displays the collection details -->
                 </div>
 
                 <div class="order-row">
-                    <span>Delivery Type</span>
-                    <span>@item.DeliveryType</span>
+                    <!-- Row displaying the delivery type -->
+                    <span>Delivery Type</span> <!-- Label for delivery type -->
+                    <span>@item.DeliveryType</span> <!-- Displays the chosen delivery method -->
                 </div>
 
                 <div class="order-row">
-                    <span>Order Date</span>
-                    <span>@item.OrderDate</span>
+                    <!-- Row displaying the order date -->
+                    <span>Order Date</span> <!-- Label for order date -->
+                    <span>@item.OrderDate</span> <!-- Displays when the order was placed -->
                 </div>
 
                 <div class="order-row">
-                    <span>Collection Date</span>
-                    <span>@item.CollectionDate</span>
+                    <!-- Row displaying the collection date -->
+                    <span>Collection Date</span> <!-- Label for collection date -->
+                    <span>@item.CollectionDate</span> <!-- Displays when the order is scheduled for collection -->
                 </div>
 
-            </div>
-
+            </div> <!-- Ends order body -->
             <!-- ACTIONS -->
             <div class="order-actions">
-                <a asp-action="Edit" asp-route-id="@item.OrdersId">Edit</a>
-                <a asp-action="Details" asp-route-id="@item.OrdersId">Details</a>
-                <a asp-action="Delete" asp-route-id="@item.OrdersId">Delete</a>
-            </div>
+                <!-- Container for management links -->
+                <a asp-action="Edit" asp-route-id="@item.OrdersId">Edit</a> <!-- Link to modify this order -->
+                <a asp-action="Details" asp-route-id="@item.OrdersId">Details</a> <!-- Link to view full order details -->
+                <a asp-action="Delete" asp-route-id="@item.OrdersId">Delete</a> <!-- Link to remove this order -->
+            </div> <!-- Ends order actions -->
 
-        </div>
+        </div> <!-- Ends the individual order card -->
     }
 
-</div>
+</div> <!-- Ends the main orders container -->

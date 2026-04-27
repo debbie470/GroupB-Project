@@ -1,36 +1,65 @@
-﻿@model ECommercePlatform.Models.OrderProducts
+﻿@* Specifies the data model for displaying details of a specific product within an order *@
+@model ECommercePlatform.Models.OrderProducts
 
+@* Block for setting server-side page metadata *@
 @{
+    @* Sets the browser tab title to "Details" *@
     ViewData["Title"] = "Details";
 }
 
+@* Main heading for the details page *@
 <h1>Details</h1>
 
+@* Container for the Order-Product relationship information *@
 <div>
+    @* Sub-heading identifying the entity type *@
     <h4>OrderProducts</h4>
+
+    @* Horizontal separator *@
     <hr />
+
+    @* Description list using Bootstrap grid for property labels and values *@
     <dl class="row">
-        <dt class = "col-sm-2">
+        @* Label column for the Quantity property *@
+        <dt class="col-sm-2">
+            @* Displays the metadata display name for the Quantity field *@
             @Html.DisplayNameFor(model => model.Quantity)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value column for the Quantity property *@
+        <dd class="col-sm-10">
+            @* Renders the numerical quantity of products ordered *@
             @Html.DisplayFor(model => model.Quantity)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Label column for the associated Product *@
+        <dt class="col-sm-2">
+            @* Displays the metadata display name for the Products navigation property *@
             @Html.DisplayNameFor(model => model.Products)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value column for the associated Product ID *@
+        <dd class="col-sm-10">
+            @* Renders the unique identifier of the linked product *@
             @Html.DisplayFor(model => model.Products.ProductsId)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Label column for the associated Order *@
+        <dt class="col-sm-2">
+            @* Displays the metadata display name for the Orders navigation property *@
             @Html.DisplayNameFor(model => model.Orders)
         </dt>
-        <dd class = "col-sm-10">
+        @* Value column for the associated Order ID *@
+        <dd class="col-sm-10">
+            @* Renders the unique identifier of the parent order *@
             @Html.DisplayFor(model => model.Orders.OrdersId)
         </dd>
     </dl>
 </div>
+
+@* Action link navigation container *@
 <div>
+    @* Link to the Edit page, passing the specific OrderProducts primary key as a route parameter *@
     <a asp-action="Edit" asp-route-id="@Model?.OrderProductsId">Edit</a> |
+
+    @* Link to navigate back to the main list of order-product mappings *@
     <a asp-action="Index">Back to List</a>
 </div>

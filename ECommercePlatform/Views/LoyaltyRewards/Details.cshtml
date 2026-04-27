@@ -1,42 +1,76 @@
-﻿@model ECommercePlatform.Models.LoyaltyRewards
+﻿@* Specifies the data model used for displaying the details of a specific Loyalty Reward record *@
+@model ECommercePlatform.Models.LoyaltyRewards
 
+@* Server-side block to configure page-level metadata *@
 @{
+    @* Sets the title of the page to be displayed in the browser tab *@
     ViewData["Title"] = "Details";
 }
 
+@* Page main heading *@
 <h1>Details</h1>
 
+@* Container for the loyalty reward information section *@
 <div>
+    @* Sub-heading identifying the entity type *@
     <h4>LoyaltyRewards</h4>
+
+    @* Visual separator line *@
     <hr />
+
+    @* Description list using Bootstrap grid classes for label/value alignment *@
     <dl class="row">
-        <dt class = "col-sm-2">
+        @* Column for the User ID label *@
+        <dt class="col-sm-2">
+            @* Retrieves the display name attribute for the UserId property *@
             @Html.DisplayNameFor(model => model.UserId)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the User ID value *@
+        <dd class="col-sm-10">
+            @* Renders the specific User ID stored in the model *@
             @Html.DisplayFor(model => model.UserId)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Column for the Points Balance label *@
+        <dt class="col-sm-2">
+            @* Retrieves the display name attribute for the PointsBalance property *@
             @Html.DisplayNameFor(model => model.PointsBalance)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the Points Balance value *@
+        <dd class="col-sm-10">
+            @* Renders the current points total for the user *@
             @Html.DisplayFor(model => model.PointsBalance)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Column for the Tier Level label *@
+        <dt class="col-sm-2">
+            @* Retrieves the display name attribute for the TierLevel property *@
             @Html.DisplayNameFor(model => model.TierLevel)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the Tier Level value *@
+        <dd class="col-sm-10">
+            @* Renders the user's current loyalty tier (e.g., Bronze, Gold) *@
             @Html.DisplayFor(model => model.TierLevel)
         </dd>
-        <dt class = "col-sm-2">
+
+        @* Column for the History label *@
+        <dt class="col-sm-2">
+            @* Retrieves the display name attribute for the History property *@
             @Html.DisplayNameFor(model => model.History)
         </dt>
-        <dd class = "col-sm-10">
+        @* Column for the History value *@
+        <dd class="col-sm-10">
+            @* Renders the transaction history or activity logs *@
             @Html.DisplayFor(model => model.History)
         </dd>
     </dl>
 </div>
+
+@* Section for navigational action links *@
 <div>
+    @* Link to the Edit page, passing the unique LoyaltyRewardsId as a route parameter *@
     <a asp-action="Edit" asp-route-id="@Model?.LoyaltyRewardsId">Edit</a> |
+
+    @* Link to return to the main index list of all rewards *@
     <a asp-action="Index">Back to List</a>
 </div>

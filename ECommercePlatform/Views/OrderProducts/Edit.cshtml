@@ -1,44 +1,64 @@
-﻿@model ECommercePlatform.Models.OrderProducts
+﻿@model ECommercePlatform.Models.OrderProducts // Specifies the OrderProducts model for the Edit view
 
 @{
-    ViewData["Title"] = "Edit";
+    // Starts a Razor code block for server-side initialization
+    ViewData["Title"] = "Edit"; // Sets the browser page title to "Edit"
 }
 
-<h1>Edit</h1>
+<h1>Edit</h1> <!-- Primary page heading -->
 
-<h4>OrderProducts</h4>
-<hr />
+<h4>OrderProducts</h4> <!-- Sub-heading for the order item entity -->
+<hr /> <!-- Horizontal line separator -->
+
 <div class="row">
+    <!-- Bootstrap row for form layout -->
     <div class="col-md-4">
+        <!-- Grid column spanning 4 units for the form container -->
+
         <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="OrderProductsId" />
+            <!-- Form that submits data to the 'Edit' action of the controller -->
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div> <!-- Displays model-level validation errors -->
+
+            <input type="hidden" asp-for="OrderProductsId" /> <!-- Hidden field to store the Primary Key during the POST -->
+
             <div class="form-group">
-                <label asp-for="ProductsId" class="control-label"></label>
-                <select asp-for="ProductsId" class="form-control" asp-items="ViewBag.ProductsId"></select>
-                <span asp-validation-for="ProductsId" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Product selection -->
+                <label asp-for="ProductsId" class="control-label"></label> <!-- Renders the label for the associated Product ID -->
+                <select asp-for="ProductsId" class="form-control" asp-items="ViewBag.ProductsId"></select> <!-- Dropdown populated with products from ViewBag -->
+                <span asp-validation-for="ProductsId" class="text-danger"></span> <!-- Placeholder for product validation messages -->
+            </div> <!-- Ends Product group -->
+
             <div class="form-group">
-                <label asp-for="OrdersId" class="control-label"></label>
-                <select asp-for="OrdersId" class="form-control" asp-items="ViewBag.OrdersId"></select>
-                <span asp-validation-for="OrdersId" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Order selection -->
+                <label asp-for="OrdersId" class="control-label"></label> <!-- Renders the label for the associated Order ID -->
+                <select asp-for="OrdersId" class="form-control" asp-items="ViewBag.OrdersId"></select> <!-- Dropdown populated with orders from ViewBag -->
+                <span asp-validation-for="OrdersId" class="text-danger"></span> <!-- Placeholder for order validation messages -->
+            </div> <!-- Ends Order group -->
+
             <div class="form-group">
-                <label asp-for="Quantity" class="control-label"></label>
-                <input asp-for="Quantity" class="form-control" />
-                <span asp-validation-for="Quantity" class="text-danger"></span>
-            </div>
+                <!-- Grouping for the Quantity field -->
+                <label asp-for="Quantity" class="control-label"></label> <!-- Renders the label for product quantity -->
+                <input asp-for="Quantity" class="form-control" /> <!-- Input field for editing the quantity of units -->
+                <span asp-validation-for="Quantity" class="text-danger"></span> <!-- Placeholder for quantity validation messages -->
+            </div> <!-- Ends Quantity group -->
+
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+                <!-- Container for the form submission -->
+                <input type="submit" value="Save" class="btn btn-primary" /> <!-- Submit button to save the updated order product details -->
+            </div> <!-- Ends submit button group -->
+
+        </form> <!-- Ends the order product edit form -->
+    </div> <!-- Ends the column div -->
+</div> <!-- Ends the row div -->
 
 <div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+    <!-- Navigation container -->
+    <a asp-action="Index">Back to List</a> <!-- Link to return the user to the list of order products -->
+</div> <!-- Ends navigation div -->
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+     
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    } 
 }

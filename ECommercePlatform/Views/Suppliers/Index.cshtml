@@ -3,8 +3,21 @@
 <h1 class="section-title">Suppliers</h1> <!-- Main heading for the page with a CSS class for styling -->
 
 <p>Total Suppliers: @Model.Count()</p> <!-- Displays the count of items in the Model collection using C# -->
+<!-- Form that appends search parameters to the URL using the HTTP GET method -->
+<form method="get">
+    <!-- Text input for keywords; 'name' attribute matches the controller's search parameter -->
+    <input type="text" name="searchString" placeholder="Search suppliers..." class="form-control" />
 
-<input type="text" id="searchBox" placeholder="Search suppliers..." class="form-control" /> <!-- Input field for filtering the list with a bootstrap style -->
+    <!-- Button to submit the form and trigger the filtered search -->
+    <button type="submit" class="btn btn-primary mt-2">
+        Search
+    </button>
+
+    <!-- Navigation link to the base Index page to clear the current search and reset the list -->
+    <a href="/Suppliers/Index" class="btn btn-secondary mt-2">
+        Reset
+    </a>
+</form>
 
 <div class="supplier-container">
     <!-- Wrapper container for all supplier cards -->

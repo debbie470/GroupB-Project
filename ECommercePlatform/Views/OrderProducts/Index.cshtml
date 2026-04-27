@@ -1,29 +1,34 @@
-﻿@model IEnumerable<ECommercePlatform.Models.OrderProducts>
+﻿@model IEnumerable<ECommercePlatform.Models.OrderProducts> // Specifies a collection of OrderProducts for the view
 
-<h1 class="section-title">Order Products</h1>
+<h1 class="section-title">Order Products</h1> <!-- Main title for the order products section -->
 
 <div class="order-product-container">
-
+    <!-- Main wrapper for the list of order-product mapping cards -->
     @foreach (var item in Model)
     {
+        // Iterates through each link between an order and a specific product
         <div class="order-product-card">
+            <!-- Individual card representing a product within an order -->
 
             <div class="op-header">
-                <h4>@item.Products.ProductName</h4>
-            </div>
+                <!-- Header section of the card -->
+                <h4>@item.Products.ProductName</h4> <!-- Displays the name of the product from the joined Products table -->
+            </div> <!-- Ends card header -->
 
             <div class="op-body">
-                <p><strong>Quantity:</strong> @item.Quantity</p>
-                <p><strong>Order ID:</strong> #@item.OrdersId</p>
-            </div>
+                <!-- Content area for product-specific order details -->
+                <p><strong>Quantity:</strong> @item.Quantity</p> <!-- Displays the amount of this product ordered -->
+                <p><strong>Order ID:</strong> #@item.OrdersId</p> <!-- Displays the unique ID of the parent order -->
+            </div> <!-- Ends card body -->
 
             <div class="op-actions">
-                <a asp-action="Edit" asp-route-id="@item.OrderProductsId">Edit</a>
-                <a asp-action="Details" asp-route-id="@item.OrderProductsId">Details</a>
-                <a asp-action="Delete" asp-route-id="@item.OrderProductsId">Delete</a>
-            </div>
+                <!-- Container for management links -->
+                <a asp-action="Edit" asp-route-id="@item.OrderProductsId">Edit</a> <!-- Link to modify this specific order item -->
+                <a asp-action="Details" asp-route-id="@item.OrderProductsId">Details</a> <!-- Link to view details for this order item -->
+                <a asp-action="Delete" asp-route-id="@item.OrderProductsId">Delete</a> <!-- Link to remove this product from the order -->
+            </div> <!-- Ends card actions -->
 
-        </div>
+        </div> <!-- Ends the order-product card -->
     }
 
-</div>
+</div> <!-- Ends the main product container -->

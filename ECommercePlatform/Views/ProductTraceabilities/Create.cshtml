@@ -1,52 +1,72 @@
-﻿@model ECommercePlatform.Models.ProductTraceability
+﻿@model ECommercePlatform.Models.ProductTraceability // Declares that this view is bound to the ProductTraceability model for creating a new record
 
 @{
-    ViewData["Title"] = "Create";
-}
+    // Starts a Razor code block for view-specific configurations
+    ViewData["Title"] = "Create"; // Sets the browser tab title to "Create" using the ViewData dictionary
+} 
 
-<h1>Create</h1>
+<h1>Create</h1> <!-- Main level 1 heading for the creation page -->
 
-<h4>ProductTraceability</h4>
-<hr />
+<h4>ProductTraceability</h4> <!-- Level 4 heading indicating the entity type being added -->
+<hr /> <!-- Renders a horizontal line as a visual separator -->
+
 <div class="row">
+    <!-- Starts a Bootstrap grid row to structure the form layout -->
     <div class="col-md-4">
+        <!-- Defines a column spanning 4 out of 12 units on medium screens or larger -->
         <form asp-action="Create" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <!-- Creates a form that submits data via POST to the 'Create' action in the controller -->
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div> <!-- Container for displaying validation errors that apply to the whole model rather than a specific field -->
+
             <div class="form-group">
-                <label asp-for="ProductsId" class="control-label"></label>
-                <select asp-for="ProductsId" class ="form-control" asp-items="ViewBag.ProductsId"></select>
-            </div>
+                <!-- Groups the label and selection dropdown for the related Product -->
+                <label asp-for="ProductsId" class="control-label"></label> <!-- Generates a label for the 'ProductsId' foreign key property -->
+                <select asp-for="ProductsId" class="form-control" asp-items="ViewBag.ProductsId"></select> <!-- Renders a dropdown list of products populated from the ViewBag -->
+            </div> <!-- End of the Product selection group -->
+
             <div class="form-group">
-                <label asp-for="Origin" class="control-label"></label>
-                <input asp-for="Origin" class="form-control" />
-                <span asp-validation-for="Origin" class="text-danger"></span>
-            </div>
+                <!-- Groups the label, input, and validation for the Origin field -->
+                <label asp-for="Origin" class="control-label"></label> <!-- Generates a label for the 'Origin' property -->
+                <input asp-for="Origin" class="form-control" /> <!-- Renders a text input for the user to enter the product's origin -->
+                <span asp-validation-for="Origin" class="text-danger"></span> <!-- Placeholder for displaying validation error messages specific to the Origin field -->
+            </div> <!-- End of the Origin group -->
+
             <div class="form-group">
-                <label asp-for="BatchNumber" class="control-label"></label>
-                <input asp-for="BatchNumber" class="form-control" />
-                <span asp-validation-for="BatchNumber" class="text-danger"></span>
-            </div>
+                <!-- Groups the label, input, and validation for the Batch Number field -->
+                <label asp-for="BatchNumber" class="control-label"></label> <!-- Generates a label for the 'BatchNumber' property -->
+                <input asp-for="BatchNumber" class="form-control" /> <!-- Renders a text input for the product batch number -->
+                <span asp-validation-for="BatchNumber" class="text-danger"></span> <!-- Placeholder for displaying validation error messages for the Batch Number -->
+            </div> <!-- End of the Batch Number group -->
+
             <div class="form-group">
-                <label asp-for="HarvestDate" class="control-label"></label>
-                <input asp-for="HarvestDate" class="form-control" />
-                <span asp-validation-for="HarvestDate" class="text-danger"></span>
-            </div>
+                <!-- Groups the label, input, and validation for the Harvest Date field -->
+                <label asp-for="HarvestDate" class="control-label"></label> <!-- Generates a label for the 'HarvestDate' property -->
+                <input asp-for="HarvestDate" class="form-control" /> <!-- Renders a date input for selecting the harvest date -->
+                <span asp-validation-for="HarvestDate" class="text-danger"></span> <!-- Placeholder for displaying validation error messages for the Harvest Date -->
+            </div> <!-- End of the Harvest Date group -->
+
             <div class="form-group">
-                <label asp-for="Certifications" class="control-label"></label>
-                <input asp-for="Certifications" class="form-control" />
-                <span asp-validation-for="Certifications" class="text-danger"></span>
-            </div>
+                <!-- Groups the label, input, and validation for the Certifications field -->
+                <label asp-for="Certifications" class="control-label"></label> <!-- Generates a label for the 'Certifications' property -->
+                <input asp-for="Certifications" class="form-control" /> <!-- Renders a text input for entering certification details -->
+                <span asp-validation-for="Certifications" class="text-danger"></span> <!-- Placeholder for displaying validation error messages for Certifications -->
+            </div> <!-- End of the Certifications group -->
+
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+                <!-- Container for the form submission button -->
+                <input type="submit" value="Create" class="btn btn-primary" /> <!-- The primary button that submits the form data to create the new record -->
+            </div> <!-- End of the submit button group -->
+        </form> <!-- Ends the HTML form -->
+    </div> <!-- Ends the column div -->
+</div> <!-- Ends the row div -->
 
 <div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
+    <!-- Container for navigation links -->
+    <a asp-action="Index">Back to List</a> <!-- Hyperlink that redirects the user back to the main list of traceability records -->
+</div> <!-- Ends the navigation container -->
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+     <!-- Defines a section for JavaScript to be injected into the main layout -->
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    } <!-- Asynchronously loads client-side validation scripts for immediate field checking -->
+} <!-- Ends the Scripts section -->
